@@ -361,7 +361,12 @@ const views = {
   cover() {
     return shell(`
       <h1>CHLOE STARR</h1>
-      <p class="cover-introduction">Storyteller. AI-native writer, builder</p>
+      <p class="cover-introduction">Storyteller. AI-native builder</p>
+      <aside class="original-line cover-writing" aria-label="Lines from my writing">
+        <blockquote id="original-line-text" aria-live="polite">${escapeHtml(originalLines[originalLineCursor].text)}</blockquote>
+        <div class="atmosphere-window"><img id="atmosphere-photo" src="${atmosphericPhotos[atmosphericPhotoCursor].src}" alt="${escapeHtml(atmosphericPhotos[atmosphericPhotoCursor].alt)}" width="1200" height="800"></div>
+        <div class="actions"><button type="button" class="text-action" data-next-line>another line ↻</button><a id="original-line-source" href="#${originalLines[originalLineCursor].route}">read ${escapeHtml(originalLines[originalLineCursor].title)} →</a></div>
+      </aside>
       <p class="cover-venture"><a href="https://ompom.ai" target="_blank" rel="noopener noreferrer">Founder of ompom.ai ↗</a></p>
       <nav class="cover-socials" aria-label="Find Chloe on social media">
         <a href="https://x.com/cloeystarr" target="_blank" rel="noopener noreferrer">X ↗</a>
@@ -371,11 +376,6 @@ const views = {
         <a href="https://www.youtube.com/@TheCloeystarr" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
         <a href="#events">Events ↗</a>
       </nav>
-      <aside class="original-line cover-writing" aria-label="Lines from my writing">
-        <blockquote id="original-line-text" aria-live="polite">${escapeHtml(originalLines[originalLineCursor].text)}</blockquote>
-        <div class="atmosphere-window"><img id="atmosphere-photo" src="${atmosphericPhotos[atmosphericPhotoCursor].src}" alt="${escapeHtml(atmosphericPhotos[atmosphericPhotoCursor].alt)}" width="1200" height="800"></div>
-        <div class="actions"><button type="button" class="text-action" data-next-line>another line ↻</button><a id="original-line-source" href="#${originalLines[originalLineCursor].route}">read ${escapeHtml(originalLines[originalLineCursor].title)} →</a></div>
-      </aside>
       <div class="actions">
         <button class="action" type="button" data-route="question">[ enter ]</button>
       </div>
