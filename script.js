@@ -593,12 +593,14 @@ const views = {
         <p class="film-series">The Oldest Books on Earth Already Designed Your Software</p>
         <p>An anime promo made with Chris for <a href="https://ompom.ai" target="_blank" rel="noopener noreferrer">ompom.ai</a>, beginning with a question: what software would the oldest books on Earth build?</p>
         <figure class="film-player">
-          <video controls playsinline preload="metadata" poster="assets/visual-media/poster.jpg" aria-label="Part I: The Author — anime promo film">
+          <video controls controlslist="nodownload" playsinline preload="metadata" poster="assets/visual-media/poster.jpg" aria-label="Part I: The Author — anime promo film">
             <source src="assets/visual-media/ompom-ai-part-i-the-author.mp4" type="video/mp4">
             Your browser does not support embedded video. <a href="assets/visual-media/ompom-ai-part-i-the-author.mp4">Watch the film</a>.
           </video>
           <figcaption>Chloe Starr &amp; Chris Starr · 2:35 · Captions included</figcaption>
         </figure>
+        <div class="actions"><button type="button" data-share-film>share film →</button></div>
+        <p id="film-share-status" class="note" role="status"></p>
         <section class="film-making" aria-labelledby="film-making-title">
           <h3 id="film-making-title">How we made it</h3>
           <p>The film brings our writing and recorded performances together with generated imagery, animation, and a carefully edited soundtrack. We developed it through repeated scene, voice, and sound revisions.</p>
@@ -755,6 +757,23 @@ function render() {
 }
 
 app.addEventListener("click", async (event) => {
+  if (event.target.closest("[data-share-film]")) {
+    const status = document.getElementById("film-share-status");
+    const url = "https://chloestarr.me/#visual-media";
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Part I: The Author — Chloe Starr & Chris Starr", url });
+      } else {
+        await navigator.clipboard.writeText(url);
+        status.textContent = "Film page link copied.";
+      }
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        status.textContent = `Share this link: ${url}`;
+      }
+    }
+    return;
+  }
   if (event.target.closest("[data-copy-style]")) {
     const status = document.getElementById("style-copy-status");
     try {
