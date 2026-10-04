@@ -285,6 +285,7 @@ const archive = [
   { title: "Gaming", route: "gaming", category: "Fortnite · cloeystarr" },
   { title: "Human experience", route: "experience", category: "Professional life, companies and creative work" },
   { title: "Worlds", route: "worlds", category: "Building, anime, visual media and practice" },
+  { title: "Music", route: "music", category: "Spotify and favorite playlists" },
 ];
 
 // Workspace drafts exist only for this page session.
@@ -516,6 +517,7 @@ const views = {
       <a href="#writing"><span>ENOUGH. — my book</span><span>→</span></a>
       <a href="#reading"><span>Reading — metaphysics, grimoires &amp; ancient texts</span><span>→</span></a>
       <a href="#anime"><span>Anime &amp; animation</span><span>→</span></a>
+      <a href="#music"><span>Music</span><span>→</span></a>
       <a href="#events"><span>Events &amp; gatherings</span><span>→</span></a>
       <a href="#style"><span>Style — my styling brief</span><span>→</span></a>
       <a href="#clothes"><span>Clothes &amp; my closet</span><span>→</span></a>
@@ -525,6 +527,16 @@ const views = {
       <a href="#practice"><span>Mantra, yoga &amp; vegetarianism</span><span>→</span></a>
       <a href="#world"><span>Building ompom.ai</span><span>→</span></a>
     </nav>`, { label: "WORLDS" });
+  },
+  music() {
+    return shell(`<h2>Music</h2>
+      <div class="actions"><a href="https://open.spotify.com/user/cloeystarr" target="_blank" rel="noopener noreferrer">my Spotify ↗</a></div>
+      <section class="anime-section" aria-labelledby="favorite-playlist-title">
+        <h3 id="favorite-playlist-title">Flesh without Blood</h3>
+        <iframe title="Flesh without Blood — Chloe’s Spotify playlist" src="https://open.spotify.com/embed/playlist/73eE7IVSZQWiI2aDJVBSWD" width="100%" height="352" style="border:0;border-radius:12px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="actions"><a href="https://open.spotify.com/playlist/73eE7IVSZQWiI2aDJVBSWD" target="_blank" rel="noopener noreferrer">open playlist in Spotify ↗</a></div>
+      </section>
+      <div class="actions"><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS" });
   },
   events() {
     return shell(`<h2>Events &amp; gatherings</h2>
