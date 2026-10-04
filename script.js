@@ -250,6 +250,7 @@ const atmosphericPhotos = [{"src": "assets/atmosphere/01.jpg", "alt": "A city sk
 let atmosphericPhotoCursor = 0;
 
 const routes = new Set([
+  "music",
   ...writingEntries.map(entry => entry.route),
   
   
