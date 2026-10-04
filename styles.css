@@ -434,3 +434,38 @@ ol.book-list { list-style: decimal; padding-left: 1.5rem; }
 .poem:first-child { margin-top: 2.5rem; }
 .poem-number { font-size: 1rem; font-weight: 400; margin: 0 0 1.5rem; }
 .poem p { white-space: pre-wrap; margin: 0; }
+
+.cover-introduction { margin: 1rem 0 1.5rem; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.5; }
+.cover-socials { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; font-size: 0.9rem; }
+.cover-socials a { text-decoration: none; padding-block: 0.35rem; }
+.cover-socials a:hover, .cover-socials a:focus-visible { text-decoration: underline; }
+.cover-writing { max-width: 44rem; margin: 2.5rem 0; padding: 1.5rem 0; }
+.cover-writing { border-color: #d8d8d8; }
+.cover-writing blockquote { margin: 0 0 1rem; font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.65; color: #555; }
+.cover-writing .actions { margin-top: 1rem; font-size: 0.8rem; color: #555; }
+
+.reading-entry .reading-text p { white-space: pre-line; }
+
+.atmosphere-window { display: block; position: relative; width: min(100%, 24rem); margin: 1.5rem 0 0; padding: 0; border: 0; background: #f3f3f3; }
+.atmosphere-window img { display: block; width: 100%; height: clamp(10rem, 22vw, 14rem); object-fit: cover; }
+
+.cover-introduction { margin-bottom: .5rem; }
+.cover-venture { margin: 0 0 1.5rem; font-size: .9rem; line-height: 1.5; }
+.cover-venture a { text-underline-offset: .2em; }
+
+/* A quiet photograph from the archive introduces each story. */
+.story-atmosphere { margin: 1rem 0 1.5rem; max-width: 24rem; }
+.story-atmosphere img { display: block; width: 100%; height: clamp(7rem, 16vw, 10rem); object-fit: cover; }
+
+/* Vertical films retain their native frame within a modest player. */
+.film-entry { max-width: 42rem; }
+.film-entry > h3 { font-size: 1.5rem; margin-bottom: .5rem; }
+.film-series { color: #666; }
+.film-player { margin: 1.5rem 0 2rem; width: min(100%, 18rem); }
+.film-player video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #111; }
+.film-player figcaption { margin-top: .6rem; font-size: .75rem; line-height: 1.5; color: #666; }
+.film-making { margin-top: 2rem; }
+.film-making p, .film-credits { line-height: 1.65; }
+.film-credits { margin-top: 1.5rem; }
+.film-credits summary { cursor: pointer; }
+.film-credits li { margin-bottom: 1rem; }
