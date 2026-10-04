@@ -627,6 +627,28 @@ const views = {
     return shell(`
       <h2>ompom.ai</h2>
       <p class="object-copy">AI needs context. People should own that context and control where it goes.</p>
+      <section class="film-entry" aria-labelledby="building-film-title">
+        <p class="eyebrow">BUILDING OMPOM.AI</p>
+        <h3 id="building-film-title">Part I: The Author</h3>
+        <p>The Oldest Books on Earth Already Designed Your Software</p>
+        <figure class="film-player">
+          <video controls controlslist="nodownload" playsinline preload="metadata" poster="assets/visual-media/poster.jpg" aria-label="Part I: The Author — anime promo film">
+            <source src="assets/visual-media/ompom-ai-part-i-the-author.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          <figcaption>Chloe Starr &amp; Chris Starr · 2:35 · Captions included</figcaption>
+        </figure>
+        <div class="actions"><button type="button" data-share-film data-share-url="https://chloestarr.me/#world">share film &amp; building notes →</button><a href="#visual-media">how we made the film →</a></div>
+        <p id="film-share-status" class="note" role="status"></p>
+      </section>
+      <section aria-labelledby="building-notes-title">
+        <h3 id="building-notes-title">Building notes</h3>
+        <article>
+          <p class="eyebrow">OCTOBER 3, 2026 · MAKING THE FILM</p>
+          <p>Chris and I recorded our own dialogue for our anime promo. We brought those performances together with OpenAI reference images, Google Flow animation, and a locally generated Kokoro voice for Starlet.</p>
+          <p>The work was in the revisions: scene continuity, voice clarity, caption timing, and music that leaves room for the dialogue. Codex, Python, and FFmpeg helped bring the pieces together. The ending is intentionally silent.</p>
+        </article>
+      </section>
       <div class="actions">
         <a class="text-action" href="https://ompom.ai" target="_blank" rel="noopener noreferrer">enter ompom.ai →</a>
         <button class="action" type="button" data-route="index">[ continue ]</button>
@@ -759,7 +781,7 @@ function render() {
 app.addEventListener("click", async (event) => {
   if (event.target.closest("[data-share-film]")) {
     const status = document.getElementById("film-share-status");
-    const url = "https://chloestarr.me/#visual-media";
+    const url = event.target.closest("[data-share-film]").dataset.shareUrl || "https://chloestarr.me/#visual-media";
     try {
       if (navigator.share) {
         await navigator.share({ title: "Part I: The Author — Chloe Starr & Chris Starr", url });
