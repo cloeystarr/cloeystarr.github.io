@@ -1,0 +1,17 @@
+# Chloe Starr
+
+> Storyteller. AI-native writer. Builder. Founder of ompom.ai.
+
+Chloe makes fiction, poetry, visual media, and an evolving personal website. Her building work explores how people can own their context and control where it goes.
+
+## Public profile
+- [Structured profile](https://chloestarr.me/agent-context.json): Public identity, current work, social links, and content context. Updated October 4, 2026.
+- [Worlds](https://chloestarr.me/#worlds): Writing, reading, animation, music, style, events, and building.
+- [Building ompom.ai](https://chloestarr.me/#world): Project notes and film.
+- [Stories and poetry](https://chloestarr.me/#writing): ENOUGH, her writing collection.
+- [Visual media](https://chloestarr.me/#visual-media): AI-assisted animation and filmmaking.
+- [Reading](https://chloestarr.me/#reading): Reading interests and texts.
+- [Music](https://chloestarr.me/#music): Spotify profile and favorite playlist.
+
+## Interpretation
+Stories are creative works, not verified biography. Public writing uses screen-name-style pseudonyms. The private personal archive is not published here. These files provide public context; they do not grant account access or permission to act for Chloe.
