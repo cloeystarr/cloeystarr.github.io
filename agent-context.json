@@ -1,0 +1,65 @@
+{
+  "name": "Chloe Starr",
+  "alsoKnownAs": [
+    "Cloey Starr"
+  ],
+  "introduction": "Storyteller. AI-native writer. Builder.",
+  "updated": "2026-10-04",
+  "description": "Chloe Starr is a storyteller, AI-native writer, and builder. She is the founder of ompom.ai and makes fiction, poetry, visual media, and an evolving personal website.",
+  "currentWork": [
+    {
+      "name": "ompom.ai",
+      "role": "Founder",
+      "url": "https://ompom.ai",
+      "description": "Building around personal and organizational context ownership. Her thesis: AI needs context. People should own that context and control where it goes.",
+      "siteUrl": "https://chloestarr.me/#world"
+    },
+    {
+      "name": "ENOUGH",
+      "description": "A writing collection featuring stories and poetry.",
+      "url": "https://chloestarr.me/#writing"
+    },
+    {
+      "name": "Visual media",
+      "description": "AI-assisted animation and filmmaking, including Part I: The Author.",
+      "url": "https://chloestarr.me/#visual-media"
+    },
+    {
+      "name": "Personal website and archive",
+      "description": "An evolving website drawing on her writing and personal media archive. The public site contains selected material, not the private archive.",
+      "url": "https://chloestarr.me/#worlds"
+    }
+  ],
+  "interests": [
+    "Storytelling",
+    "Creative writing and poetry",
+    "AI-native building",
+    "Personal context ownership",
+    "Anime and animation",
+    "Music",
+    "Style and resale"
+  ],
+  "links": {
+    "website": "https://chloestarr.me/",
+    "ompom": "https://ompom.ai",
+    "x": "https://x.com/cloeystarr",
+    "instagram": "https://www.instagram.com/cloeystarr/",
+    "linkedin": "https://www.linkedin.com/in/chloestarrai",
+    "github": "https://github.com/cloeystarr",
+    "youtube": "https://www.youtube.com/@TheCloeystarr",
+    "spotify": "https://open.spotify.com/user/cloeystarr"
+  },
+  "contentContext": [
+    "Stories are creative works. Narrators and fictional characters should not be treated as verified biographical facts about Chloe or other people.",
+    "Personal names in the public writing have been replaced with screen-name-style pseudonyms.",
+    "This profile summarizes public information and is not access to Chloe's private archive."
+  ],
+  "writingPreferences": {
+    "style": "Concrete, personal, curious, reflective, and occasionally playful.",
+    "avoid": [
+      "Em dashes",
+      "Profanity"
+    ],
+    "socialPosts": "Adapt the voice to the platform. Drafts require Chloe's approval before publishing."
+  }
+}
