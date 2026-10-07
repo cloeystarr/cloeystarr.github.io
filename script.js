@@ -1,3 +1,15 @@
+function loadFieldNoteEmbeds() {
+  if (window.twttr?.widgets) { window.twttr.widgets.load(document.getElementById("app")); return; }
+  if (document.getElementById("x-field-note-widgets")) return;
+  const script = document.createElement("script");
+  script.id = "x-field-note-widgets";
+  script.src = "https://platform.twitter.com/widgets.js";
+  script.async = true;
+  script.onload = () => window.twttr?.widgets?.load(document.getElementById("app"));
+  script.onerror = () => script.remove();
+  document.head.appendChild(script);
+}
+
 const RESPONSE_ENDPOINT = "https://script.google.com/macros/s/AKfycbwvqf3Ecg1sp-Lx76-FsNQrnXF0TtLdlGTmADKUNXiyow_LCsFPQUpqXe3Y_K3obPkxoA/exec"; // Filled after Google completes web-app deployment.
 async function saveResponse(form, payload) {
   if (!RESPONSE_ENDPOINT) throw new Error("Responses aren’t connected yet. Please try again later.");
@@ -542,19 +554,57 @@ const views = {
   events() {
     return shell(`<h2>Events &amp; gatherings</h2>
       <p class="object-copy">Events are an important part of my world in San Francisco.</p>
-      <section class="anime-section" aria-labelledby="upcoming-events-heading">
-        <h3 id="upcoming-events-heading">Coming up</h3>
-        <p>Events I’m thinking about going to. Plans can change.</p>
-        <iframe class="events-calendar" title="Chloe’s upcoming events — Google Calendar" src="https://calendar.google.com/calendar/embed?src=f4b854ac3a6f322649cc888c4bf28c6133212986cf76037077485bb31dc75c55%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles&amp;mode=AGENDA&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0" loading="eager" referrerpolicy="no-referrer"></iframe>
-        <div class="actions"><a href="https://calendar.google.com/calendar/embed?src=f4b854ac3a6f322649cc888c4bf28c6133212986cf76037077485bb31dc75c55%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles&amp;mode=AGENDA" target="_blank" rel="noopener noreferrer">open events calendar ↗</a></div>
-      </section>
-      <section class="anime-section" aria-labelledby="event-notes-heading">
-        <h3 id="event-notes-heading">My event notes</h3>
-        <p>I share thoughts about events on LinkedIn and X.</p>
-        <div class="actions">
-          <a href="https://www.linkedin.com/in/chloestarrai/recent-activity/all/" target="_blank" rel="noopener noreferrer">my LinkedIn posts ↗</a>
-          <a href="https://x.com/cloeystarr" target="_blank" rel="noopener noreferrer">my posts on X ↗</a>
-        </div>
+      <section class="anime-section field-notes" aria-labelledby="field-notes-heading">
+        <h3 id="field-notes-heading">Field Notes</h3>
+        <p>Films and notes from tech events and gatherings.</p>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
+          <h4>FriendliAI</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Fast enough for whose workflow?</p><a href="https://twitter.com/cloeystarr/status/2107889939740508413">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>Film: Chloe Starr, with Chris Starr. Research insert: FriendliAI Tech &amp; Research, Figure 3. Outside source, not a live event benchmark. Music: Loyalty Freak Music, Standing + Old Saga (CC0).</p><a href="https://x.com/cloeystarr/status/2107889941296627719" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
+          <h4>Google for Startups × Google DeepMind</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Two takes, one frame.</p><a href="https://twitter.com/cloeystarr/status/2107885943562830076">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>The Aviary, Metreon, October 6. Outside research: Arena’s explanation of blind model comparisons. Music: Love They + Beach, Loyalty Freak Music, CC0.</p><a href="https://x.com/cloeystarr/status/2107885945001492794" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
+          <h4>Post-Training &amp; Agent Infra</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>If a harness learns from my work, can I take that learning with me?</p><a href="https://twitter.com/cloeystarr/status/2107881996580208721">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>Brix, CreaoAI, NeuroSpark AI and Beta University. Outside research: Peter Pang’s self-healing agent harness article. Music: Softly + Shoepop, Loyalty Freak Music, CC0.</p><a href="https://x.com/cloeystarr/status/2107881998027194864" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
+          <h4>AI Realized</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Who can act on my context, and can I revoke that authority?</p><a href="https://twitter.com/cloeystarr/status/2107877647221240221">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>Voices in the film: Adil Ajmal; Jayant Kolhe, Stripe; Madhav Chinta, Yellow.ai; Chris Caen, JLINC Labs; Vasanth Chandra, Meta. Outside work: Algedonic’s telemetry demo and Vidhi Agrawal’s expense-agent experiment, Databricks.</p><a href="https://x.com/cloeystarr/status/2107877648970260528" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-06">October 6, 2026</time> · Posted on X</p>
+          <h4>Claude Founder House</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Communicating, building, belonging.</p><a href="https://twitter.com/cloeystarr/status/2107727425656549809">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>Then she started talking about real estate and building community with friends. Yes. I want to make crazy real estate bets. Somewhere we can live, make things and stay up talking about what we’re actually trying to build.</p><a href="https://x.com/cloeystarr/status/2107727427443228853" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-06">October 6, 2026</time> · Posted on X</p>
+          <h4>Coffee &amp; Claude Founder House</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Good morning, SF.</p><a href="https://twitter.com/cloeystarr/status/2107698790803366192">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>First stop: coffee and meeting builders at Joe &amp; the Juice with Chris Starr. Then into the line for Claude Founder House.</p></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-06">October 6, 2026</time> · Posted on X</p>
+          <h4>SHACK15 kickoff</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Agent harnesses by day. Humans under a disco ball by night.</p><a href="https://twitter.com/cloeystarr/status/2107485569102369023">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>Extra DJ and Bay Bridge footage: Rick Uzcategui. Music: District Four by Kevin MacLeod, CC BY 4.0. Excerpted and mixed.</p><a href="https://x.com/cloeystarr/status/2107485570691952649" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
+        <article class="field-note">
+          <p class="byline"><time datetime="2026-10-05">October 5, 2026</time> · Posted on X</p>
+          <h4>EPAM × AI Circle</h4>
+          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Does every enterprise need its own agent harness?</p><a href="https://twitter.com/cloeystarr/status/2107354584259952798">Watch the film on X</a></blockquote>
+          <div class="field-note-text"><p class="eyebrow">Notes</p><p>With Chris Starr, thinking about what I’m building with ompom.ai: personal agents working across my scattered data.</p><a href="https://x.com/cloeystarr/status/2107354585648234513" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div>
+        </article>
       </section>
       <section class="anime-section" aria-labelledby="regular-gatherings-heading">
         <h3 id="regular-gatherings-heading">Regular gatherings</h3>
@@ -572,7 +622,6 @@ const views = {
           <a href="https://www.bhaktisf.com/" target="_blank" rel="noopener noreferrer">visit Bhakti SF ↗</a>
         </article>
       </section>
-      <p class="note">Social posts are not automatically imported here.</p>
       <div class="actions"><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS / EVENTS" });
   },
   anime() {
@@ -783,6 +832,7 @@ function render() {
   }
 
   app.innerHTML = views[route]();
+  if (route === "events") loadFieldNoteEmbeds();
   document.title = `${route === "cover" ? "Chloe Starr" : route.replace("-", " ")} — Chloe Starr`;
 
   if (route === "index") renderSearch();
