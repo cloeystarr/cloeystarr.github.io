@@ -557,6 +557,10 @@ const views = {
       <section class="anime-section field-notes" aria-labelledby="field-notes-heading">
         <h3 id="field-notes-heading">Field Notes</h3>
         <p>Films and notes from tech events and gatherings.</p>
+<article class="field-note"><p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p><h4>Haunted Agent + Infra Horror Night · Part 3</h4><blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>AI isn’t new. The scaffolding keeps changing.</p><a href="https://twitter.com/cloeystarr/status/2107924645550952813">Watch the film on X</a></blockquote><div class="field-note-text"><p class="eyebrow">Notes</p><p>Building ompom.ai makes this personal. I’m thinking about context, permission and the harness around the model. Jennifer pushes the question back another level: are we building around a research problem we haven’t solved?</p><a href="https://x.com/cloeystarr/status/2107924647128027210" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div></article>
+<article class="field-note"><p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p><h4>Haunted Agent + Infra Horror Night · Part 2</h4><blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>The rollback didn’t end the nightmare.</p><a href="https://twitter.com/cloeystarr/status/2107919547571618054">Watch the film on X</a></blockquote><div class="field-note-text"><p class="eyebrow">Notes</p><p>J. Paul Reed tells a crowdsourced incident story. Rolling back doesn’t stop the outage. The app goes into reduced-functionality mode, but the load is still high. Multiple teams investigate. This is not presented as an incident at his current employer.</p><a href="https://x.com/cloeystarr/status/2107919548985098601" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div></article>
+<article class="field-note"><p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p><h4>Haunted Agent + Infra Horror Night · Part 1</h4><blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Cheap AI tokens. Someone else’s keys. Someone else’s bill.</p><a href="https://twitter.com/cloeystarr/status/2107917874283397184">Watch the film on X</a></blockquote><div class="field-note-text"><p class="eyebrow">Notes</p><p>Credits: Matt Lenhard / Vectoral. Hosts: Heavybit, SVB, Tailscale. AI illustration: Flow by Google, Veo 3.1 Lite. Original eerie score and edit: my Codex experiment. Filming with Chris Starr. Reposted with corrected speaker attribution.</p><a href="https://x.com/cloeystarr/status/2107917875810034154" target="_blank" rel="noopener noreferrer">full notes &amp; sources on X ↗</a></div></article>
+
         <article class="field-note">
           <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
           <h4>FriendliAI</h4>
@@ -649,6 +653,12 @@ const views = {
   },
   "visual-media"() {
     return shell(`<h2>Visual media</h2>
+      <article class="field-note" aria-labelledby="troll-flame-title">
+        <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
+        <h3 id="troll-flame-title">TROLL FLAME</h3>
+        <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Whose stories haven’t we heard yet?</p><a href="https://twitter.com/cloeystarr/status/2107926511680643356">Watch TROLL FLAME on X</a></blockquote>
+        <div class="field-note-text"><p class="eyebrow">Notes</p><p>Transcendental Meditation is a silent mantra practice taught by a certified teacher, sitting comfortably with eyes closed.</p><p>My connection is about giving ideas room to emerge, then giving them form. Creation, destruction, renewal.</p><div class="actions"><a href="https://www.tm.org/en-us/faq" target="_blank" rel="noopener noreferrer">TM source ↗</a><a href="https://x.com/cloeystarr/status/2107926513547194711" target="_blank" rel="noopener noreferrer">full notes, credits &amp; sources on X ↗</a></div></div>
+      </article>
       <article class="film-entry" aria-labelledby="author-film-title">
         <p class="eyebrow">01 · ANIME PROMO · OMPOM.AI</p>
         <h3 id="author-film-title">Part I: The Author</h3>
@@ -832,7 +842,7 @@ function render() {
   }
 
   app.innerHTML = views[route]();
-  if (route === "events") loadFieldNoteEmbeds();
+  if (route === "events" || route === "visual-media") loadFieldNoteEmbeds();
   document.title = `${route === "cover" ? "Chloe Starr" : route.replace("-", " ")} — Chloe Starr`;
 
   if (route === "index") renderSearch();
