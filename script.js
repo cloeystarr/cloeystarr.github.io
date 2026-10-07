@@ -659,37 +659,7 @@ const views = {
         <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Whose stories haven’t we heard yet?</p><a href="https://twitter.com/cloeystarr/status/2107926511680643356">Watch TROLL FLAME on X</a></blockquote>
         <div class="field-note-text"><p class="eyebrow">Notes</p><p>Transcendental Meditation is a silent mantra practice taught by a certified teacher, sitting comfortably with eyes closed.</p><p>My connection is about giving ideas room to emerge, then giving them form. Creation, destruction, renewal.</p><div class="actions"><a href="https://www.tm.org/en-us/faq" target="_blank" rel="noopener noreferrer">TM source ↗</a><a href="https://x.com/cloeystarr/status/2107926513547194711" target="_blank" rel="noopener noreferrer">full notes, credits &amp; sources on X ↗</a></div></div>
       </article>
-      <article class="film-entry" aria-labelledby="author-film-title">
-        <p class="eyebrow">01 · ANIME PROMO · OMPOM.AI</p>
-        <h3 id="author-film-title">Part I: The Author</h3>
-        <p class="film-series">The Oldest Books on Earth Already Designed Your Software</p>
-        <p>An anime promo made with Chris for <a href="https://ompom.ai" target="_blank" rel="noopener noreferrer">ompom.ai</a>, beginning with a question: what software would the oldest books on Earth build?</p>
-        <figure class="film-player">
-          <video controls controlslist="nodownload" playsinline preload="metadata" poster="assets/visual-media/poster.jpg" aria-label="Part I: The Author — anime promo film">
-            <source src="assets/visual-media/ompom-ai-part-i-the-author.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="assets/visual-media/ompom-ai-part-i-the-author.mp4">Watch the film</a>.
-          </video>
-          <figcaption>Chloe Starr &amp; Chris Starr · 2:35 · Captions included</figcaption>
-        </figure>
-        <div class="actions"><button type="button" data-share-film>share film →</button></div>
-        <p id="film-share-status" class="note" role="status"></p>
-        <section class="film-making" aria-labelledby="film-making-title">
-          <h3 id="film-making-title">How we made it</h3>
-          <p>The film brings our writing and recorded performances together with generated imagery, animation, and a carefully edited soundtrack. We developed it through repeated scene, voice, and sound revisions.</p>
-          <p><strong>OpenAI image generation</strong> helped create reference stills, including the house and temple scenes and an ink version of our OM logo. <strong>Google Flow</strong> animated reference images into moving scenes, including the logo drawing.</p>
-          <p>Chris and I recorded our own dialogue. The fictional Starlet character’s voice was generated locally with <strong>Kokoro</strong>, using its af_bella voice. Our recordings were retained and refined with noise reduction, EQ, de-essing, compression, and light character pitch processing.</p>
-          <p><strong>Codex, Python, and FFmpeg</strong> supported the edit and finishing work: assembling the film, timing captions, synchronizing dialogue and music, shaping sound effects, and mastering the final audio. The score combines licensed tracks with overlapping fades and music ducking so the voices remain clear. The ending is intentionally silent.</p>
-        </section>
-        <details class="film-credits">
-          <summary>Film &amp; music credits</summary>
-          <p>Created by Chloe Starr and Chris Starr, cofounders of ompom.ai. Founder voices: Chloe Starr and Chris Starr. Starlet: locally generated Kokoro af_bella voice.</p>
-          <ul>
-            <li><a href="https://www.scottbuckley.com.au/library/emergent/" target="_blank" rel="noopener noreferrer">Emergent</a> and <a href="https://www.scottbuckley.com.au/library/machina/" target="_blank" rel="noopener noreferrer">Machina</a> by Scott Buckley, released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Edited for length, fades, and synchronization with dialogue and picture.</li>
-            <li>Minimal Emotion and La La Land by Alejandro Magaña (A. M.); These Nights by Ahjay Stelino; Can’t Get You Off My Mind by Michael Ramir C. Provided by <a href="https://mixkit.co/free-stock-music/" target="_blank" rel="noopener noreferrer">Mixkit</a> under the <a href="https://mixkit.co/license/modal/musicFree/" target="_blank" rel="noopener noreferrer">Mixkit Stock Music Free License</a>. Edited as synchronized film cues.</li>
-            <li><a href="https://commons.wikimedia.org/wiki/File:Pen_dropped.ogg" target="_blank" rel="noopener noreferrer">Pen dropped</a> by Kapoios2026, CC0 public domain. Trimmed and synchronized with a short room reflection. Additional pen textures and pitched resonances synthesized locally.</li>
-          </ul>
-        </details>
-      </article>
+
       <div class="actions"><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS" });
   },
   practice() {
@@ -710,9 +680,26 @@ const views = {
           </video>
           <figcaption>Chloe Starr &amp; Chris Starr · 2:35 · Captions included</figcaption>
         </figure>
-        <div class="actions"><button type="button" data-share-film data-share-url="https://chloestarr.me/#world">share film &amp; building notes →</button><a href="#visual-media">how we made the film →</a></div>
+        <div class="actions"><button type="button" data-share-film data-share-url="https://chloestarr.me/#world">share film &amp; building notes →</button><a href="#film-making-title">how we made the film →</a></div>
         <p id="film-share-status" class="note" role="status"></p>
       </section>
+        <section class="film-making" aria-labelledby="film-making-title">
+          <h3 id="film-making-title">How we made it</h3>
+          <p>The film brings our writing and recorded performances together with generated imagery, animation, and a carefully edited soundtrack. We developed it through repeated scene, voice, and sound revisions.</p>
+          <p><strong>OpenAI image generation</strong> helped create reference stills, including the house and temple scenes and an ink version of our OM logo. <strong>Google Flow</strong> animated reference images into moving scenes, including the logo drawing.</p>
+          <p>Chris and I recorded our own dialogue. The fictional Starlet character’s voice was generated locally with <strong>Kokoro</strong>, using its af_bella voice. Our recordings were retained and refined with noise reduction, EQ, de-essing, compression, and light character pitch processing.</p>
+          <p><strong>Codex, Python, and FFmpeg</strong> supported the edit and finishing work: assembling the film, timing captions, synchronizing dialogue and music, shaping sound effects, and mastering the final audio. The score combines licensed tracks with overlapping fades and music ducking so the voices remain clear. The ending is intentionally silent.</p>
+        </section>
+        <details class="film-credits">
+          <summary>Film &amp; music credits</summary>
+          <p>Created by Chloe Starr and Chris Starr, cofounders of ompom.ai. Founder voices: Chloe Starr and Chris Starr. Starlet: locally generated Kokoro af_bella voice.</p>
+          <ul>
+            <li><a href="https://www.scottbuckley.com.au/library/emergent/" target="_blank" rel="noopener noreferrer">Emergent</a> and <a href="https://www.scottbuckley.com.au/library/machina/" target="_blank" rel="noopener noreferrer">Machina</a> by Scott Buckley, released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Edited for length, fades, and synchronization with dialogue and picture.</li>
+            <li>Minimal Emotion and La La Land by Alejandro Magaña (A. M.); These Nights by Ahjay Stelino; Can’t Get You Off My Mind by Michael Ramir C. Provided by <a href="https://mixkit.co/free-stock-music/" target="_blank" rel="noopener noreferrer">Mixkit</a> under the <a href="https://mixkit.co/license/modal/musicFree/" target="_blank" rel="noopener noreferrer">Mixkit Stock Music Free License</a>. Edited as synchronized film cues.</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Pen_dropped.ogg" target="_blank" rel="noopener noreferrer">Pen dropped</a> by Kapoios2026, CC0 public domain. Trimmed and synchronized with a short room reflection. Additional pen textures and pitched resonances synthesized locally.</li>
+          </ul>
+        </details>
+
       <section aria-labelledby="building-notes-title">
         <h3 id="building-notes-title">Building notes</h3>
         <article>
