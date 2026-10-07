@@ -680,7 +680,7 @@ const views = {
           </video>
           <figcaption>Chloe Starr &amp; Chris Starr · 2:35 · Captions included</figcaption>
         </figure>
-        <div class="actions"><button type="button" data-share-film data-share-url="https://chloestarr.me/#world">share film &amp; building notes →</button><a href="#film-making-title">how we made the film →</a></div>
+        <div class="actions"><button type="button" data-share-film data-share-url="https://chloestarr.me/#world">share film &amp; building notes →</button><button type="button" class="text-action" onclick="document.getElementById('film-making-title').scrollIntoView()">how we made the film ↓</button></div>
         <p id="film-share-status" class="note" role="status"></p>
       </section>
         <section class="film-making" aria-labelledby="film-making-title">
