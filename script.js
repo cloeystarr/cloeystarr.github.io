@@ -359,7 +359,7 @@ function shell(content, { className = "", showIndex = true, label = "" } = {}) {
     <main class="entry ${className}">
       <header class="entry__header">
         ${label ? `<p class="eyebrow">${label}</p>` : "<span></span>"}
-        <nav class="entry-navigation" aria-label="Site navigation">${className === "cover" ? "" : '<a class="index-control" href="#cover">HOME</a>'}${showIndex ? '<a class="index-control" href="#index">INDEX</a>' : ""}</nav>
+        <nav class="entry-navigation" aria-label="Site navigation">${className === "cover" ? "" : '<a class="index-control" href="#cover">home</a>'}${showIndex ? '<a class="index-control" href="#worlds">worlds</a>' : ""}</nav>
       </header>
       <section class="entry__body">
         ${content}
@@ -374,26 +374,31 @@ const styleBrief = "MY STYLE BRIEF\n\n1. IDENTITY\nStyle name or archetype (Kibb
 const views = {
   cover() {
     return shell(`
-      <h1>CHLOE STARR</h1>
-      <p class="cover-introduction">Storyteller. AI-native builder</p>
-      <aside class="original-line cover-writing" aria-label="Lines from my writing">
-        <blockquote id="original-line-text" aria-live="polite">${escapeHtml(originalLines[originalLineCursor].text)}</blockquote>
-        <div class="atmosphere-window"><img id="atmosphere-photo" src="${atmosphericPhotos[atmosphericPhotoCursor].src}" alt="${escapeHtml(atmosphericPhotos[atmosphericPhotoCursor].alt)}" width="1200" height="800"></div>
-        <div class="actions"><button type="button" class="text-action" data-next-line>another line ↻</button><a id="original-line-source" href="#${originalLines[originalLineCursor].route}">read ${escapeHtml(originalLines[originalLineCursor].title)} →</a></div>
-      </aside>
-      <p class="cover-venture"><a href="https://ompom.ai" target="_blank" rel="noopener noreferrer">Founder of ompom.ai ↗</a></p>
-      <nav class="cover-socials" aria-label="Find Chloe on social media">
-        <a href="https://x.com/cloeystarr" target="_blank" rel="noopener noreferrer">X ↗</a>
-        <a href="https://www.instagram.com/cloeystarr/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-        <a href="https://www.linkedin.com/in/chloestarrai" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/cloeystarr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        <a href="https://www.youtube.com/@TheCloeystarr" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
-        <a href="#events">Events ↗</a>
-      </nav>
-      <div class="actions">
-        <button class="action" type="button" data-route="question">[ enter ]</button>
-      </div>
-    `, { className: "cover", showIndex: true });
+      <div class="cover-artist-image"><img src="assets/cover/chloe-cyber-elf-sleeves-v3.jpg" alt="Chloe Starr in a cyberpunk elf portrait, with a silver crown and tied-back dark hair." width="1536" height="1024"></div>
+      <h1>Chloe Starr</h1>
+      <nav class="cover-socials" aria-label="Find Chloe on social media"><a href="https://x.com/cloeystarr" aria-label="X" title="X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h4l12 18h-4L4 3Zm16 0L4 21"/></svg></a>
+<a href="https://www.instagram.com/cloeystarr/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+<a href="https://www.linkedin.com/in/chloestarrai" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.1M11 17v-7m0 3c0-4 6-4 6 0v4"/></svg></a>
+<a href="https://github.com/cloeystarr" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 20c-5 1-5-2-7-2m14 4v-4c0-1-.3-2-1-2 4-.5 6-2 6-6 0-1.5-.5-3-1.5-4 .3-1 .3-2-.2-3-2 0-3 1-4 1a12 12 0 0 0-7 0C7 3 6 2 4 2c-.5 1-.5 2-.2 3C3 6 2.5 7.5 2.5 9c0 4 2 5.5 6 6-.7.5-1 1.5-1 2.5V22"/></svg></a>
+<a href="https://www.youtube.com/@TheCloeystarr" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 6 3-6 3Z" fill="currentColor" stroke="none"/></svg></a>
+<a href="#events" aria-label="Events" title="Events"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 4h2m4 0h2"/></svg></a></nav>
+      <section class="cover-latest-film" aria-labelledby="latest-field-film-title">
+        <h2 id="latest-field-film-title"><a href="#events"><span>events</span><span aria-hidden="true">→</span></a></h2>
+        <div class="cover-film-frame"><button class="journal-film-play" type="button" data-play-cover-film aria-label="Play More Worlds to Build on YouTube"><span class="event-film-poster"><span class="event-poster-copy"><span>More Worlds<br>to Build</span><span class="event-poster-play"><span aria-hidden="true">▷</span> watch the film</span></span><span class="event-poster-image" aria-hidden="true"></span></span></button></div>
+      </section>
+      <a class="cover-stack-link" href="#poetry"><span>poetry</span><span aria-hidden="true">→</span></a>
+      <a class="cover-stack-link" href="#world"><span>ompom.ai</span><span aria-hidden="true">→</span></a>
+      <a class="cover-stack-link" href="#worlds"><span>worlds</span><span aria-hidden="true">→</span></a>
+      <form id="cover-thought-form" class="cover-invitation">
+        <h2>What do you believe that you cannot prove?</h2>
+        <label class="visually-hidden" for="cover-thought">Your answer</label>
+        <textarea id="cover-thought" name="thought" placeholder="Your answer" maxlength="6000" required></textarea>
+        <label class="visually-hidden" for="thought-name">Your name</label><input id="thought-name" name="name" type="text" autocomplete="name" placeholder="Your name" maxlength="120" required>
+        <label class="visually-hidden" for="thought-email">Your email</label><input id="thought-email" name="email" type="email" autocomplete="email" placeholder="Your email" maxlength="254" required>
+        <button type="submit">leave an answer →</button>
+        <p class="note" role="status" aria-live="polite"></p>
+      </form>
+    `, { className: "cover", showIndex: false });
   },
 
   question() {
@@ -560,7 +565,9 @@ const views = {
         <article class="field-note" id="more-worlds-to-build">
           <p class="byline"><time datetime="2026-10-14">October 14, 2026</time> · Posted on X</p>
           <h4>More Worlds to Build</h4>
-          <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>I went to More Worlds to Build during SF Tech Week and came home thinking about a poem I wrote in 2012: “my dreams of making films.”</p><a href="https://twitter.com/cloeystarr/status/2110431281205141677">Watch the film on X</a></blockquote>
+          <iframe class="field-note-youtube" src="https://www.youtube.com/embed/dDSRjptCQ8M" title="More Worlds to Build | SF Tech Week Field Notes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>I went to More Worlds to Build during SF Tech Week and came home thinking about a poem I wrote in 2012: “my dreams of making films.”</p>
+          <div class="actions"><a href="https://www.youtube.com/watch?v=dDSRjptCQ8M" target="_blank" rel="noopener noreferrer">watch on YouTube ↗</a><a href="https://x.com/cloeystarr/status/2110431281205141677" target="_blank" rel="noopener noreferrer">original post on X ↗</a></div>
           <div class="field-note-text">
             <p class="eyebrow">Notes</p>
             <p>Yi Hua of World Labs, Yanpei Cao of VAST/Tripo, and Jimei Yang of Runway showed tools that change what an independent filmmaker can attempt: moving through captured moments, turning reference images into 3D assets, transforming existing footage.</p>
@@ -854,6 +861,12 @@ function render() {
 }
 
 app.addEventListener("click", async (event) => {
+  if (event.target.closest("[data-play-cover-film]")) {
+    const frame = event.target.closest(".cover-film-frame");
+    frame.innerHTML = '<iframe src="https://www.youtube.com/embed/dDSRjptCQ8M?autoplay=1" title="More Worlds to Build | SF Tech Week Field Notes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+    return;
+  }
+
   if (event.target.closest("[data-share-film]")) {
     const status = document.getElementById("film-share-status");
     const url = event.target.closest("[data-share-film]").dataset.shareUrl || "https://chloestarr.me/#visual-media";
@@ -918,6 +931,21 @@ app.addEventListener("click", async (event) => {
 app.addEventListener("submit", async (event) => {
   event.preventDefault();
   const form = event.target;
+  if (form.id === "cover-thought-form") {
+    if (form.dataset.sending || !form.reportValidity()) return;
+    const data = new FormData(form), status = form.querySelector('[role="status"]'), submit = form.querySelector('[type="submit"]');
+    const thought = String(data.get("thought") || "").trim(), name = String(data.get("name") || "").trim(), email = String(data.get("email") || "").trim();
+    if (!thought || !name || !email) { status.textContent = "Add your answer, name, and email."; return; }
+    form.dataset.sending = "true"; submit.disabled = true; status.textContent = "Saving…";
+    try {
+      // The response service stores email only when contact consent is true.
+      // Here it records the contact details supplied with this answer, not a newsletter opt-in.
+      await saveResponse(form, {type: "question", context: "What do you believe that you cannot prove? (Name and email supplied with answer; no newsletter opt-in.)", response: thought, name, email, consent: true});
+      form.reset(); status.textContent = "Thank you. Your answer is saved.";
+    } catch (error) { status.textContent = error.message || "Could not save. Please try again."; }
+    finally { delete form.dataset.sending; submit.disabled = false; }
+    return;
+  }
   if (["question-answer-form", "entrance-form", "leave-form"].includes(form.id) || form.matches("[data-book]")) {
     let status = form.querySelector('[role="status"]');
     if (!status) { status = document.createElement("p"); status.setAttribute("role", "status"); status.className = "note"; form.append(status); }
