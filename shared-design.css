@@ -40,3 +40,8 @@ body, .entry, .cover, input, textarea, select, button { font-family: var(--text-
 .event-poster-image { display: block; background-image: url('assets/cover/more-worlds-event-still.jpg'); background-size: auto 170%; background-position: 50% 45%; background-repeat: no-repeat; }
 .journal-film-play:hover .event-poster-play { text-decoration: underline; text-underline-offset: .25em; }
 @media (max-width: 400px) { .event-poster-copy { padding: 1rem; } .event-film-poster { min-height: 11rem; } }
+
+/* Keep the white canvas in mobile browsers with automatic darkening. */
+html, body, #app, .entry, .cover { color-scheme: only light; background-color: #fff; color: #000; }
+.cover-artist-image { background-color: #fff; }
+.cover-invitation input, .cover-invitation textarea { color-scheme: only light; background-color: #fff; color: #000; }
