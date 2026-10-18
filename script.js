@@ -386,7 +386,7 @@ const views = {
         <h2 id="latest-field-film-title"><a href="#events"><span>events</span><span aria-hidden="true">→</span></a></h2>
         <div class="cover-film-frame"><button class="journal-film-play" type="button" data-play-cover-film aria-label="Play More Worlds to Build on YouTube"><span class="event-film-poster"><span class="event-poster-copy"><span>More Worlds<br>to Build</span><span class="event-poster-play"><span aria-hidden="true">▷</span> watch the film</span></span><span class="event-poster-image" aria-hidden="true"></span></span></button></div>
       </section>
-      <section class="cover-latest-film" aria-labelledby="poetry-film-cover-title"><h2 id="poetry-film-cover-title"><a href="https://www.youtube.com/watch?v=2eTSRR24aec" target="_blank" rel="noopener noreferrer"><span>poetry</span><span aria-hidden="true">→</span></a></h2><div class="film-player" style="width:100%;aspect-ratio:16/9;line-height:0"><a href="https://www.youtube.com/watch?v=2eTSRR24aec" target="_blank" rel="noopener noreferrer" aria-label="Watch Where Do Memories Live? on YouTube" style="display:block;width:100%;height:100%;padding:0;border:0;background:white;cursor:pointer"><img src="assets/poetry-films/where-do-memories-live-v1.jpg" alt="Where do memories live? A smell of fabric that touched both me and you triggers a marathon of memories. Seductive suction the present moment disappears and I'm in a reconstructed past packaging the most suitable version for you. Chloe Starr. Poetry films." style="display:block;width:100%;height:100%;object-fit:contain"></a></div><p>Where Do Memories Live? · A film from my poem, archive and reconstructed memories.</p><p><a href="#visual-media">How we made it →</a></p></section>
+      <section class="cover-latest-film" aria-labelledby="poetry-film-cover-title"><h2 id="poetry-film-cover-title"><a href="#poetry"><span>poetry</span><span aria-hidden="true">→</span></a></h2>${poetryFilmMarkup()}</section>
       <a class="cover-stack-link" href="#world"><span>ompom.ai</span><span aria-hidden="true">→</span></a>
       <a class="cover-stack-link" href="#worlds"><span>worlds</span><span aria-hidden="true">→</span></a>
       <form id="cover-thought-form" class="cover-invitation">
@@ -808,6 +808,10 @@ const views = {
   },
 };
 
+function poetryFilmMarkup() {
+  return `<div class="cover-film-frame poetry-film-frame"><button class="journal-film-play" type="button" data-play-poetry-film aria-label="Play Where Do Memories Live?"><img src="assets/poetry-films/where-do-memories-live-v1.jpg" alt="Where do memories live? A smell of fabric that touched both me and you triggers a marathon of memories. Seductive suction the present moment disappears and I'm in a reconstructed past packaging the most suitable version for you. Chloe Starr. Poetry films."><span class="journal-play-label"><span aria-hidden="true">▷</span> watch the film</span></button></div>`;
+}
+
 // The source collection's editorial notes and unwritten title story are omitted.
 writingEntries.forEach(entry => {
   views[entry.route] = () => shell(`
@@ -815,9 +819,9 @@ writingEntries.forEach(entry => {
     <h2>${escapeHtml(entry.title)}</h2>
     ${entry.photo ? `<figure class="story-atmosphere"><img src="${escapeHtml(entry.photo.src)}" alt="${escapeHtml(entry.photo.alt)}" decoding="async"></figure>` : ""}
     ${entry.route === "poetry" ? "" : '<p class="note">Creative fiction.</p>'}
-    ${entry.route === "poetry" ? "<section class=\"field-note\"><h3>Where Do Memories Live?</h3><div class=\"film-player\" style=\"aspect-ratio:16/9\"><button type=\"button\" data-play-poetry-film aria-label=\"Play Where Do Memories Live?\" style=\"display:block;width:100%;height:100%;padding:0;border:0;background:white;cursor:pointer\"><img src=\"assets/poetry-films/where-do-memories-live-v1.jpg\" alt=\"Where do memories live? A smell of fabric that touched both me and you triggers a marathon of memories. Seductive suction the present moment disappears and I'm in a reconstructed past packaging the most suitable version for you. Chloe Starr. Poetry films.\" style=\"display:block;width:100%;height:100%;object-fit:contain\"></button></div><p>A poetry film from my archive and reconstructed memories. My reading of the poem is the only narration.</p><p><a href=\"#visual-media\">The making-of and credits →</a></p></section>" : ""}
+
     <article class="reading-text" aria-label="${escapeHtml(entry.title)}">
-      ${entry.poems ? entry.poems.map((poem, index) => `<section class="poem" aria-labelledby="poem-${index}"><h3 class="poem-number" id="poem-${index}">${escapeHtml(poem.number)}.</h3><p>${escapeHtml(poem.text)}</p></section>`).join("") : entry.paragraphs.map(text => text === "—" ? '<div class="section-pause" aria-hidden="true"></div>' : `<p>${escapeHtml(text)}</p>`).join("")}
+      ${entry.poems ? entry.poems.map((poem, index) => `<section class="poem" aria-labelledby="poem-${index}"><h3 class="poem-number" id="poem-${index}">${escapeHtml(poem.number)}.</h3><p>${escapeHtml(poem.text)}</p>${entry.route === "poetry" && String(poem.number) === "4" ? `${poetryFilmMarkup()}<p><a href="#visual-media">The making-of and credits →</a></p>` : ""}</section>`).join("") : entry.paragraphs.map(text => text === "—" ? '<div class="section-pause" aria-hidden="true"></div>' : `<p>${escapeHtml(text)}</p>`).join("")}
     </article>
     <nav class="collection-contents" aria-label="Read another story">
       <p class="quiet-label">ANOTHER STORY</p>
@@ -872,7 +876,7 @@ function render() {
 app.addEventListener("click", async (event) => {
   const poetryPlay = event.target.closest("[data-play-poetry-film]");
   if (poetryPlay) {
-    poetryPlay.parentElement.innerHTML = '<iframe style="display:block;width:100%;height:100%;aspect-ratio:16/9;border:0" src="https://www.youtube-nocookie.com/embed/2eTSRR24aec?autoplay=1" title="Where Do Memories Live? A poetry film by Chloe Starr" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+    poetryPlay.parentElement.innerHTML = '<iframe style="display:block;width:100%;height:auto;aspect-ratio:16/9;border:0" src="https://www.youtube-nocookie.com/embed/2eTSRR24aec?autoplay=1" title="Where Do Memories Live? A poetry film by Chloe Starr" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
     return;
   }
 
