@@ -45,3 +45,62 @@ body, .entry, .cover, input, textarea, select, button { font-family: var(--text-
 html, body, #app, .entry, .cover { color-scheme: only light; background-color: #fff; color: #000; }
 .cover-artist-image { background-color: #fff; }
 .cover-invitation input, .cover-invitation textarea { color-scheme: only light; background-color: #fff; color: #000; }
+
+/* A white personal p(om), with Chloe inside the house. */
+.cover-artist-image {aspect-ratio:3/2;width:calc(100% + 2rem);margin:-.5rem -1rem 0;background:#fff;}
+.cover-artist-image img {width:100%;height:100%;object-fit:contain;object-position:center;}
+.cover .cover-latest-film h2 {max-width:none;}
+
+/* Shared ompom.ai typefaces, on Chloe's white personal canvas. */
+:root {--text-font:'DM Sans',sans-serif;--ink:#000;--paper:#fff;}
+html,body,#app,.entry,.cover {background:#fff;color:#000;}
+body,.entry,.cover,input,textarea,select,button {font-family:'DM Sans',sans-serif;}
+.entry h2,.entry h3,.entry h4,.cover h2 {font-family:'Bodoni Moda',Georgia,serif;font-weight:400;}
+.cover h1 {font-family:'La Belle Aurore',cursive;letter-spacing:-.035em;font-size:clamp(3.5rem,10vw,5rem);}
+.entry .eyebrow,.entry .quiet-label,.entry .byline,.entry .index-control,.entry .note {font-family:'IBM Plex Mono',monospace;font-size:.74rem;line-height:1.7;}
+.cover .cover-stack-link,.cover .cover-latest-film h2,.cover .cover-invitation h2 {font-family:'Bodoni Moda',Georgia,serif;font-size:1.25rem;line-height:1.5;}
+.cover .cover-latest-film h2 a {font-family:inherit;}
+.cover .journal-play-label,.cover .event-poster-play {font-family:'IBM Plex Mono',monospace;font-size:.75rem;}
+.cover .event-poster-copy {font-family:'Bodoni Moda',Georgia,serif;}
+.entry .poem p,.entry .prose p {font-family:'DM Sans',sans-serif;}
+/* Personal house: one system for the cover and its rooms. */
+:root {--pom-gold:#b98a43;--pom-rule:#e7d8bd;}
+.entry .entry__header {border:0;}
+.entry .entry-navigation a {color:#000;}
+.cover .entry__body {padding-top:0;}
+.pom-cover-links {margin:2rem auto 0;max-width:32rem;}
+.pom-cover-links a {display:flex;justify-content:space-between;align-items:center;padding:1rem 0;border-top:1px solid var(--pom-rule);text-decoration:none;font:400 1.6rem 'Bodoni Moda',serif;}
+.pom-cover-links a:last-child {border-bottom:1px solid var(--pom-rule);}
+.pom-cover-links a:hover {color:var(--pom-gold);}
+.pom-interior {width:min(100%,76rem);margin:auto;}
+.pom-interior .entry__body {width:100%;max-width:64rem;padding-top:1.5rem;}
+.pom-page-heading {text-align:center;margin:0 auto 3rem;}
+.pom-page-heading>.pom-drawing {width:130px;height:100px;margin:auto;color:var(--pom-gold);}
+.pom-page-heading h2 {margin:.4rem auto 0;font-size:clamp(2.8rem,7vw,4.2rem);}
+.pom-page-heading .quiet-label {margin:1rem 0 0;color:#685b49;font-size:.65rem;}
+.pom-world-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;}
+.pom-world {padding:2rem 1.3rem;border-top:1px solid var(--pom-rule);text-decoration:none;min-width:0;}
+.pom-world .pom-drawing {width:90px;height:82px;color:var(--pom-gold);display:block;margin-bottom:1.4rem;transition:transform .2s;}
+.pom-world:hover .pom-drawing {transform:translateY(-5px);}
+.entry .pom-world h3 {display:flex;gap:.8rem;justify-content:space-between;font-size:1.35rem;margin:0;}
+.entry .pom-world h3 span {font-family:'DM Sans',sans-serif;font-size:1rem;}
+.entry .pom-world p {font-size:.78rem;line-height:1.6;margin:.6rem 0 0;color:#665f56;}
+.pom-film-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3rem 2rem;align-items:start;}
+.pom-player {aspect-ratio:16/9;background:#faf8f4;overflow:hidden;border:1px solid var(--pom-rule);}
+.pom-player iframe {display:block;width:100%;height:100%;border:0;}
+.entry .pom-play {position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:#faf8f4;cursor:pointer;}
+.pom-play img {width:100%;height:100%;object-fit:cover;display:block;}
+.pom-play-symbol {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:3rem;height:3rem;display:grid;place-items:center;background:#fff;color:#000;border:1px solid var(--pom-gold);border-radius:50%;font:1.5rem 'DM Sans',sans-serif;}
+.entry .pom-film .quiet-label {font-size:.6rem;margin:1rem 0 .3rem;color:#78664d;}
+.entry .pom-film h3 {font-size:1.45rem;line-height:1.3;margin:.3rem 0 .8rem;}
+.pom-film-links {display:flex;gap:1.3rem;font: .68rem 'IBM Plex Mono',monospace;}
+.pom-film-links a {text-underline-offset:4px;}
+.pom-film details {border-top:1px solid var(--pom-rule);margin-top:1rem;padding-top:.7rem;font-size:.8rem;}
+.entry .pom-film summary {font: .68rem 'IBM Plex Mono',monospace;cursor:pointer;}
+.pom-film details p {font-size:.8rem;}
+.pom-x-film {height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;text-decoration:none;gap:.5rem;font:.7rem 'IBM Plex Mono',monospace;}
+.pom-x-film .pom-drawing {width:90px;color:var(--pom-gold);}
+.pom-gatherings {margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--pom-rule);display:flex;flex-wrap:wrap;gap:1rem;font-size:.8rem;}
+.pom-gatherings h3 {width:100%;margin:0;}
+.entry .collection-contents a,.entry .link-list a {border-color:var(--pom-rule);font-family:'Bodoni Moda',serif;}
+@media(max-width:650px){.pom-world-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.pom-world{padding:1.4rem .6rem;}.entry .pom-world h3{font-size:1.2rem;}.pom-film-grid{grid-template-columns:1fr;gap:2.5rem;}.pom-page-heading{margin-bottom:2rem;}.pom-cover-links a{font-size:1.4rem;}.pom-interior .entry__body{padding-top:.5rem;}}
