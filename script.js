@@ -355,6 +355,11 @@ function navigate(route) {
 }
 
 function shell(content, { className = "", showIndex = true, label = "" } = {}) {
+  if (!className.includes('cover') && !className.includes('pom-interior')) {
+    className += ' pom-interior pom-content';
+    content = content.replace(/<h2>([\s\S]*?)<\/h2>/, (_,title) => `<div class="pom-page-heading">${pomDrawing('house')}<h2>${title}</h2></div>`);
+    label = 'Chloe Starr';
+  }
   return `
     <main class="entry ${className}">
       <header class="entry__header">
@@ -370,6 +375,11 @@ function shell(content, { className = "", showIndex = true, label = "" } = {}) {
 }
 
 const styleBrief = "MY STYLE BRIEF\n\n1. IDENTITY\nStyle name or archetype (Kibbe type, a style word, or your own label):\nThree references (people, eras, films, characters):\nThe feeling I want my clothes to give me:\n\n2. BODY AND FIT\nFit notes (bust, waist, hips, torso, height, anything clothes get wrong):\nNecklines that work / necklines that don't:\nSilhouettes that work / silhouettes that don't:\nMy non-negotiable (the one thing every piece must do):\n\n3. COLOR\nTop color:\nSupporting colors:\nNeutrals, and when they work:\nColors and prints to skip:\n\n4. FABRIC\nFabrics I love / fabrics I avoid:\nCare preferences (machine washable, etc.):\n\n5. HARD NO LIST\nItems, details, and brands I never want recommended:\n\n6. SIZING\nTops / Dresses / Bottoms / Shoes, with notes on when to size up or down:\n\n7. SHOPPING FILTERS\nWhere I shop, budget or sale rules, new vs. secondhand:\n\n8. OUTFIT FORMULAS\nTwo or three combinations I actually wear:\n\n9. TIEBREAKER RULE\nWhen two pieces are close, I pick the one that:\n\nHOW TO USE THIS: For each item I share, give me\nVERDICT (Strong Yes / Maybe / Skip), WHY (1 to 2 sentences against my brief),\nand WEAR IT WITH (one outfit formula). Be decisive. I want the right call,\nnot encouragement.";
+
+function pipelineShare(id,title) {
+ const url = `https://chloestarr.me/?note=${encodeURIComponent(id)}#visual-media`;
+ return `<nav class="pipeline-share" aria-label="Share this entry"><a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">share on X ↗</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><button type="button" data-share-film data-share-url="${url}">copy / share link ↗</button><span class="share-status" role="status" aria-live="polite"></span></nav>`;
+}
 
 function pomDrawing(kind) {
  const paths = {house:'M10 73V31L50 10l40 21v42M20 73V36h60v37M36 73V49a14 14 0 0 1 28 0v24M5 78h90M50 10V3M12 31h76',book:'M50 73V29C35 18 20 19 8 25v45c16-6 28-4 42 3Zm0 0c14-7 26-9 42-3V25c-12-6-27-7-42 4M17 34c9-3 18-2 24 1m-24 9c9-3 18-2 24 1m18-10c6-3 15-4 24-1m-24 11c6-3 15-4 24-1',film:'M15 27h70v49H15ZM15 40h70M28 27v13m16-13v13m16-13v13m16-13v13M43 49l17 9-17 9ZM25 18h50',orbit:'M50 12a36 36 0 1 0 0 72 36 36 0 1 0 0-72M12 65c-9-12 12-29 38-38s45-7 40 6S54 67 28 70 4 61 12 65M50 12v72'};
@@ -425,14 +435,9 @@ const views = {
       <h2>ENOUGH.</h2>
       <p class="byline">My book · a short story collection</p>
       <p class="note">Selected creative writing. The stories are fiction.</p>
-      <aside class="original-line" aria-label="Lines from my writing">
-        <p class="quiet-label">FROM MY WRITING</p>
-        <blockquote id="original-line-text" aria-live="polite">${escapeHtml(originalLines[originalLineCursor].text)}</blockquote>
-        <div class="actions"><a id="original-line-source" href="#${originalLines[originalLineCursor].route}">read ${escapeHtml(originalLines[originalLineCursor].title)} →</a><button type="button" class="text-action" data-next-line>another line →</button></div>
-      </aside>
       <nav class="collection-contents" aria-label="Featured finished work">
         <p class="quiet-label">FINISHED WORK · SELECTED READINGS</p>
-        ${writingEntries.filter(entry => entry.finished).map(entry => `<a href="#${entry.route}"><span>${escapeHtml(entry.title)}</span><span aria-hidden="true">→</span></a>`).join("")}
+        ${writingEntries.filter(entry => entry.finished && entry.route !== "poetry").map(entry => `<a href="#${entry.route}"><span>${escapeHtml(entry.title)}</span><span aria-hidden="true">→</span></a>`).join("")}
       </nav>
       <div class="actions"><a href="#enough-reading">The book’s reading list →</a></div>
     `, { label: "ENOUGH." });
@@ -521,7 +526,7 @@ const views = {
       <div class="actions"><a href="#world">what I’m building →</a><a href="#anime">anime &amp; animation →</a><a href="#events">events &amp; gatherings →</a><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS / HUMAN EXPERIENCE" });
   },
   worlds() {
-    return shell(`<div class="pom-page-heading">${pomDrawing('house')}<p class="quiet-label">A house with many rooms</p><h2>Worlds</h2></div><nav class="pom-world-grid" aria-label="My worlds">${[["poetry", "Poetry", "Lines, memories, little worlds.", "book"], ["writing", "ENOUGH.", "Stories from my book.", "book"], ["visual-media", "Films", "Experiments in moving images.", "film"], ["reading", "Reading", "Ancient texts and other ways of seeing.", "book"], ["anime", "Anime", "Animation, reviews and imagined worlds.", "orbit"], ["music", "Music", "What I\u2019m listening to.", "orbit"], ["events", "Events", "Films from gatherings.", "film"], ["world", "ompom.ai", "What I\u2019m building.", "house"], ["experience", "Human experience", "My professional life.", "house"], ["style", "Style", "My visual language.", "orbit"], ["clothes", "My closet", "Clothes with another life.", "house"], ["gaming", "Gaming", "Fortnite and other worlds.", "orbit"], ["practice", "Practice", "Mantra, yoga and vegetarianism.", "orbit"]].map(([route,title,description,icon]) => `<a class="pom-world" href="#${route}">${pomDrawing(icon)}<h3>${title}<span aria-hidden="true">→</span></h3><p>${description}</p></a>`).join('')}</nav>`, {className:'pom-interior', label:'Chloe Starr'});
+    return shell(`<div class="pom-page-heading">${pomDrawing('house')}<p class="quiet-label">A house with many rooms</p><h2>Worlds</h2></div><nav class="pom-world-grid" aria-label="My worlds">${[["poetry", "Poetry", "Lines, memories, little worlds.", "book"], ["writing", "ENOUGH.", "Stories from my book.", "book"], ["visual-media", "Production Pipeline Blog", "Films, experiments and studio notes.", "film"], ["reading", "Reading", "Ancient texts and other ways of seeing.", "book"], ["anime", "Anime", "Animation, reviews and imagined worlds.", "orbit"], ["music", "Music", "What I\u2019m listening to.", "orbit"], ["events", "Events", "Films from gatherings.", "film"], ["world", "ompom.ai", "What I\u2019m building.", "house"], ["experience", "Human experience", "My professional life.", "house"], ["style", "Style", "My visual language.", "orbit"], ["clothes", "My closet", "Clothes with another life.", "house"], ["gaming", "Gaming", "Fortnite and other worlds.", "orbit"], ["practice", "Practice", "Mantra, yoga and vegetarianism.", "orbit"]].map(([route,title,description,icon]) => `<a class="pom-world" href="#${route}">${pomDrawing(icon)}<h3>${title}<span aria-hidden="true">→</span></h3><p>${description}</p></a>`).join('')}</nav>`, {className:'pom-interior', label:'Chloe Starr'});
   },
   music() {
     return shell(`<h2>Music</h2>
@@ -561,23 +566,27 @@ const views = {
       <div class="actions"><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS" });
   },
   "visual-media"() {
-    return shell(`<h2>Visual media</h2>
-<article class="field-note" aria-labelledby="memories-film-title"><p class="byline"><time datetime="2026-10-17">October 17, 2026</time> · Poetry film · 55 seconds</p><h3 id="memories-film-title">Where Do Memories Live?</h3><div class="film-player" style="width:100%;aspect-ratio:16/9;line-height:0"><button type="button" data-play-poetry-film aria-label="Play Where Do Memories Live?" style="display:block;width:100%;height:100%;padding:0;border:0;background:white;cursor:pointer"><img src="assets/poetry-films/where-do-memories-live-v1.jpg" alt="Where do memories live? A smell of fabric that touched both me and you triggers a marathon of memories. Seductive suction the present moment disappears and I'm in a reconstructed past packaging the most suitable version for you. Chloe Starr. Poetry films." style="display:block;width:100%;height:100%;object-fit:contain"></button></div><div class="field-note-text"><p>A sweater can bring someone back before you have decided to remember them.</p>
+    return shell(`<div class="pom-page-heading">${pomDrawing('film')}<p class="quiet-label">Chloe Starr · studio notes</p><h2>Production Pipeline Blog</h2><p class="pipeline-deck">Building in public. One cut, then another.</p></div><nav class="pipeline-socials" aria-label="Follow the films"><a href="https://www.youtube.com/@TheCloeystarr" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="https://x.com/cloeystarr" target="_blank" rel="noopener noreferrer">X ↗</a><a href="https://www.instagram.com/cloeystarr/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/in/chloestarrai" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></nav>
+      <article class="pipeline-post" id="memories-preproduction"><p class="quiet-label"><time datetime="2026-10-21">October 21, 2026</time> · Building in public</p><h3>A finished cut is a place to keep going</h3><p>I published the first cut of <em>Where Do Memories Live?</em> on YouTube. It’s my first time finishing something cut-wise. It isn’t perfect, and putting it out hasn’t stopped me wanting to change it.</p><p>I’m still recutting. That includes <em>The Author</em>, our anime promo for ompom.ai. This is where I’m showing the work as I build every day.</p><p>The next pass of <em>Where Do Memories Live?</em> is in pre-production. The plan now has 44 editorial shots, with reaction coverage and a shooting order grouped by setup.</p><p>Blender blocking is helping work out framing, movement and timing. Those stand-ins are planning tools. Character likeness and performance still need work before this becomes a finished film.</p><a href="#poetry">Read poem 4 →</a>${pipelineShare('memories-preproduction','A finished cut is a place to keep going')}</article>
+      <article class="pipeline-post" id="a-house-on-the-internet"><p class="quiet-label"><time datetime="2026-10-20">October 20, 2026</time> · Building in public</p><h3>A house on the internet</h3><p>ompom.ai went live. Then I kept going.</p><p>I redesigned the branding around a French Riviera feeling, and worked on how my own website could belong beside it. I wanted my site to stay white, with my face inside my p(om). The crown, ears, clothes and house became linework.</p><p>Getting that to feel like me took revisions. So did deciding what you should find when you arrive: ompom.ai, events, worlds. My films, poems and the other things I keep making needed rooms of their own.</p><p>This is part of building too. The website, the films, the archive I work from. I’m making them alongside each other, and changing them as I go.</p><a href="https://ompom.ai" target="_blank" rel="noopener noreferrer">Visit ompom.ai ↗</a>${pipelineShare('a-house-on-the-internet','A house on the internet')}</article>
+      <article class="pipeline-post" id="out-to-play"><p class="quiet-label"><time datetime="2026-10-20">October 20, 2026</time> · Published cut</p><h3>Out to play, back to the edit</h3><div class="pom-player"><button class="pom-play" data-field-video="5LZ_Z-ANciE" aria-label="Play Out to Play"><img src="https://i.ytimg.com/vi/5LZ_Z-ANciE/hqdefault.jpg" alt="" loading="lazy"><span class="pom-play-symbol">▷</span></button></div><p>The Overmind field film brings a night at Joey the Cat together with the poetry-film work. Alex Newman’s waveform-editing conversation became part of the experiment.</p><p>Original footage and voice, editing, and sound come together in the finished cut. Music: <em>Upbeat Overworld</em> by Wolfgang_, CC0. Visual inspiration: Overmind’s artwork and New Genre Studio.</p><a href="https://x.com/cloeystarr/status/2112755762938491117" target="_blank" rel="noopener noreferrer">Original notes &amp; credits ↗</a>${pipelineShare('out-to-play','Out to play, back to the edit')}</article>
+      <article id="memories-release" class="pipeline-post" aria-labelledby="memories-film-title"><p class="byline"><time datetime="2026-10-17">October 17, 2026</time> · Published work in progress</p><h3 id="memories-film-title">Where Do Memories Live?</h3><div class="film-player" style="width:100%;aspect-ratio:16/9;line-height:0"><button type="button" data-play-poetry-film aria-label="Play Where Do Memories Live?" style="display:block;width:100%;height:100%;padding:0;border:0;background:white;cursor:pointer"><img src="assets/poetry-films/where-do-memories-live-v1.jpg" alt="Where do memories live? A smell of fabric that touched both me and you triggers a marathon of memories. Seductive suction the present moment disappears and I'm in a reconstructed past packaging the most suitable version for you. Chloe Starr. Poetry films." style="display:block;width:100%;height:100%;object-fit:contain"></button></div><div class="field-note-text"><p>A sweater can bring someone back before you have decided to remember them.</p>
 <p>My poem starts with fabric and moves into a reconstructed past. While making this film, I kept returning to the person I was then, the clothes I wore, the things we gave each other, and the writing that continued over years. Meeting him helped bring me to Oakland and the Bay Area. A person can change the geography of your life.</p>
 <p>I made this film with Codex, using my writing, photographs, correspondence and my own reading of the poem. The scenes are AI-assisted reconstructions. The message interfaces are dramatized. We did not recover the actual watercolor or stone, so those were reconstructed from my writing.</p>
 <p>The early cuts kept losing me. Sometimes literally: my face changed between shots. Sometimes the clothes made different encounters feel like one evening. We went back to archive garments and separated the New Year’s party, the first meeting, writing together, and the Oakland picnic through clothes and setting. Within an encounter, the face, hair and outfit needed to stay together.</p>
 <p>The details gave us actions to film: a poem arriving, a photograph sent back, a kiss with time on either side, passing a draft across the table, talking until sleep, a brush moving while I slept, a sweater put around me before goodbye. I wanted a relationship to be felt through what we did together.</p>
 <p>My poem is the only narration. I recorded it again near the end. We kept the voice at its natural speed and put space between complete phrases rather than stretching the words. The soundtrack moves from a designed electronic club cue into jazz and Satie. I wanted the music’s imperfect fit to belong to the relationship: connection, big plans, and an ending.</p>
 <p>We learned from specific posts by Dave Clark, PJ Ace and Martin Nebelong about emotional context, natural behavior, environmental sound and authored movement. Later comparisons with Ellen Keyo and feeltekk sharpened the question: do we actually see an action, a reaction and a consequence? These are research influences, not collaborators or sponsors.</p>
-<p>Continuity is still a limitation of the process. A good-looking frame can become someone else in motion. We replaced drifting angles, shortened unusable moments, preserved the kiss and kept the liked tear at BART. The final present-day scene is me returning to the material and making something from it. Repackaging the past is also the subject of the poem.</p><p>Process references: <a href="https://x.com/Diesol/status/2069119948820259031">Dave Clark (@Diesol)</a>, <a href="https://x.com/PJaccetturo/status/2108220134448071023">PJ Ace (@PJaccetturo)</a>, <a href="https://x.com/PJaccetturo/status/2105285290436812964">PJ Ace on environmental sound</a>, and <a href="https://x.com/MartinNebelong/status/2061213340706189333">Martin Nebelong (@MartinNebelong)</a>. Attribution is limited to the published material we read; it does not imply a full study of their films or access to their production stacks.</p><details><summary>Film credits and music</summary><p>Poem, voice, personal archive and creative direction: Chloe Starr. Reference images: OpenAI. Motion: Kling O3 Standard and Kling 3.0 Standard through Runway Dev and Runway. Editing, compositing, original electronic cue and designed foley: Codex with Python, NumPy, PyAV and FFmpeg.</p><p>Archive reference photography: Taschka Turnquist; Jonny Rose (pink wrap garment reference). Other garment and recent portrait photographers have not yet been identified. Reference garments inform reconstructions rather than verified outfits from each encounter.</p><p>“Avant Jazz” by Kevin MacLeod (<a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100319">incompetech.com</a>), <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. “Gymnopédie No.1” by Erik Satie, recording by Teknopazzo, <a href="https://commons.wikimedia.org/wiki/File:Gymnopedie_No._1..ogg">CC0</a>. Both recordings excerpted, faded and mixed. Scene atmosphere is designed or model-generated, not an authentic recording of MIGHTY.</p></details><p><a href="#poetry">Read the poetry →</a></p></div></article>
-      <article class="field-note" aria-labelledby="troll-flame-title">
+<p>Continuity is still a limitation of the process. A good-looking frame can become someone else in motion. We replaced drifting angles, shortened unusable moments, preserved the kiss and kept the liked tear at BART. The final present-day scene is me returning to the material and making something from it. Repackaging the past is also the subject of the poem.</p><p>Process references: <a href="https://x.com/Diesol/status/2069119948820259031">Dave Clark (@Diesol)</a>, <a href="https://x.com/PJaccetturo/status/2108220134448071023">PJ Ace (@PJaccetturo)</a>, <a href="https://x.com/PJaccetturo/status/2105285290436812964">PJ Ace on environmental sound</a>, and <a href="https://x.com/MartinNebelong/status/2061213340706189333">Martin Nebelong (@MartinNebelong)</a>. Attribution is limited to the published material we read; it does not imply a full study of their films or access to their production stacks.</p><details><summary>Film credits and music</summary><p>Poem, voice, personal archive and creative direction: Chloe Starr. Reference images: OpenAI. Motion: Kling O3 Standard and Kling 3.0 Standard through Runway Dev and Runway. Editing, compositing, original electronic cue and designed foley: Codex with Python, NumPy, PyAV and FFmpeg.</p><p>Archive reference photography: Taschka Turnquist; Jonny Rose (pink wrap garment reference). Other garment and recent portrait photographers have not yet been identified. Reference garments inform reconstructions rather than verified outfits from each encounter.</p><p>“Avant Jazz” by Kevin MacLeod (<a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100319">incompetech.com</a>), <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. “Gymnopédie No.1” by Erik Satie, recording by Teknopazzo, <a href="https://commons.wikimedia.org/wiki/File:Gymnopedie_No._1..ogg">CC0</a>. Both recordings excerpted, faded and mixed. Scene atmosphere is designed or model-generated, not an authentic recording of MIGHTY.</p></details><p><a href="#poetry">Read the poetry →</a></p></div>${pipelineShare('memories-release','Where Do Memories Live? A published work in progress')}</article>
+      <article id="troll-flame" class="pipeline-post" aria-labelledby="troll-flame-title">
         <p class="byline"><time datetime="2026-10-07">October 7, 2026</time> · Posted on X</p>
         <h3 id="troll-flame-title">TROLL FLAME</h3>
         <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><p>Whose stories haven’t we heard yet?</p><a href="https://twitter.com/cloeystarr/status/2107926511680643356">Watch TROLL FLAME on X</a></blockquote>
         <div class="field-note-text"><p class="eyebrow">Notes</p><p>Transcendental Meditation is a silent mantra practice taught by a certified teacher, sitting comfortably with eyes closed.</p><p>My connection is about giving ideas room to emerge, then giving them form. Creation, destruction, renewal.</p><div class="actions"><a href="https://www.tm.org/en-us/faq" target="_blank" rel="noopener noreferrer">TM source ↗</a><a href="https://x.com/cloeystarr/status/2107926513547194711" target="_blank" rel="noopener noreferrer">full notes, credits &amp; sources on X ↗</a></div></div>
       </article>
 
-      <div class="actions"><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS" });
+      
+    `, {className:'pom-interior pipeline-blog',label:'Chloe Starr'});
   },
   practice() {
     return shell(`<h2>Practice</h2><p class="object-copy">Mantra is an important part of my life. I love yoga, volunteer at the ashram, and want to spread vegetarianism.</p><div class="actions"><a href="#reading">what I’m reading →</a><a href="#question-object">questions I’m exploring →</a><a href="#worlds">return to worlds →</a></div>`, { label: "WORLDS" });
@@ -718,6 +727,11 @@ writingEntries.forEach(entry => {
   `, { className: "reading-entry", label: "WRITING" });
 });
 
+views.poetry = () => {
+ const entry = writingEntries.find(e=>e.route==='poetry');
+ return shell(`<div class="pom-page-heading">${pomDrawing('book')}<p class="quiet-label">Chloe Starr · poems &amp; poetry films</p><h2>Poetry</h2></div><div class="pom-poetry-grid">${entry.poems.map((poem,index)=>`<article class="pom-poem" id="poem-${index}"><p class="quiet-label">${escapeHtml(poem.number).padStart(2,'0')}</p><p class="poem-lines">${escapeHtml(poem.text)}</p>${String(poem.number)==='4'?`${poetryFilmMarkup()}<a class="poem-process" href="?note=memories-release#visual-media">Inside the production pipeline →</a>`:''}</article>`).join('')}</div>`,{className:'pom-interior poetry-room',label:'Chloe Starr'});
+};
+
 function escapeHtml(value) {
   const element = document.createElement("div");
   element.textContent = value;
@@ -757,6 +771,8 @@ function render() {
   if (route === "index") renderSearch();
 
   window.scrollTo(0, 0);
+  const note = new URLSearchParams(location.search).get('note');
+  if (route === 'visual-media' && note) document.getElementById(note)?.scrollIntoView();
   app.focus({ preventScroll: true });
 }
 
@@ -780,18 +796,20 @@ app.addEventListener("click", async (event) => {
   }
 
   if (event.target.closest("[data-share-film]")) {
-    const status = document.getElementById("film-share-status");
+    const trigger = event.target.closest("[data-share-film]");
+    const status = trigger.closest("article")?.querySelector(".share-status") || document.getElementById("film-share-status");
     const url = event.target.closest("[data-share-film]").dataset.shareUrl || "https://chloestarr.me/#visual-media";
     try {
       if (navigator.share) {
-        await navigator.share({ title: "Part I: The Author — Chloe Starr & Chris Starr", url });
+        await navigator.share({ title: document.title, url });
       } else {
         await navigator.clipboard.writeText(url);
-        status.textContent = "Film page link copied.";
+        if (status) status.textContent = "Link copied.";
+        trigger.textContent = "link copied ✓";
       }
     } catch (error) {
       if (error.name !== "AbortError") {
-        status.textContent = `Share this link: ${url}`;
+        if (status) status.textContent = `Share this link: ${url}`;
       }
     }
     return;
@@ -945,4 +963,3 @@ app.addEventListener("input", (event) => {
 
 window.addEventListener("hashchange", render);
 render();
-

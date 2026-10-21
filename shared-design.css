@@ -104,3 +104,43 @@ body,.entry,.cover,input,textarea,select,button {font-family:'DM Sans',sans-seri
 .pom-gatherings h3 {width:100%;margin:0;}
 .entry .collection-contents a,.entry .link-list a {border-color:var(--pom-rule);font-family:'Bodoni Moda',serif;}
 @media(max-width:650px){.pom-world-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.pom-world{padding:1.4rem .6rem;}.entry .pom-world h3{font-size:1.2rem;}.pom-film-grid{grid-template-columns:1fr;gap:2.5rem;}.pom-page-heading{margin-bottom:2rem;}.pom-cover-links a{font-size:1.4rem;}.pom-interior .entry__body{padding-top:.5rem;}}
+/* Rooms share the same architectural frame, type and rhythm. */
+.pom-content .entry__body {max-width:54rem;}
+.pom-content .pom-page-heading {margin-bottom:2.5rem;}
+.pom-content .object-copy {font-size:1.05rem;max-width:40rem;margin-inline:auto;}
+.pom-content .anime-section,.pom-content .reading-section,.pom-content .film-making,.pom-content .film-entry {border-top:1px solid var(--pom-rule);padding-top:1.7rem;margin-top:2.5rem;}
+.pom-content .collection-contents,.pom-content .link-list {border-color:var(--pom-rule);}
+.pom-content .collection-contents a {padding:1.2rem 0;font-size:1.3rem;}
+.pom-content .reading-text {max-width:40rem;margin:auto;}
+.pom-content .reading-text p {font-size:1rem;line-height:1.9;}
+.pom-content .story-atmosphere {max-width:32rem;margin:1.5rem auto 2rem;}
+.pom-content .actions {gap:1rem;font-size:.8rem;}
+.pom-content h3 {font-size:1.6rem;}
+.pom-content .byline,.pom-content .note {font-size:.72rem;}
+.pom-content .collection-contents>.quiet-label {margin:1.5rem 0 .5rem;}
+.pom-poetry-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem;align-items:start;}
+.pom-poem {border-top:1px solid var(--pom-rule);padding:1.5rem 0 2rem;min-width:0;}
+.entry .pom-poem .quiet-label {color:var(--pom-gold);margin:0 0 1rem;font-size:.65rem;}
+.entry .pom-poem .poem-lines {white-space:pre-wrap;font:400 1.05rem/1.9 'DM Sans',sans-serif;margin:0;}
+.poetry-room .poetry-film-frame {margin-top:1.5rem;width:100%;}
+.poetry-room .journal-film-play {display:block;width:100%;padding:0;border:0;background:white;}
+.poetry-room .journal-film-play img {display:block;width:100%;height:auto;}
+.poetry-room .journal-play-label {display:block;font: .65rem 'IBM Plex Mono',monospace;padding:.8rem 0;text-align:left;}
+.poem-process {font-size:.72rem;display:inline-block;margin-top:.8rem;}
+.pipeline-blog .entry__body {max-width:48rem;}
+.entry .pipeline-deck {font-size:.85rem;line-height:1.7;margin:1rem auto 0;color:#6d6252;}
+.pipeline-socials {display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;padding-bottom:2rem;font:.7rem 'IBM Plex Mono',monospace;}
+.pipeline-post {border-top:1px solid var(--pom-rule);padding:2rem 0;margin:0;}
+.entry .pipeline-post h3 {font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.35;margin:.8rem 0 1.3rem;}
+.entry .pipeline-post p {font-size:.95rem;line-height:1.9;}
+.entry .pipeline-post>.quiet-label,.entry .pipeline-post>.byline {font:.65rem/1.7 'IBM Plex Mono',monospace;color:#78664d;}
+.pipeline-post .field-note-text {border:0;margin:0;padding:0;}
+.pipeline-post .cover-film-frame {width:100%;max-width:none;margin:1.5rem 0;}
+.pipeline-post .journal-film-play {padding:0;border:0;display:block;width:100%;background:#fff;}
+.pipeline-post .journal-film-play img {display:block;width:100%;height:auto;}
+.pipeline-post .journal-play-label {display:block;padding:.8rem 0;text-align:left;font:.7rem 'IBM Plex Mono',monospace;}
+.pipeline-share {display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.5rem;align-items:center;}
+.entry .pipeline-share a,.entry .pipeline-share button {font:.65rem 'IBM Plex Mono',monospace;padding:0;border:0;background:none;color:#000;text-decoration:underline;text-underline-offset:4px;cursor:pointer;}
+.pipeline-post details {border-top:1px solid var(--pom-rule);padding-top:1rem;margin:1.5rem 0;}
+.pipeline-post summary {font:.7rem 'IBM Plex Mono',monospace;cursor:pointer;}
+@media(max-width:650px){.pom-poetry-grid{grid-template-columns:1fr;}.pipeline-socials{gap:1rem;}.pom-content .reading-text p{font-size:.95rem;}.pipeline-blog .pom-page-heading h2{font-size:2.4rem;}.pipeline-post{padding:1.5rem 0;}}
