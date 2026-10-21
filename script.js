@@ -387,7 +387,7 @@ const views = {
         <div class="cover-film-frame"><button class="journal-film-play" type="button" data-play-cover-film aria-label="Play More Worlds to Build on YouTube"><span class="event-film-poster"><span class="event-poster-copy"><span>More Worlds<br>to Build</span><span class="event-poster-play"><span aria-hidden="true">▷</span> watch the film</span></span><span class="event-poster-image" aria-hidden="true"></span></span></button></div>
       </section>
       <section class="cover-latest-film" aria-labelledby="poetry-film-cover-title"><h2 id="poetry-film-cover-title"><a href="#poetry"><span>poetry</span><span aria-hidden="true">→</span></a></h2>${poetryFilmMarkup()}</section>
-      <a class="cover-stack-link" href="#world"><span>ompom.ai</span><span aria-hidden="true">→</span></a>
+      <a class="cover-stack-link" href="https://ompom.ai" target="_blank" rel="noopener noreferrer"><span>ompom.ai</span><span aria-hidden="true">→</span></a>
       <a class="cover-stack-link" href="#worlds"><span>worlds</span><span aria-hidden="true">→</span></a>
       <form id="cover-thought-form" class="cover-invitation">
         <h2>What do you believe that you cannot prove?</h2>
