@@ -144,3 +144,79 @@ body,.entry,.cover,input,textarea,select,button {font-family:'DM Sans',sans-seri
 .pipeline-post details {border-top:1px solid var(--pom-rule);padding-top:1rem;margin:1.5rem 0;}
 .pipeline-post summary {font:.7rem 'IBM Plex Mono',monospace;cursor:pointer;}
 @media(max-width:650px){.pom-poetry-grid{grid-template-columns:1fr;}.pipeline-socials{gap:1rem;}.pom-content .reading-text p{font-size:.95rem;}.pipeline-blog .pom-page-heading h2{font-size:2.4rem;}.pipeline-post{padding:1.5rem 0;}}
+/* Editorial system: publication front, individual features, and captioned evidence. */
+.magazine-page {width:min(100%,86rem);}
+.magazine-page .entry__body {width:100%;max-width:72rem;padding-top:1rem;}
+.magazine-mast {border-top:1px solid #b98a43;border-bottom:1px solid #b98a43;padding:1.3rem 0 1.1rem;margin-bottom:2.5rem;text-align:center;}
+.magazine-name {font:400 clamp(1.7rem,4vw,2.8rem)/1.25 'Bodoni Moda',serif;text-decoration:none;}
+.magazine-name em {font-weight:400;}
+.entry .magazine-mast p {font:.65rem 'IBM Plex Mono',monospace;letter-spacing:.07em;margin:.8rem 0 1.2rem;color:#77634a;}
+.magazine-socials {display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;font:.67rem 'IBM Plex Mono',monospace;}
+.magazine-socials a {text-decoration:none;}
+.magazine-lead {display:grid;grid-template-columns:1.35fr 1fr;gap:2.5rem;align-items:center;margin:2rem 0 3.5rem;}
+.magazine-lead-art img {width:100%;display:block;aspect-ratio:3/2;object-fit:contain;}
+.entry .magazine-lead h2 {font:400 clamp(2rem,4vw,3.5rem)/1.1 'Bodoni Moda',serif;margin:.7rem 0 1.3rem;}
+.magazine-lead h2 a,.magazine-stories h3 a {text-decoration:none;}
+.entry .magazine-lead-copy>p:not(.quiet-label) {font:.95rem/1.85 'DM Sans',sans-serif;}
+.magazine-read {font:.7rem 'IBM Plex Mono',monospace;display:inline-block;margin-top:.8rem;text-underline-offset:5px;}
+.entry .magazine-page .quiet-label,.entry .magazine-lead .quiet-label,.entry .magazine-stories .quiet-label {font:.62rem/1.7 'IBM Plex Mono',monospace;color:#78664d;}
+.magazine-section-label {padding:.8rem 0;border-top:1px solid #b98a43;border-bottom:1px solid var(--pom-rule);font:.7rem 'IBM Plex Mono',monospace;}
+.magazine-stories {display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;padding:2rem 0;}
+.magazine-story-art img {display:block;width:100%;height:20rem;object-fit:cover;object-position:top;}
+.entry .magazine-stories h3 {font:400 1.9rem/1.2 'Bodoni Moda',serif;margin:.7rem 0 1rem;}
+.entry .magazine-stories article>p:not(.quiet-label) {font:.9rem/1.8 'DM Sans',sans-serif;}
+.magazine-archive {display:flex;flex-wrap:wrap;gap:2rem;border-top:1px solid var(--pom-rule);padding:2rem 0;font:.75rem 'IBM Plex Mono',monospace;}
+.editorial-head {max-width:53rem;margin:3rem auto 2rem;text-align:center;}
+.entry .editorial-head h2 {font:400 clamp(2.7rem,6vw,4.7rem)/1.08 'Bodoni Moda',serif;margin:1rem auto 1.5rem;max-width:20ch;}
+.entry .editorial-deck {font:400 1.1rem/1.7 'DM Sans',sans-serif;max-width:44rem;margin:auto;color:#5f594f;}
+.entry .editorial-byline {font:.65rem 'IBM Plex Mono',monospace;margin:1.5rem 0 0;}
+.editorial-hero {margin:2rem 0 3rem;}
+.editorial-hero img {display:block;width:100%;max-height:43rem;object-fit:contain;}
+.editorial-prose {max-width:40rem;margin:auto;}
+.entry .editorial-prose>p {font:400 1.02rem/1.95 'DM Sans',sans-serif;margin:1.3rem 0;}
+.entry .editorial-prose>.editorial-lede {font:400 1.6rem/1.5 'Bodoni Moda',serif;margin:2rem 0;}
+.entry .editorial-prose h3 {font:400 2rem/1.3 'Bodoni Moda',serif;margin:2.5rem 0 1rem;}
+.editorial-wide {margin:2.5rem -6rem;}
+.editorial-wide img {display:block;width:100%;height:auto;}
+.entry .editorial-feature figcaption {font:.62rem/1.7 'IBM Plex Mono',monospace;color:#78664d;margin:.7rem 0 0;max-width:48rem;}
+.editorial-portrait {max-width:24rem;margin:2.5rem auto;}
+.editorial-portrait img {width:100%;display:block;}
+.entry .editorial-prose blockquote {border:0;border-block:1px solid var(--pom-rule);padding:1.5rem 0;margin:2.5rem 0;font:400 1.8rem/1.5 'Bodoni Moda',serif;}
+.editorial-prose cite {display:block;font: .65rem/1.7 'IBM Plex Mono',monospace;margin-top:1rem;}
+.editorial-destinations {display:flex;gap:2rem;margin:2rem 0;font:.75rem 'IBM Plex Mono',monospace;}
+.magazine-library {border-top:1px solid var(--pom-rule);margin:2rem 0;padding-top:1.2rem;}
+.magazine-library>summary {font:400 1.5rem 'Bodoni Moda',serif;cursor:pointer;}
+@media(max-width:700px){.magazine-lead,.magazine-stories{grid-template-columns:1fr;gap:1.5rem;}.magazine-lead-art img{aspect-ratio:3/2;}.magazine-socials{gap:1rem;}.magazine-mast{margin-bottom:1.5rem;}.editorial-head{margin-top:1.8rem;}.entry .editorial-head h2{font-size:2.7rem;}.entry .editorial-deck{font-size:.95rem;}.editorial-wide{margin:2rem 0;}.entry .editorial-prose>p{font-size:.95rem;}.magazine-stories{gap:2.5rem;}.magazine-story-art img{height:18rem;}.magazine-page .entry__body{padding-top:.5rem;}}
+.entry .editorial-head h2 {font-size:clamp(2.5rem,5vw,4.2rem);max-width:22ch;text-wrap:balance;}
+.editorial-head {margin-top:2rem;}
+.magazine-mast {margin-bottom:1.8rem;}
+
+/* Editorial photographs stay separate from platform thumbnail graphics. */
+.magazine-story-art {display:flex;align-items:center;justify-content:center;aspect-ratio:3/2;background:#fff;overflow:hidden;border-bottom:1px solid #e9dfcf;}
+.magazine-story-art img {width:100%;height:100%;max-height:23rem;object-fit:contain;object-position:center;}
+.editorial-hero img {object-fit:contain;background:#fff;}
+
+/* Website film artwork: shared white editorial frame, independent of YouTube covers. */
+.pom-events .pom-player {background:#fff;border:0;border-bottom:1px solid var(--pom-rule);}
+.pom-events .pom-play {background:#fff;}
+.pom-events .pom-play img {object-fit:contain;object-position:center;background:#fff;}
+.pom-events .pom-play-symbol {width:2.6rem;height:2.6rem;background:rgba(255,255,255,.94);border:1px solid #b98a43;}
+.pom-events .pom-play img {object-fit:cover;object-position:center 40%;}
+.pom-events .pom-player {border:1px solid #e7dccb;}
+.pom-events .pom-play img[src*="5LZ_Z-ANciE"] {object-position:center 23%;}
+.pom-events .pom-play img[src*="V6a0FLrHq44"] {object-position:center 66%;}
+
+/* Personal p(om): navy ink on white, fine gold rules and matching drawn arrows. */
+:root {--ink:#182e46;--pom-ink:#182e46;}
+body,.entry,.cover {color:var(--ink);background-color:#fff;}
+.cover h1,.cover .cover-name,.cover .cover-socials,.cover .pom-cover-links a {color:var(--ink);}
+.pom-cover-links a {font-family:'Bodoni Moda',Georgia,serif;font-weight:400;padding:1.15rem 0;gap:1.5rem;transition:color .18s ease;}
+.pom-nav-arrow {width:2.25rem;height:1.4rem;flex-shrink:0;color:var(--pom-gold);transition:transform .18s ease;}
+.pom-cover-links a:hover .pom-nav-arrow {transform:translateX(4px);}
+.pom-play-symbol {color:var(--ink);}
+
+.editorial-film{margin:2rem 0 3rem;}.editorial-film .pom-player{aspect-ratio:16/9;background:white;}.editorial-film .pom-play img{object-position:center 60%;}.editorial-portrait img{max-height:36rem;object-fit:contain;}
+
+.editorial-credits{border-top:1px solid var(--pom-rule);margin-top:3rem;padding-top:1rem;}.entry .editorial-credits p{font:.9rem/1.85 'DM Sans',sans-serif;}.editorial-prose a{text-decoration-thickness:1px;text-underline-offset:4px;}
+
+.editorial-film video{display:block;width:100%;max-height:40rem;background:#fff;object-fit:contain;}.pom-player video{display:block;width:100%;height:100%;object-fit:contain;}.event-article-link{display:inline-block;font:.7rem 'IBM Plex Mono',monospace;margin:.75rem 0 1rem;}
