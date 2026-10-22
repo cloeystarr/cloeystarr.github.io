@@ -220,3 +220,24 @@ body,.entry,.cover {color:var(--ink);background-color:#fff;}
 .editorial-credits{border-top:1px solid var(--pom-rule);margin-top:3rem;padding-top:1rem;}.entry .editorial-credits p{font:.9rem/1.85 'DM Sans',sans-serif;}.editorial-prose a{text-decoration-thickness:1px;text-underline-offset:4px;}
 
 .editorial-film video{display:block;width:100%;max-height:40rem;background:#fff;object-fit:contain;}.pom-player video{display:block;width:100%;height:100%;object-fit:contain;}.event-article-link{display:inline-block;font:.7rem 'IBM Plex Mono',monospace;margin:.75rem 0 1rem;}
+
+/* Shared article links: content must not widen the phone's grid column. */
+@media (max-width:700px) {
+  html:has(.magazine-page) {min-width:0;}
+  .magazine-page {grid-template-columns:minmax(0,1fr);}
+  .magazine-page .entry__body,
+  .magazine-page .entry__header,
+  .magazine-page .editorial-feature,
+  .magazine-page .editorial-head,
+  .magazine-page .editorial-prose {min-width:0;max-width:100%;}
+  .magazine-page .entry__header,
+  .magazine-page .entry-navigation {flex-wrap:wrap;}
+  .magazine-page .magazine-mast,
+  .magazine-page .editorial-feature {overflow-wrap:anywhere;}
+  .magazine-page .editorial-feature figure {min-width:0;max-width:100%;}
+  .magazine-page .editorial-feature img {max-width:100%;height:auto;}
+  .magazine-page .editorial-feature video,
+  .magazine-page .editorial-feature iframe {max-width:100%;}
+  .magazine-page .editorial-destinations {flex-wrap:wrap;gap:.75rem 1.25rem;}
+  .magazine-page .pipeline-share>* {min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;}
+}
