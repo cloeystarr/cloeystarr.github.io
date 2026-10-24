@@ -253,3 +253,30 @@ body,.entry,.cover {color:var(--ink);background-color:#fff;}
 .story-navigation strong {font:500 1.5rem/1.25 'Bodoni Moda',serif;overflow-wrap:anywhere;}
 .portals-return {font:.8rem 'DM Sans',sans-serif;margin-right:1.4rem;}
 @media(max-width:600px){.story-navigation{grid-template-columns:minmax(0,1fr);gap:1.5rem}.entry-navigation{flex-wrap:wrap}.magazine-mast .portals-links{justify-content:center}}
+
+
+/* Open Source AI Awards: approved illustrated feature, scoped to this story. */
+#who-gets-to-build-the-next-internet .editorial-prose h2{clear:both}
+#who-gets-to-build-the-next-internet .picture-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.4rem;align-items:start;clear:both}
+#who-gets-to-build-the-next-internet .picture-pair figure{min-width:0;margin:1.25rem 0}
+#who-gets-to-build-the-next-internet .editorial-photo{margin:2rem 0;clear:both}
+#who-gets-to-build-the-next-internet .editorial-photo img{display:block;width:100%;max-height:48rem;object-fit:contain;background:#faf9f6}
+#who-gets-to-build-the-next-internet figcaption{font:400 .8rem/1.7 'DM Sans',sans-serif;color:#536878;padding:.65rem 0;border-bottom:1px solid #ded4c4}
+#who-gets-to-build-the-next-internet .portrait{float:right;clear:none;width:38%;max-width:270px;margin:.4rem 0 1.5rem 1.75rem}
+#who-gets-to-build-the-next-internet .portrait img{max-height:430px}
+#who-gets-to-build-the-next-internet .web-principles{clear:both;border-block:1px solid #b98a43;padding:1.25rem 0;margin:2rem 0}
+#who-gets-to-build-the-next-internet .web-principles h3{margin:0 0 .75rem;font-size:1.7rem}
+#who-gets-to-build-the-next-internet .source-note{font-size:.85rem;color:#536878}
+#who-gets-to-build-the-next-internet .web-principles ul{columns:2;column-gap:1.9rem;padding-left:1.25rem}
+#who-gets-to-build-the-next-internet .web-principles li{break-inside:avoid;font-size:.93rem;line-height:1.6;margin-bottom:.75rem}
+#who-gets-to-build-the-next-internet .project-directory{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.15rem 1.9rem;padding:0;list-style:none}
+#who-gets-to-build-the-next-internet .project-directory li{font-size:.93rem;line-height:1.8;border-top:1px solid #ded4c4;padding-top:.75rem;margin:0}
+#who-gets-to-build-the-next-internet .film-inset{clear:both;max-width:22rem;margin:2.2rem auto}
+#who-gets-to-build-the-next-internet .film-inset .pom-player{aspect-ratio:9/16}
+#who-gets-to-build-the-next-internet .film-inset .pom-play{aspect-ratio:9/16}
+#who-gets-to-build-the-next-internet .film-inset iframe{width:100%;height:100%;aspect-ratio:9/16;border:0}
+#who-gets-to-build-the-next-internet .film-inset img{height:100%;object-fit:contain}
+#who-gets-to-build-the-next-internet .work-demo{display:block;width:100%;height:auto;max-height:600px;background:#faf9f6}
+#who-gets-to-build-the-next-internet aside{clear:both;border-top:1px solid #b98a43;font-size:.9rem;margin-top:2.5rem}
+@media(max-width:600px){#who-gets-to-build-the-next-internet .portrait{float:none;width:100%;max-width:100%;margin:1.5rem 0}#who-gets-to-build-the-next-internet .portrait img{width:auto;max-height:470px;margin:auto}#who-gets-to-build-the-next-internet .web-principles ul{columns:1}#who-gets-to-build-the-next-internet .project-directory{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:480px){#who-gets-to-build-the-next-internet .picture-pair{grid-template-columns:minmax(0,1fr)}}
