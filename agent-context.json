@@ -3,56 +3,68 @@
   "alsoKnownAs": [
     "Cloey Starr"
   ],
-  "introduction": "Storyteller. AI-native writer. Builder.",
-  "updated": "2026-10-04",
-  "description": "Chloe Starr is a storyteller, AI-native writer, and builder. She is the founder of ompom.ai and makes fiction, poetry, visual media, and an evolving personal website.",
+  "introduction": "Filmmaker. Writer. Founder of ompom.ai.",
+  "updated": "2026-10-28",
+  "description": "Chloe Starr is a filmmaker, writer and founder of ompom.ai based in San Francisco. She makes poetry films and field films about the people, work and questions shaping AI, and writes Portals, her illustrated studio journal. Her work connects authorship, memory, personal context and user-owned data.",
   "currentWork": [
     {
-      "name": "ompom.ai",
-      "role": "Founder",
-      "url": "https://ompom.ai",
-      "description": "Building around personal and organizational context ownership. Her thesis: AI needs context. People should own that context and control where it goes.",
-      "siteUrl": "https://chloestarr.me/#world"
-    },
-    {
-      "name": "ENOUGH",
-      "description": "A writing collection featuring stories and poetry.",
-      "url": "https://chloestarr.me/#writing"
-    },
-    {
-      "name": "Visual media",
-      "description": "AI-assisted animation and filmmaking, including Part I: The Author.",
+      "name": "Poetry films",
+      "role": "Poet, voice performer and filmmaker",
+      "description": "Adapting her original poems and selected archive into films. Published examples include Coffee and Where Do Memories Live? The series is ongoing; individual works have different production and publication states.",
       "url": "https://chloestarr.me/#visual-media"
     },
     {
-      "name": "Personal website and archive",
-      "description": "An evolving website drawing on her writing and personal media archive. The public site contains selected material, not the private archive.",
-      "url": "https://chloestarr.me/#worlds"
+      "name": "Field films",
+      "role": "Filmmaker and writer",
+      "description": "Personal films and researched essays connecting San Francisco's AI and creative communities to the actual work, people and questions in the room. Art, music, nightlife and lived experience are part of the practice.",
+      "url": "https://chloestarr.me/portals/"
+    },
+    {
+      "name": "Portals",
+      "role": "Writer and editor",
+      "description": "An illustrated studio journal combining films, photographs, outside research and the decisions behind the work, including production failures and open questions.",
+      "url": "https://chloestarr.me/portals/"
+    },
+    {
+      "name": "Writing and poetry",
+      "role": "Writer and poet",
+      "description": "Original fiction, poetry and essays, including ENOUGH. Published creative writing is distinct from verified biography.",
+      "url": "https://chloestarr.me/#writing"
+    },
+    {
+      "name": "ompom.ai",
+      "role": "Founder",
+      "description": "Building personal agents around user-owned data and context. People should be able to retain their context, choose what to share and control where it goes.",
+      "url": "https://ompom.ai/"
     }
   ],
   "interests": [
-    "Storytelling",
-    "Creative writing and poetry",
-    "AI-native building",
-    "Personal context ownership",
-    "Anime and animation",
-    "Music",
-    "Style and resale"
+    "Poetry and film",
+    "Authorship and memory",
+    "Frontier AI and personal agents",
+    "User-owned data and portable context",
+    "Open-source creative tools",
+    "Art, music and shared experiences"
   ],
   "links": {
     "website": "https://chloestarr.me/",
     "ompom": "https://ompom.ai",
     "x": "https://x.com/cloeystarr",
     "instagram": "https://www.instagram.com/cloeystarr/",
-    "linkedin": "https://www.linkedin.com/in/chloestarrai",
+    "linkedin": "https://www.linkedin.com/in/chloestarrai/",
     "github": "https://github.com/cloeystarr",
     "youtube": "https://www.youtube.com/@TheCloeystarr",
-    "spotify": "https://open.spotify.com/user/cloeystarr"
+    "spotify": "https://open.spotify.com/user/cloeystarr",
+    "portals": "https://chloestarr.me/portals/",
+    "instagramAI": "https://www.instagram.com/cloeystarrai/"
   },
   "contentContext": [
     "Stories are creative works. Narrators and fictional characters should not be treated as verified biographical facts about Chloe or other people.",
     "Personal names in the public writing have been replaced with screen-name-style pseudonyms.",
-    "This profile summarizes public information and is not access to Chloe's private archive."
+    "This profile summarizes public information and is not access to Chloe's private archive.",
+    "Event appearances, footage, outside source quotations and credits do not imply employment, sponsorship or collaboration with the featured organizations.",
+    "Only work explicitly described as published should be treated as a finished public release. Experiments and research are not demonstrated production improvements.",
+    "This information supports discovery and introductions. It does not grant agents permission to act, accept terms, publish or commit on Chloe's behalf."
   ],
   "writingPreferences": {
     "style": "Concrete, personal, curious, reflective, and occasionally playful.",
@@ -61,5 +73,72 @@
       "Profanity"
     ],
     "socialPosts": "Adapt the voice to the platform. Drafts require Chloe's approval before publishing."
+  },
+  "identity": {
+    "publicName": "Chloe Starr",
+    "alsoKnownAs": [
+      "Chloe Warnock",
+      "Chloe (Warnock) Starr",
+      "Cloey Starr"
+    ],
+    "canonicalWebsite": "https://chloestarr.me/",
+    "canonicalLinkedIn": "https://www.linkedin.com/in/chloestarrai/",
+    "companyWebsite": "https://ompom.ai/",
+    "note": "Use the canonical LinkedIn URL for current introductions. Older LinkedIn URLs may appear in historical correspondence; do not treat them as separate current profiles."
+  },
+  "selectedWork": [
+    {
+      "title": "Pixels After Dark",
+      "kind": "Field film and essay",
+      "url": "https://chloestarr.me/journal/pixels-and-authorship/",
+      "filmUrl": "https://www.youtube.com/watch?v=62hPXNfkuKg",
+      "context": "Community, AI, art and authorship at Simular's SF Tech Week gathering."
+    },
+    {
+      "title": "Coffee",
+      "kind": "Poetry film and making-of",
+      "url": "https://chloestarr.me/journal/coffee-photographs-become-a-film/",
+      "filmUrl": "https://www.youtube.com/watch?v=59tsbQ2Elfk",
+      "context": "Chloe's poem and voice, with original photographs by Katy Shayne and AI-assisted motion."
+    },
+    {
+      "title": "Who gets to build the next internet?",
+      "kind": "Field film and essay",
+      "url": "https://chloestarr.me/journal/who-gets-to-build-the-next-internet/",
+      "filmUrl": "https://www.youtube.com/watch?v=KdO1SCcHh6Y",
+      "context": "Open-source AI, agents, participation and context ownership."
+    },
+    {
+      "title": "First, a Heartbeat: Animal Talk",
+      "kind": "Field film and essay",
+      "url": "https://chloestarr.me/journal/first-a-heartbeat-animal-talk/",
+      "filmUrl": "https://www.youtube.com/watch?v=KDH88Dx1BSE",
+      "context": "SOFI TUKKER, poetry, dance and the shared worlds artists create."
+    }
+  ],
+  "opportunityInterests": {
+    "creativeWork": [
+      "Paid films, launch content and editorial commissions grounded in substantive AI or creative work.",
+      "Creator partnerships, sponsorship and production support with AI model and creative-tool teams.",
+      "Experiential production, artist-led gatherings, community programs and event storytelling.",
+      "Collaborations with filmmakers, artists, researchers and builders working on authorship, agents, memory and context ownership."
+    ],
+    "professionalConversations": [
+      "Experiential production, creative AI, community, marketing and partnerships.",
+      "Founding GTM and enterprise sales where the work is creative, AI-forward and a strong fit."
+    ],
+    "organizationFit": "Frontier AI, model companies, agent infrastructure and the AI filmmaker/creator ecosystem.",
+    "location": "Based in San Francisco. Remote opportunities are welcome; regular on-site or hybrid work in San Francisco city.",
+    "introductionGuidance": "Explain the specific work or opportunity, why it fits, who is involved, and the proposed next step. Link the most relevant actual film or essay. A useful introduction can be creative, technical or professional.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/chloestarrai/",
+      "x": "https://x.com/cloeystarr"
+    },
+    "privacy": "No compensation floor, private negotiations, personal correspondence or private archive is published in this profile."
+  },
+  "agentDiscoveryExperiment": {
+    "description": "Chloe is exploring how agents discover and understand a person's public work, recommend relevant people and opportunities, and help make useful introductions.",
+    "evaluation": "Accurate understanding, relevant matches, human responses and concrete next steps matter alongside audience reach.",
+    "interpretation": "This experiment does not establish that a particular system has indexed this site or guarantee a recommendation, introduction or hiring outcome."
   }
 }
