@@ -5,7 +5,7 @@ Halloween is already directed independently and is deliberately never regenerate
 from pathlib import Path
 from html.parser import HTMLParser
 from brand_system import HEADER
-import html,json,re,subprocess,hashlib
+import html,json,re,subprocess,hashlib,sys
 WEB=Path(__file__).resolve().parents[1]
 E=lambda x:html.escape(str(x),quote=True)
 def display_title(t):
@@ -104,9 +104,9 @@ def clean(n,pid,media,unverified):
  return html.escape(n.text,quote=False)
 
 AUDIT=[]
-for post in ORDER:
+for post in ([] if "--index-only" in sys.argv else ORDER):
  pid=post['id']
- if pid=='content-can-be-liquid-too':continue
+ if pid=='content-can-be-liquid-too' or post.get('presentation')=='authored':continue
  body=P(post['body']).root
  source_links=[{'url':n.a['href'],'label':n.txt().strip(),'verification':'existing article source; not freshly verified'}for n in body.find(lambda n:n.t=='a' and n.a.get('href'))]
  films=[f for f in FILMS if f.get('article')==pid]
@@ -186,6 +186,7 @@ def index_kind(p):
  if 'field' in category:return 'Event story'
  if 'poetry' in category:return 'Poetry film'
  if category.startswith('film'):return 'Film / Production writing'
+ if category=='building in public':return 'Building in public'
  return 'Essay'
 def card(p,cl='',archive=False):
  image=p.get('image','');image=''if archive or image.endswith('.svg')else image

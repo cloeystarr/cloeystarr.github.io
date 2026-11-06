@@ -1,0 +1,22 @@
+[
+  {
+    "id": "a-world-i-can-keep-changing",
+    "title": "A world I can keep changing.",
+    "category": "Building in public",
+    "iso": "2026-11-05",
+    "date": "November 5, 2026",
+    "deck": "I wanted my website to look like Breathless, but in color. And I wanted it to be able to change with me.",
+    "image": "assets/editorial/building-identity/homepage.png",
+    "alt": "Chloe Starr’s redesigned homepage with her original purple portrait and Poetry, Events and Portals navigation",
+    "caption": "The personal website opening, directed by Chloe Starr and implemented with Codex.",
+    "presentation": "authored",
+    "body": "",
+    "publication_status": "approved",
+    "x_posts": [
+      "https://x.com/cloeystarr/status/2118532120507560354",
+      "https://x.com/cloeystarr/status/2118532238136816003",
+      "https://x.com/cloeystarr/status/2118532298673102968"
+    ],
+    "youtube_required": false
+  }
+]
