@@ -1,0 +1,12 @@
+{
+  "protected_files": {
+    "index.html": "f4c2897a26a0f80f85f2b1478a10b548cc192a7e5cde169c95e5d9e5a5928095",
+    "portals/index.html": "2b28a4d4f11ee76291ff018abffa2de42fca393f8b38f12d910348de775d6621",
+    "assets/editorial/portals-system.css": "d41414e88a84f04cb102c98e5e5ab86882831318189321538ae65c3dbdb4a126",
+    "assets/brand/homepage.css": "20be2f2019dde5ca833932d5188d7b55242ff619d6162a599b569c34b9d24cae",
+    "assets/poetry/compositions.css": "be71a4c2c4568791e46f5cdfe4e16ba377aa4539781617b0a9bf0dfd0a5d16f2",
+    "poetry/index.html": "ea4fefcb1b561bfcdfb166e7bbb21378a2b4cbad3850a847ec7d0e7b526002fd",
+    "poetry/coffee/index.html": "9261ed49dfd6048fcaf04bc45a49781166875da9b70dff1e4ce0f5a6ef83f050"
+  },
+  "homepage_composition_sha256": "39724322e3fdf3dec70265f0b8bf0fb8f7267dfd76ed7e1525662725436ba83f"
+}

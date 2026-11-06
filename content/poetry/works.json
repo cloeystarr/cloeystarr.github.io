@@ -1,0 +1,1130 @@
+[
+  {
+    "id": "poetry-01",
+    "slug": "poem-01",
+    "historical_number": "1",
+    "text": "Life is a simple equation of (x)a=C if either a or x are 0 life can\nnot be created.",
+    "text_sha256": "ce7d0c7daa2cacbfc154e919d5d906092a64399fb8ccf7e7f453f628ca54d27c",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 0,
+    "source_text_sha256": "ce7d0c7daa2cacbfc154e919d5d906092a64399fb8ccf7e7f453f628ca54d27c",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "ce7d0c7daa2cacbfc154e919d5d906092a64399fb8ccf7e7f453f628ca54d27c",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "1"
+  },
+  {
+    "id": "poetry-02",
+    "slug": "poem-02",
+    "historical_number": "2",
+    "text": "Being present\nA hard construct, filters include most activities besides being still.\nStill is the nature of nature\nKale is creeping out of my skin force fed myself pounds of the green\nstuff\nEnjoy the present moment it is a gift clouds of doubt and fear isolate\nyour bright sun with fog",
+    "text_sha256": "b2d984110c3251fd42360da2ca9f96354631a5631bb6282805a798b024c020ee",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 1,
+    "source_text_sha256": "b2d984110c3251fd42360da2ca9f96354631a5631bb6282805a798b024c020ee",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "b2d984110c3251fd42360da2ca9f96354631a5631bb6282805a798b024c020ee",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "2"
+  },
+  {
+    "id": "poetry-03",
+    "slug": "poem-03",
+    "historical_number": "3",
+    "text": "Grammar a rudimentary formula punctuated by a battalion of\nstructure created by the patriarchy to continue to frame the\nhierarchical structure of the hoops I'm reminded by the media\neveryday to jump though.",
+    "text_sha256": "ea9d55807905b0c1b91debe6a64d042fb6357a989e2d08879177f0afbc12d520",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 2,
+    "source_text_sha256": "ea9d55807905b0c1b91debe6a64d042fb6357a989e2d08879177f0afbc12d520",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "ea9d55807905b0c1b91debe6a64d042fb6357a989e2d08879177f0afbc12d520",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "3"
+  },
+  {
+    "id": "poetry-04",
+    "slug": "where-do-memories-live",
+    "historical_number": "4",
+    "text": "Where do memories live? A smell of fabric that touched both me\nand you triggers a marathon of memories. Seductive suction the\npresent moment disappears and I'm in a reconstructed past\npackaging the most suitable version for you.",
+    "text_sha256": "bcb5a92ab8670c9f8209137ffbda6f11887956f674bb19c12ab4fb43223d025d",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "featured",
+    "writing_state": "published",
+    "film": {
+      "state": "in_development",
+      "production_url": "/journal/i-asked-ai-to-finish-my-film/"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 3,
+    "source_text_sha256": "bcb5a92ab8670c9f8209137ffbda6f11887956f674bb19c12ab4fb43223d025d",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "bcb5a92ab8670c9f8209137ffbda6f11887956f674bb19c12ab4fb43223d025d",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "4"
+  },
+  {
+    "id": "poetry-05",
+    "slug": "poem-05",
+    "historical_number": "5",
+    "text": "Is the freedom to buy things, really the independence we should\nall strive for? Or is it the perspective of an immortal that knows,\nthe earth is our Mother we own nothing on her, she is good and\ngraceful and where we roam on her we are fed",
+    "text_sha256": "905c0109022776e8821003c5d24c7840d045c07b7a51c2f067a5eae1b45422eb",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 4,
+    "source_text_sha256": "905c0109022776e8821003c5d24c7840d045c07b7a51c2f067a5eae1b45422eb",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "905c0109022776e8821003c5d24c7840d045c07b7a51c2f067a5eae1b45422eb",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "5"
+  },
+  {
+    "id": "poetry-06",
+    "slug": "poem-06",
+    "historical_number": "6",
+    "text": "I am filled with light. Praise to the universe. Bring me to my\nhome, fill my pockets enough to pay for it and my dreams of\nmaking films. Continue to give me strength in darkness that it\nwill all pour to light for me. Love and light and the best are\ninvited to enter me. Swell my heart.",
+    "text_sha256": "8729804a28fe4623dfb0b090715c90fd2f540c795891b42d68960d1cc54820b1",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 5,
+    "source_text_sha256": "8729804a28fe4623dfb0b090715c90fd2f540c795891b42d68960d1cc54820b1",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "8729804a28fe4623dfb0b090715c90fd2f540c795891b42d68960d1cc54820b1",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "6"
+  },
+  {
+    "id": "poetry-07",
+    "slug": "poem-07",
+    "historical_number": "7",
+    "text": "a thin choke circle of mucus was rotting in my throat\nproducing non-productive single tiny clauds of flem.\nthe life being choked out of me. smoking was a comfort a habit, a\nlove. green was always there. i can't think of any of one else there as\nmuch or in such a great capacity. now i feel guilt. sometimes I don't\nneed it. i'm contented to read. then sometime i blaze and I feel guilty.",
+    "text_sha256": "20ba11f6a7e1cebdf2930522f552d0b0c8080277a54f1309320c36346e4719b2",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 6,
+    "source_text_sha256": "20ba11f6a7e1cebdf2930522f552d0b0c8080277a54f1309320c36346e4719b2",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "20ba11f6a7e1cebdf2930522f552d0b0c8080277a54f1309320c36346e4719b2",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "7"
+  },
+  {
+    "id": "poetry-08",
+    "slug": "poem-08",
+    "historical_number": "8",
+    "text": "i thought i had died today. i was very angry at my mother and i\ndidn't look all the way before crossing the street. it was the wind\nof the swerve of the white pick-up truck that shook me back into\nconsciousness. i finished riding across the street and into the\ntriangle. watching my hands shake wondering if i was real\nanymore. perhaps death doesn't hurt and i had not felt. I felt for\nmy missing brain and wondering if it was still there. If I was still\nreal or solid or a ghost. An old guy on a two-person bicycle\nasked me for directions to the saucer. Hence, I was still real",
+    "text_sha256": "480b240cbf773c6afe22d4fe3bffe6f107090cdc9f1bebd0b4eb356d2c3ac33b",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "intimate"
+    },
+    "source_entry_index": 7,
+    "source_text_sha256": "480b240cbf773c6afe22d4fe3bffe6f107090cdc9f1bebd0b4eb356d2c3ac33b",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "480b240cbf773c6afe22d4fe3bffe6f107090cdc9f1bebd0b4eb356d2c3ac33b",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "8"
+  },
+  {
+    "id": "poetry-09",
+    "slug": "poem-09",
+    "historical_number": "10",
+    "text": "my stomach is growling\nonly I can take care of me\nI am tired\nI can’t pack up everything on my own\nlike I need your help\nI can pack up my stuff\nbut not yours too\nI’ve been hungry\nyou ate all the food without me\nyou care though that I can see",
+    "text_sha256": "49b8163624e91f7cde9118f427f007ab4b4b226956f8eec52bdf6edb8e122931",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 8,
+    "source_text_sha256": "49b8163624e91f7cde9118f427f007ab4b4b226956f8eec52bdf6edb8e122931",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "49b8163624e91f7cde9118f427f007ab4b4b226956f8eec52bdf6edb8e122931",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "10"
+  },
+  {
+    "id": "poetry-10",
+    "slug": "poem-10",
+    "historical_number": "11",
+    "text": "Being alone is such a rough\nSup....\nI miss my exes\njust as cheesy as the rest\neveryone is sleazy and cheesy\ni’m not sure I will ever get someone real again",
+    "text_sha256": "eb9808685e1fb1028040d34caf9c4a6759e3f5ed4ced90957b149b6cac482dc0",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 9,
+    "source_text_sha256": "eb9808685e1fb1028040d34caf9c4a6759e3f5ed4ced90957b149b6cac482dc0",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "eb9808685e1fb1028040d34caf9c4a6759e3f5ed4ced90957b149b6cac482dc0",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "11"
+  },
+  {
+    "id": "poetry-11",
+    "slug": "poem-11",
+    "historical_number": "12",
+    "text": "time to pretend\npretending gets tired\nif i am always pretending I’m\nnever sure who\nI am",
+    "text_sha256": "98e674455866c052715fedec4df6cbc25cc4fd307d02d8dbe1052d4e171dc783",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 10,
+    "source_text_sha256": "98e674455866c052715fedec4df6cbc25cc4fd307d02d8dbe1052d4e171dc783",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "98e674455866c052715fedec4df6cbc25cc4fd307d02d8dbe1052d4e171dc783",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "12"
+  },
+  {
+    "id": "poetry-12",
+    "slug": "poem-12",
+    "historical_number": "13",
+    "text": "i’ve got so many numbers\ni’m not even sure who\ni’m talking too",
+    "text_sha256": "f3c4130bf4d43e3800032d349a78d4d556f91942cda125cc149a7128092f0fad",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 11,
+    "source_text_sha256": "f3c4130bf4d43e3800032d349a78d4d556f91942cda125cc149a7128092f0fad",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "f3c4130bf4d43e3800032d349a78d4d556f91942cda125cc149a7128092f0fad",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "13"
+  },
+  {
+    "id": "poetry-13",
+    "slug": "coffee",
+    "historical_number": "14",
+    "text": "the smell of coffee roast lines my nose while I wait on this post",
+    "text_sha256": "c437cb2012baca592a3e75b861470143963a347ebd5a525acd6441ffd2c3be05",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "featured",
+    "writing_state": "published",
+    "film": {
+      "state": "finished",
+      "youtube_id": "q_ddqO_WuOE",
+      "production_url": "/journal/coffee-photographs-become-a-film/",
+      "credits": "Original photography: Katy Shayne. Poem, performance, voice and direction: Chloe Starr.",
+      "preview_image": "/assets/poetry/coffee-cup-frame.jpg",
+      "preview_alt": "Chloe holding a patterned coffee cup, a frame from Coffee"
+    },
+    "presentation": {
+      "tone": "turquoise",
+      "scale": "display",
+      "feature_priority": 1,
+      "featured_lines": [
+        "the smell of coffee roast",
+        "lines my nose",
+        "while I wait on this post"
+      ]
+    },
+    "source_entry_index": 12,
+    "source_text_sha256": "c437cb2012baca592a3e75b861470143963a347ebd5a525acd6441ffd2c3be05",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "c437cb2012baca592a3e75b861470143963a347ebd5a525acd6441ffd2c3be05",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "14"
+  },
+  {
+    "id": "poetry-14",
+    "slug": "poem-14",
+    "historical_number": "15",
+    "text": "the world is chipped. the scar line between the fake and the real\nare exposed. my nail is chipped. spit n sand. my life a sliced divit. a\nlost and lonely man.",
+    "text_sha256": "be1003b88a3bd023fbaf27b8f0f0cfba45fa35845756dc368fbd142975d2cd16",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 13,
+    "source_text_sha256": "be1003b88a3bd023fbaf27b8f0f0cfba45fa35845756dc368fbd142975d2cd16",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "be1003b88a3bd023fbaf27b8f0f0cfba45fa35845756dc368fbd142975d2cd16",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "15"
+  },
+  {
+    "id": "poetry-15",
+    "slug": "poem-15",
+    "historical_number": "14",
+    "text": "i miss you ghost\ntogether we walked on this earth like ancients owing nothing\ntogether we were gypsies",
+    "text_sha256": "df78d14e0e672415f9939a536062de0703ea1fef5804fac7c8364ee1b86542c2",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 14,
+    "source_text_sha256": "df78d14e0e672415f9939a536062de0703ea1fef5804fac7c8364ee1b86542c2",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "df78d14e0e672415f9939a536062de0703ea1fef5804fac7c8364ee1b86542c2",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "36"
+  },
+  {
+    "id": "poetry-16",
+    "slug": "poem-16",
+    "historical_number": "15",
+    "text": "Mirror parallel universes\nwhen i stare into the silver haze not only my current face comes to\nmeet my gape. occasionally, i see crying. i see the tears caused by\nlove affair washed down the sink. i see smiles and healing. i see\nspeeches i've yet to give. i see myself getting older. i see it, all being\nok.",
+    "text_sha256": "63c9b968abb452f948e5437bc23b0ed4da5aea3d402c0df995f7550eb6047d4d",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 15,
+    "source_text_sha256": "63c9b968abb452f948e5437bc23b0ed4da5aea3d402c0df995f7550eb6047d4d",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "63c9b968abb452f948e5437bc23b0ed4da5aea3d402c0df995f7550eb6047d4d",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "37"
+  },
+  {
+    "id": "poetry-17",
+    "slug": "poem-17",
+    "historical_number": "16",
+    "text": "feeling strained and drained\nstained bullet hole in my heart\nmy heart is broken no matter how hard\ni’ve tried to put it back together\nfeels like i’ve been trying so long to fix this hole\ni hardly remember who when or where shot me",
+    "text_sha256": "342af3a9313b61022377418de34c679c76f9e830751688204b07cb2c1c1247b2",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 16,
+    "source_text_sha256": "342af3a9313b61022377418de34c679c76f9e830751688204b07cb2c1c1247b2",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "342af3a9313b61022377418de34c679c76f9e830751688204b07cb2c1c1247b2",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "16"
+  },
+  {
+    "id": "poetry-18",
+    "slug": "poem-18",
+    "historical_number": "17",
+    "text": "i’m on nothing and i feel numb",
+    "text_sha256": "7b133c1fba3957029537ca597401db2805094d1767be41d9d33bfdcd541d9b30",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 17,
+    "source_text_sha256": "7b133c1fba3957029537ca597401db2805094d1767be41d9d33bfdcd541d9b30",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "7b133c1fba3957029537ca597401db2805094d1767be41d9d33bfdcd541d9b30",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "17"
+  },
+  {
+    "id": "poetry-19",
+    "slug": "poem-19",
+    "historical_number": "18",
+    "text": "at night. i can hear the demons all about climbing up and down\nwalls murmured voices though the hell",
+    "text_sha256": "caf69328946c4390a838b2618383b2ddeda31228c581f8319706474a0738d787",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 18,
+    "source_text_sha256": "caf69328946c4390a838b2618383b2ddeda31228c581f8319706474a0738d787",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "caf69328946c4390a838b2618383b2ddeda31228c581f8319706474a0738d787",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "18"
+  },
+  {
+    "id": "poetry-20",
+    "slug": "poem-20",
+    "historical_number": "19",
+    "text": "appreciating objects. the total destruction of man. objections\nmean nothing. Permanence is in abstraction.",
+    "text_sha256": "8761dc2f5c94a411cccd7ef2d0f0ad32867127f22617e5bbfdcd92b7522bc68b",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 19,
+    "source_text_sha256": "8761dc2f5c94a411cccd7ef2d0f0ad32867127f22617e5bbfdcd92b7522bc68b",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "8761dc2f5c94a411cccd7ef2d0f0ad32867127f22617e5bbfdcd92b7522bc68b",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "19"
+  },
+  {
+    "id": "poetry-21",
+    "slug": "poem-21",
+    "historical_number": "20",
+    "text": "to my mother\nI have four kids.\nyou wore it like a badge.\nI was five\nhelping raise the twins.\nyou crawled into my bed.\nyour father was dead.\nvodka and crying.\nI made room.\nin Texas\nI woke to my cousin\nin my boyfriend’s bed.\nhe beat me.\nlocked me in a closet.\nyou knew\nand posted about her\non Facebook.\nyou chose her.\nwhen your father died\nI held you.\nwhen mine died\nyou turned everyone\nagainst me.\nhe was the only one\nin that family\nwho loved me.\nyou knew that too.\nmy brothers followed you.\nI lost my father\nand somehow\nI was the thing\neveryone needed\nto get away from.\na triangle.\nthe evil eye inside.\nI need a reminder\non my skin\nthat you lie.\nI still want\nto believe my mother.\nyou lied.\nsaid I only wanted money.\nmade me the problem\nso nobody had to look\nat what you did.\nyou knew.\nmy father was dead.\nI wanted my mother.\nI have four kids.\nI can still hear you\ntelling people.\nI am one of them.\nwhen you cried\nI made room in my bed.\nwhen I told you I was hurt\nyou said\nyou didn’t want to hear.",
+    "text_sha256": "f3275b753e9fe37c2ca7d0998be84dd6ac1da70edb8640c630ac81ae7b2ee7a9",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "intimate"
+    },
+    "source_entry_index": 20,
+    "source_text_sha256": "f3275b753e9fe37c2ca7d0998be84dd6ac1da70edb8640c630ac81ae7b2ee7a9",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "f3275b753e9fe37c2ca7d0998be84dd6ac1da70edb8640c630ac81ae7b2ee7a9",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "20"
+  },
+  {
+    "id": "poetry-22",
+    "slug": "poem-22",
+    "historical_number": "21",
+    "text": "he is just so dumb i can’t stand to continue this contrived\nconversation any further",
+    "text_sha256": "33c570e4692409a187cf67bafeab755f36bbd4c3ff7dcbaee83aa68cdfbde6b3",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 21,
+    "source_text_sha256": "33c570e4692409a187cf67bafeab755f36bbd4c3ff7dcbaee83aa68cdfbde6b3",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "33c570e4692409a187cf67bafeab755f36bbd4c3ff7dcbaee83aa68cdfbde6b3",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "21"
+  },
+  {
+    "id": "poetry-23",
+    "slug": "poem-23",
+    "historical_number": "22",
+    "text": "Oh m triple G. I hate how fucking small this town is. I hope I have\nhid myself well enough with all this red lips and sunglasses. I’m so\ntired of running into people that know me but I don’t can to see it is\nlike it is all planned for Heightened Dramatic Irony.",
+    "text_sha256": "60c2a8b8d0fc5aed18249b84f4710c587af4a6747e420fc345e48ae3a40edd5d",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 22,
+    "source_text_sha256": "60c2a8b8d0fc5aed18249b84f4710c587af4a6747e420fc345e48ae3a40edd5d",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "60c2a8b8d0fc5aed18249b84f4710c587af4a6747e420fc345e48ae3a40edd5d",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "22"
+  },
+  {
+    "id": "poetry-24",
+    "slug": "poem-24",
+    "historical_number": "23",
+    "text": "Asking for help\nThis isn’t going to be fun. I need help. I am going to have to ask a\nfriend to help me out. Why it is so hard...humbling, yourself.",
+    "text_sha256": "62c7e7d686e71ce457257af90678e11da9758b16a1474efbe63c658493c74cd8",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 23,
+    "source_text_sha256": "62c7e7d686e71ce457257af90678e11da9758b16a1474efbe63c658493c74cd8",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "62c7e7d686e71ce457257af90678e11da9758b16a1474efbe63c658493c74cd8",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "23"
+  },
+  {
+    "id": "poetry-25",
+    "slug": "poem-25",
+    "historical_number": "24",
+    "text": "The Erotic Nature of Feet\nas my feet now ooze and puss, I feel an orgasmic tingle, running up\nmy toes to my center and I wish someone would wash my feet.",
+    "text_sha256": "5841f559c88b505b28d998ccd52fa7e870ee1c933a56236c815ceb19e5029e99",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 24,
+    "source_text_sha256": "5841f559c88b505b28d998ccd52fa7e870ee1c933a56236c815ceb19e5029e99",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "5841f559c88b505b28d998ccd52fa7e870ee1c933a56236c815ceb19e5029e99",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "24"
+  },
+  {
+    "id": "poetry-26",
+    "slug": "poem-26",
+    "historical_number": "25",
+    "text": "Voids\nstate of most beings. only looking to consume their next trend.\nwestern vampires.",
+    "text_sha256": "d5437c8b7f07df4690b83765c0b1af2f9d8661ba5ce4047c7bc27e9c2c42d701",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 25,
+    "source_text_sha256": "d5437c8b7f07df4690b83765c0b1af2f9d8661ba5ce4047c7bc27e9c2c42d701",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "d5437c8b7f07df4690b83765c0b1af2f9d8661ba5ce4047c7bc27e9c2c42d701",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "25"
+  },
+  {
+    "id": "poetry-27",
+    "slug": "poem-27",
+    "historical_number": "26",
+    "text": "hipster\ni wear pants in the summer\nshorts in the winter\nthis makes me against “the man”\nBa, ah, haha, nature",
+    "text_sha256": "1ad1482336c3a01fe8ab4c86ec638bee9798dd8e8b7d516a9587d2dc6208c7f5",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 26,
+    "source_text_sha256": "1ad1482336c3a01fe8ab4c86ec638bee9798dd8e8b7d516a9587d2dc6208c7f5",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "1ad1482336c3a01fe8ab4c86ec638bee9798dd8e8b7d516a9587d2dc6208c7f5",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "26"
+  },
+  {
+    "id": "poetry-28",
+    "slug": "poem-28",
+    "historical_number": "27",
+    "text": "text message\nyour impersonal & discrete\nand now we no longer\nneed to talk to each other\nanymore",
+    "text_sha256": "383953117b01c93344ab2ca358d626eaa977c4caa8d0dcf3f79e877feddb3a63",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 27,
+    "source_text_sha256": "383953117b01c93344ab2ca358d626eaa977c4caa8d0dcf3f79e877feddb3a63",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "383953117b01c93344ab2ca358d626eaa977c4caa8d0dcf3f79e877feddb3a63",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "27"
+  },
+  {
+    "id": "poetry-29",
+    "slug": "poem-29",
+    "historical_number": "28",
+    "text": "Value\nIs such a funny and impersonal thing. Is it worth more because it is\nnew or because it has experience. So much hate involved in being\nhip.",
+    "text_sha256": "a89580485baa7a0031d4254cbdde0461d56eaf2e39171a7ecf801c3e5a19a242",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 28,
+    "source_text_sha256": "a89580485baa7a0031d4254cbdde0461d56eaf2e39171a7ecf801c3e5a19a242",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "a89580485baa7a0031d4254cbdde0461d56eaf2e39171a7ecf801c3e5a19a242",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "28"
+  },
+  {
+    "id": "poetry-30",
+    "slug": "poem-30",
+    "historical_number": "29",
+    "text": "You don’t deserve your Face? I’ve paid, pretty is as pretty does.\nThe Iron Price for this face, more than twice. You reap what you sow.\nPhases that haunt me still.",
+    "text_sha256": "f56c7149dada3d88bc46a935bb939eeddf32a6de8d615e5f32ca3fcc963193ad",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 29,
+    "source_text_sha256": "f56c7149dada3d88bc46a935bb939eeddf32a6de8d615e5f32ca3fcc963193ad",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "f56c7149dada3d88bc46a935bb939eeddf32a6de8d615e5f32ca3fcc963193ad",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "29"
+  },
+  {
+    "id": "poetry-31",
+    "slug": "poem-31",
+    "historical_number": "30",
+    "text": "Labels\nscene hip people are impressed by boxes, houses, shells, exteriors,\nw/out a shill they will dine on you",
+    "text_sha256": "8059fb218b98c91746f6df952f1dcecb512023e894af77a12cf742b0f37bce59",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 30,
+    "source_text_sha256": "8059fb218b98c91746f6df952f1dcecb512023e894af77a12cf742b0f37bce59",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "8059fb218b98c91746f6df952f1dcecb512023e894af77a12cf742b0f37bce59",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "30"
+  },
+  {
+    "id": "poetry-32",
+    "slug": "poem-32",
+    "historical_number": "31",
+    "text": "In love three steps behind\nyou love me before i love you\ni love you much longer after you\nstop loving me",
+    "text_sha256": "79c31095f4a24cb484d209cdfde1911d03ebee5cd9c89114a21b0acbf6ca1f59",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "midnight",
+      "scale": "display"
+    },
+    "source_entry_index": 31,
+    "source_text_sha256": "79c31095f4a24cb484d209cdfde1911d03ebee5cd9c89114a21b0acbf6ca1f59",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "79c31095f4a24cb484d209cdfde1911d03ebee5cd9c89114a21b0acbf6ca1f59",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "31"
+  },
+  {
+    "id": "poetry-33",
+    "slug": "poem-33",
+    "historical_number": "32",
+    "text": "i open the love spell bottle\nthe perfume is so enticing\ni am in love with its intoxication\ni shouldn’t but i do drop it on my eyelids\nchaos without intention\nmy headache is gone\na heartache awaits\ncurses for getting this high on magic\ni can feel it working already\nmy heart is beating faster\nand the scent will not leave my nose\naction rising.",
+    "text_sha256": "c67727eebccaf71226a51ed91c87fe761419293f00601d9775d26f4693ba3916",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 32,
+    "source_text_sha256": "c67727eebccaf71226a51ed91c87fe761419293f00601d9775d26f4693ba3916",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "c67727eebccaf71226a51ed91c87fe761419293f00601d9775d26f4693ba3916",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "32"
+  },
+  {
+    "id": "poetry-34",
+    "slug": "poem-34",
+    "historical_number": "33",
+    "text": "hanging out with outlaws\nrough, wild and running\nslightly, scary always,\nbut they will never kick you out\ngive you a bunk mate perhaps.\nforever a gypsy.",
+    "text_sha256": "1a34a4e25eef22db30aef1c4b9dcc9daaa5ad5fc2ba5f9013d06f3fbc21ce052",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 33,
+    "source_text_sha256": "1a34a4e25eef22db30aef1c4b9dcc9daaa5ad5fc2ba5f9013d06f3fbc21ce052",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "1a34a4e25eef22db30aef1c4b9dcc9daaa5ad5fc2ba5f9013d06f3fbc21ce052",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "33"
+  },
+  {
+    "id": "poetry-35",
+    "slug": "poem-35",
+    "historical_number": "34",
+    "text": "violence\na evil hand that creeps everywhere\noh to be rid of the curse of hurt.",
+    "text_sha256": "b4bd0d4f8d577328355dbfea7c19c84a126f2052e09b986c41b15a204f3c3c25",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "display"
+    },
+    "source_entry_index": 34,
+    "source_text_sha256": "b4bd0d4f8d577328355dbfea7c19c84a126f2052e09b986c41b15a204f3c3c25",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "b4bd0d4f8d577328355dbfea7c19c84a126f2052e09b986c41b15a204f3c3c25",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "34"
+  },
+  {
+    "id": "poetry-36",
+    "slug": "poem-36",
+    "historical_number": "35",
+    "text": "It is your Astral Body, I’ve been talking to. No, wonder, you don’t\nremember it. Your astral body looks just like you but your skin is\nwhiter and glowing and your places where you could possibly be\nwatching me. Your glowing self teleports from column to column and\nspeaks directly to my mind, no words. If yours is out doing this, what\nis the Astral me out doing?",
+    "text_sha256": "e51c6ae337e381224468dfc4a3cdf37d41824b1e884b9b63a73107a458306879",
+    "author": "Chloe Starr",
+    "source": "script.js: originalPoetry.poems",
+    "creation_date": null,
+    "original_publication_date": null,
+    "visibility": "public",
+    "writing_state": "published",
+    "film": {
+      "state": "not_registered"
+    },
+    "presentation": {
+      "tone": "paper",
+      "scale": "reading"
+    },
+    "source_entry_index": 35,
+    "source_text_sha256": "e51c6ae337e381224468dfc4a3cdf37d41824b1e884b9b63a73107a458306879",
+    "versions": [
+      {
+        "id": "writing-v1",
+        "text_sha256": "e51c6ae337e381224468dfc4a3cdf37d41824b1e884b9b63a73107a458306879",
+        "publication": "Existing website edition",
+        "date": null
+      }
+    ],
+    "display_number": "35"
+  }
+]

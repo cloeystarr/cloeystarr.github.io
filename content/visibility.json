@@ -1,0 +1,33 @@
+{
+  "states": [
+    "featured",
+    "public",
+    "unlisted",
+    "draft"
+  ],
+  "independent_of": [
+    "writing_state",
+    "film_state"
+  ],
+  "routes": {
+    "/#worlds": {
+      "visibility": "public",
+      "promoted": false
+    },
+    "/#writing": {
+      "visibility": "public",
+      "promoted": false,
+      "project": "ENOUGH.",
+      "completion": "unchanged"
+    },
+    "/poetry/": {
+      "visibility": "featured"
+    },
+    "/#events": {
+      "visibility": "featured"
+    },
+    "/portals/": {
+      "visibility": "featured"
+    }
+  }
+}
