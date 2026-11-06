@@ -1,0 +1,35 @@
+[
+  {
+    "id": "complete-film",
+    "title": "I Animated Halloween",
+    "youtube_id": "Z5ETHN7r05A",
+    "poster": "/assets/editorial/halloween-2026/27bc4f5a-opening-chloe-runway.webp",
+    "credit": "Film by Chloe Starr, with Chris Starr AI",
+    "original_url": "https://x.com/cloeystarr/status/2117672015654232275",
+    "publication_status": "public"
+  },
+  {
+    "id": "pdoom-film",
+    "title": "P(DOOM)",
+    "youtube_id": null,
+    "poster": "/assets/editorial/liquid-review/pdoom-poster.webp",
+    "credit": "Original edit and audio by @muse_inmotion",
+    "original_url": "https://x.com/muse_inmotion/status/2116536617678807522"
+  },
+  {
+    "id": "klombo-film",
+    "title": "Klombo",
+    "youtube_id": null,
+    "poster": "/assets/editorial/liquid-review/klombo-poster.webp",
+    "credit": "Gameplay source: Tomato - Fortnite. Game imagery: Epic Games. Costume footage and recut: Chloe Starr.",
+    "original_url": "https://www.youtube.com/watch?v=QJnmD2_4iM4"
+  },
+  {
+    "id": "wan-process",
+    "title": "Runway animation: five-second take",
+    "youtube_id": null,
+    "poster": "/assets/editorial/halloween-2026/4a11c9d7-halloween-spin-start.webp",
+    "credit": "Silent Wan 2.2 take. Imagined extension of the runway.",
+    "original_url": null
+  }
+]
