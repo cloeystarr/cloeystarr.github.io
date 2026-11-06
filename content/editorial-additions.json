@@ -8,7 +8,7 @@
     "event_date": "2026-11-04",
     "deck": "The work can keep moving without losing the choices that make it mine.",
     "image": "assets/editorial/elastic-on-2026-11-04/portrait.webp",
-    "alt": "Chloe’s original ElasticON photo-booth portrait, with Elastic and Google Cloud branding",
+    "alt": "Chloe\u2019s original ElasticON photo-booth portrait, with Elastic and Google Cloud branding",
     "caption": "Original event photo-booth portrait. Photographer unverified.",
     "presentation": "authored",
     "body": "",
@@ -28,7 +28,7 @@
     "date": "November 5, 2026",
     "deck": "I wanted my website to look like Breathless, but in color. And I wanted it to be able to change with me.",
     "image": "assets/editorial/building-identity/homepage.png",
-    "alt": "Chloe Starr’s redesigned homepage with her original purple portrait and Poetry, Events and Portals navigation",
+    "alt": "Chloe Starr\u2019s redesigned homepage with her original purple portrait and Poetry, Events and Portals navigation",
     "caption": "The personal website opening, directed by Chloe Starr and implemented with Codex.",
     "presentation": "authored",
     "body": "",
@@ -39,5 +39,35 @@
       "https://x.com/cloeystarr/status/2118532298673102968"
     ],
     "youtube_required": false
+  },
+  {
+    "id": "on-target",
+    "title": "On target.",
+    "category": "Film / Event essay",
+    "iso": "2026-11-06",
+    "date": "November 6, 2026",
+    "event_date": "2026-11-04",
+    "deck": "A sales launch at a science museum. A job I know well. A future that doesn\u2019t stop at a better quota.",
+    "image": "assets/editorial/nooks-2026-11-04/party-portrait.jpg",
+    "alt": "Chloe Starr and Chris Starr AI at the Nooks launch party photo booth",
+    "caption": "Original event photo-booth portrait. Photographer unverified.",
+    "presentation": "authored",
+    "body": "",
+    "publication_status": "approved",
+    "youtube_required": true,
+    "youtube_id": "ZaoDX_bUaqc",
+    "x_posts": [
+      "https://x.com/cloeystarr/status/2118786375894122677",
+      "https://x.com/cloeystarr/status/2118786560070197455",
+      "https://x.com/cloeystarr/status/2118786751431114950",
+      "https://x.com/cloeystarr/status/2118787379251323035",
+      "https://x.com/cloeystarr/status/2118787478966665699",
+      "https://x.com/cloeystarr/status/2118787573502066767",
+      "https://x.com/cloeystarr/status/2118788181411983645",
+      "https://x.com/cloeystarr/status/2118788289276866768",
+      "https://x.com/cloeystarr/status/2118788398718861719",
+      "https://x.com/cloeystarr/status/2118788503786107331",
+      "https://x.com/cloeystarr/status/2118788611504320697"
+    ]
   }
 ]
