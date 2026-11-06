@@ -1,0 +1,49 @@
+{
+  "work_id": "valuable-to-whom",
+  "creator": "Chloe Starr",
+  "event_date": "2026-11-04",
+  "publication_date": "2026-11-05",
+  "youtube_id": "XDZPtjuRuJU",
+  "x_posts": [
+    "https://x.com/cloeystarr/status/2118058082525909492",
+    "https://x.com/cloeystarr/status/2118590196707180912"
+  ],
+  "sources": [
+    {
+      "creator_work": "Han Xiao · Omni",
+      "url": "https://hanxiao.io/omni/",
+      "context": "Published moving demo, separate from the event recording."
+    },
+    {
+      "creator_work": "Han Xiao / XH Research · Image tagging",
+      "url": "https://www.youtube.com/watch?v=ItVQqeNeR5M",
+      "context": "July 23, 2026. Brief excerpt from his published research video."
+    },
+    {
+      "creator_work": "DW / Felix Pauschinger · Han Xiao profile",
+      "url": "https://www.dw.com/en/making-it-in-germany-ai-expert-han-xiao/video-69266017",
+      "context": "October 8, 2024, Berlin. Profile excerpts, not ElasticON footage."
+    },
+    {
+      "creator_work": "Victor Moreira / LangChain · Interrupt London",
+      "url": "https://x.com/LangChain/status/2114734295818318107",
+      "context": "October 2026. Related talk recorded in London, not this San Francisco event."
+    },
+    {
+      "creator_work": "Elastic · Agent Builder / Workflows",
+      "url": "https://x.com/elastic/status/2053127855446298683",
+      "context": "May 9, 2026. Published product demo, not a recording of Anish’s presentation."
+    },
+    {
+      "creator_work": "Sydney Marrone and Kassandra Murphy · Women and intersectional diversity in cyber",
+      "url": "https://dispatch.thorcollective.com/p/why-we-need-more-women-and-intersectional-diversity-in-cyber",
+      "context": "March 27, 2025. Coauthored THOR Collective Dispatch essay; brief quote and author portrait in the film."
+    },
+    {
+      "creator_work": "Elastic · Elky event imagery",
+      "url": "https://www.elastic.co/events/elasticon/",
+      "context": "Official event-world imagery. Original creators retain ownership."
+    }
+  ],
+  "credit_notes": "Speaker program portraits and THOR author portrait credited inline. Photo booth Elastic / Google Cloud; provider unverified. Original creators retain ownership. Chloe approved the credited current cut for release."
+}

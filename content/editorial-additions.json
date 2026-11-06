@@ -1,5 +1,26 @@
 [
   {
+    "id": "valuable-to-whom",
+    "title": "Valuable to whom.",
+    "category": "Film / Event essay",
+    "iso": "2026-11-05",
+    "date": "November 5, 2026",
+    "event_date": "2026-11-04",
+    "deck": "The work can keep moving without losing the choices that make it mine.",
+    "image": "assets/editorial/elastic-on-2026-11-04/portrait.webp",
+    "alt": "Chloe’s original ElasticON photo-booth portrait, with Elastic and Google Cloud branding",
+    "caption": "Original event photo-booth portrait. Photographer unverified.",
+    "presentation": "authored",
+    "body": "",
+    "publication_status": "approved",
+    "youtube_required": true,
+    "youtube_id": "XDZPtjuRuJU",
+    "x_posts": [
+      "https://x.com/cloeystarr/status/2118058082525909492",
+      "https://x.com/cloeystarr/status/2118590196707180912"
+    ]
+  },
+  {
     "id": "a-world-i-can-keep-changing",
     "title": "A world I can keep changing.",
     "category": "Building in public",

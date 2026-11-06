@@ -24,7 +24,7 @@ def date(f):return '<p class="eyebrow"><time datetime="'+f['date']+'">'+E(f['dis
 # Keep original poster records intact; this wide released-film frame is a presentation choice.
 featured=dict(films[0])
 if featured.get('article')=='content-can-be-liquid-too':featured['poster']='/assets/editorial/halloween-2026/4a11c9d7-halloween-spin-start.webp'
-feature='<section class="event-feature" id="film-'+str(featured['legacy_id'])+'" data-film-ids="'+E(featured['aliases'])+'" aria-label="Featured event film"><div class="event-heading">'+date(featured)+'<h2>'+E(display_title(featured))+'<span class="punctuation">.</span></h2></div>'+player(featured)+'<div class="event-after"><p>Film by Chloe Starr, with Chris Starr AI.</p>'+story(featured)+'</div>'+credits(featured)+'</section>'
+feature='<section class="event-feature" id="film-'+str(featured['legacy_id'])+'" data-film-ids="'+E(featured['aliases'])+'" aria-label="Featured event film"><div class="event-heading">'+date(featured)+'<h2>'+E(display_title(featured))+'<span class="punctuation">.</span></h2></div>'+player(featured)+'<div class="event-after"><p>'+E(featured.get('byline','Film by Chloe Starr, with Chris Starr AI.'))+'</p>'+story(featured)+'</div>'+credits(featured)+'</section>'
 selections=[]
 for f in films[1:4]:
  selections.append('<article class="event-selection" id="film-'+str(f['legacy_id'])+'" data-film-ids="'+E(f['aliases'])+'">'+player(f)+date(f)+'<h3>'+E(display_title(f))+'</h3>'+story(f)+credits(f)+'</article>')
