@@ -1,0 +1,31 @@
+/* Secondary public rooms. Shared identity comes from portals-system.css. */
+.secondary-active{color-scheme:dark}
+.secondary-room{padding-top:48px;min-height:65vh}
+.secondary-room h1{max-width:16ch;margin-top:0}
+.secondary-room p{max-width:60ch}
+.secondary-room .object-copy{font-size:24px;line-height:1.5;max-width:48ch;margin-bottom:56px}
+.secondary-room .note,.secondary-room .quiet-label{color:var(--muted);font-size:18px;line-height:1.6}
+.secondary-room .quiet-label{text-transform:none;letter-spacing:0}
+.secondary-room .byline{margin:0 0 24px}
+.secondary-room .actions{display:flex;flex-wrap:wrap;gap:20px 32px;margin:48px 0 12px;font-size:18px}
+.secondary-room .collection-contents{max-width:920px;margin:48px 0}
+.secondary-room .collection-contents>a{display:flex;justify-content:space-between;gap:24px;padding:24px 0;border-top:1px solid var(--line);text-decoration:none;font-size:clamp(24px,3vw,38px);font-weight:600;line-height:1.25}
+.secondary-room .collection-contents>a:last-child{border-bottom:1px solid var(--line)}
+.secondary-room .reading-text{max-width:700px;margin:56px 0}
+.secondary-room .reading-text p{white-space:pre-wrap;font-size:20px;line-height:1.8;margin-bottom:28px}
+.secondary-room .reading-text .section-pause{text-align:center;margin:48px 0}
+.secondary-room figure{max-width:900px;margin:40px 0}
+.secondary-room figure img{max-height:75vh;object-fit:contain;object-position:left}
+.secondary-room figcaption{color:var(--muted);font-size:18px;margin-top:16px}
+.experience-room .anime-section{display:grid;grid-template-columns:180px minmax(0,740px);column-gap:40px;border-top:1px solid var(--line);padding:32px 0 20px;margin:0}
+.experience-room .anime-section .eyebrow{grid-column:1;grid-row:1 / span 3;margin:5px 0}
+.experience-room .anime-section h3{grid-column:2;font-size:clamp(26px,3vw,38px);margin:0 0 14px}
+.experience-room .anime-section .byline,.experience-room .anime-section>p:not(.eyebrow){grid-column:2}
+.secondary-room .reading-section{max-width:900px;border-top:1px solid var(--line);margin-top:48px}
+.secondary-room .book-list{padding-left:24px}
+.secondary-room li{margin:20px 0}
+.secondary-active a:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+@media(max-width:760px){.secondary-room{padding-top:28px}.secondary-room h1{font-size:clamp(46px,12vw,72px)}.secondary-room .object-copy{font-size:22px;margin-bottom:36px}.experience-room .anime-section{display:block;padding:26px 0 14px}.experience-room .anime-section .eyebrow{margin:0 0 16px}.secondary-room .reading-text{margin-top:36px}.secondary-room .reading-text p{font-size:20px}.secondary-room .collection-contents>a{padding:22px 0}}
+.secondary-active .skip-link{position:absolute;top:-100px;left:20px;z-index:10;background:var(--paper);color:var(--night);padding:12px}
+.secondary-active .skip-link:focus{top:12px}
+.secondary-active #app:focus{outline:none}

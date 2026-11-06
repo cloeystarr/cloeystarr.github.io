@@ -356,6 +356,11 @@ function navigate(route) {
 }
 
 function shell(content, { className = "", showIndex = true, label = "" } = {}) {
+  const room = location.hash.slice(1);
+  if (room === 'experience' || room === 'writing' || room === 'enough-reading' || writingEntries.some(entry => entry.route === room && room !== 'poetry')) {
+    content = content.replace(/<h2>([\s\S]*?)<\/h2>/, '<h1>$1</h1>');
+    return `<header class="site-header"><a class="wordmark" href="/">chloe starr<span>.</span></a><nav aria-label="Main navigation"><a href="/poetry/">Poetry</a><a href="/#events">Events</a><a href="/portals/">Portals</a></nav></header><main class="secondary-room ${room === 'experience' ? 'experience-room' : 'writing-room'}" id="secondary-content"><section class="secondary-opening">${content}</section></main><footer class="site-footer"><a href="/#experience">Human experience</a><a href="/#writing">ENOUGH.</a><a class="company-link" href="https://ompom.ai">ompom.ai ↗</a></footer>`;
+  }
   if (!className.includes('cover') && !className.includes('pom-interior')) {
     className += ' pom-interior pom-content';
     content = content.replace(/<h2>([\s\S]*?)<\/h2>/, (_,title) => `<div class="pom-page-heading">${pomDrawing('house')}<h2>${title}</h2></div>`);
@@ -886,6 +891,13 @@ function render() {
   if (route === "cover" && !document.head.querySelector('link[href*="assets/brand/homepage.css"]')) {
     const homeStyle = document.createElement('link'); homeStyle.rel = 'stylesheet'; homeStyle.href = '/assets/brand/homepage.css?v=approved-a-20261105'; document.head.append(homeStyle);
   }
+  const secondary = route === 'experience' || route === 'writing' || route === 'enough-reading' || writingEntries.some(entry => entry.route === route && route !== 'poetry');
+  document.body.classList.toggle('secondary-active', secondary);
+  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+    const path = new URL(link.href).pathname;
+    if (path === '/styles.css' || path === '/shared-design.css') link.disabled = secondary;
+    if (path === '/assets/editorial/portals-system.css' || path === '/assets/brand/secondary.css') link.disabled = !secondary;
+  });
   document.body.classList.toggle("homepage-active", route === "cover");
   document.body.classList.toggle("composition-a", route === "cover");
   app.innerHTML = views[route]();
