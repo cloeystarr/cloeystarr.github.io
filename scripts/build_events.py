@@ -11,7 +11,8 @@ for f in films:
  f['legacy_id']=f.get('youtube')or f.get('x')or f.get('id')
  f.update(overrides.get(f.get('article'),{}))
  f['aliases']=' '.join(str(v)for v in [f.get('youtube'),f.get('x'),f.get('id')]if v)
-films.sort(key=lambda f:f['date'],reverse=True)
+# Newest event first; for events on the same day, newest film release leads.
+films.sort(key=lambda f:(f['date'],f.get('published_on',f['date'])),reverse=True)
 def display_title(f):return html.unescape(f['title']).replace(' | ',' · ')
 def player(f):
  if f.get('youtube'):
