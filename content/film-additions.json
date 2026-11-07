@@ -30,5 +30,21 @@
     "publication_status": "approved",
     "byline": "Film by Chloe Starr.",
     "published_on": "2026-11-06"
+  },
+  {
+    "id": "afterglow-2026-11-06",
+    "title": "The town square, in towels.",
+    "date": "2026-11-06",
+    "display": "November 6, 2026 \u00b7 Film published November 7",
+    "youtube": "LcCLvHJKavE",
+    "youtube_id": "LcCLvHJKavE",
+    "poster": "/assets/editorial/afterglow-2026-11-06/dj.jpg",
+    "article": "the-town-square-in-towels",
+    "notes": "<p>A film by Chloe Starr. With Chris Starr AI, Amy @amypretzel, Atlas @creatine_cycle, Nalin @lordspline and David Kanter @TheKanter. Hosts: Afterglow and Soup. Venue: Alchemy Springs. Editing, drawn accents and original lo-fi score with Codex. Native party sound retained. Full sources in the article.</p>",
+    "creator": "Chloe Starr",
+    "state": "finished",
+    "publication_status": "approved",
+    "byline": "Film by Chloe Starr.",
+    "published_on": "2026-11-07"
   }
 ]
