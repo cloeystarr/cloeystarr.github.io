@@ -114,5 +114,27 @@
       "https://x.com/cloeystarr/status/2119209262073499649",
       "https://x.com/cloeystarr/status/2119208943977431357"
     ]
+  },
+  {
+    "id": "i-wanted-to-make-it",
+    "title": "I wanted to make it.",
+    "category": "Career / Podcast",
+    "iso": "2026-10-02",
+    "date": "October 2, 2026",
+    "written_date": "2026-11-07",
+    "published_date": "2026-11-07",
+    "chronology_note": "Opening retrospective placed before the existing chronicle; created and released November 7.",
+    "deck": "Creative software, founder communities, and a year of learning to work with agents. A conversation through the things I have built.",
+    "image": "assets/editorial/i-wanted-to-make-it/episode-poster.webp",
+    "alt": "Temple-style illustrated portraits of Chloe Starr and Ancient Witch facing each other",
+    "presentation": "authored",
+    "body": "",
+    "publication_status": "approved",
+    "youtube_required": true,
+    "youtube_id": "OE5yHnBKcpo",
+    "x_posts": [
+      "https://x.com/cloeystarr/status/1604210251951063042",
+      "https://x.com/cloeystarr/status/1604961796699213825"
+    ]
   }
 ]
