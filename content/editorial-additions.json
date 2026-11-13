@@ -136,5 +136,21 @@
       "https://x.com/cloeystarr/status/1604210251951063042",
       "https://x.com/cloeystarr/status/1604961796699213825"
     ]
+  },
+  {
+    "id": "gabriel-jimenez-uglycash",
+    "title": "He tried to open the money system. Then the police came.",
+    "category": "Founder spotlight",
+    "iso": "2026-11-13",
+    "date": "November 13, 2026",
+    "deck": "After everything it took to get here, I’m excited to see what UGLYCASH builds next.",
+    "image": "assets/editorial/uglycash-2026-11-13/studio-table.jpg",
+    "alt": "UGLYCASH patches, cameras and design books photographed by Chloe Starr",
+    "caption": "Photograph: Chloe Starr · November 11, 2026",
+    "presentation": "authored",
+    "body": "",
+    "publication_status": "approved",
+    "youtube_required": false,
+    "spotlight_script": "/journal/gabriel-jimenez-uglycash/spotlight/"
   }
 ]
