@@ -7,6 +7,8 @@ from html.parser import HTMLParser
 from brand_system import HEADER
 import html,json,re,subprocess,hashlib,sys
 WEB=Path(__file__).resolve().parents[1]
+MEDIA=json.loads((WEB/'content/editorial-media.json').read_text())['assets']
+PHOTO_DERIVATIVES={v['source']:k for k,v in MEDIA.items() if v['kind']=='ai_photo'}
 E=lambda x:html.escape(str(x),quote=True)
 def display_title(t):
  return E(t[:-1])+'<span class="punctuation">'+E(t[-1])+'</span>' if t.endswith(('.', '?', '!')) else E(t)+'<span class="punctuation">.</span>'
@@ -69,13 +71,22 @@ class P(HTMLParser):
   for i in range(len(self.stack)-1,0,-1):
    if self.stack[i].t==t:self.stack=self.stack[:i];break
  def handle_data(self,d):self.stack[-1].add(N(text=d))
-def src(x):return x if x.startswith(('https://','http://','/'))else '/'+x
+def src(x):
+ url=x if x.startswith(('https://','http://','/'))else '/'+x
+ return PHOTO_DERIVATIVES.get(url,url)
+def image_tag(image,alt,lazy=False):
+ url=src(image);record=MEDIA.get(url)
+ if not record:raise ValueError('Image requires editorial media review: '+url)
+ extra=''.join(' '+k+'="'+str(record[k])+'"'for k in ['width','height']if k in record)
+ if record['kind']=='ai_photo':extra+=' data-editorial-treatment="'+E(record['treatment'])+'"'
+ return '<img src="'+E(url)+'" alt="'+E(alt)+'"'+extra+(' loading="lazy"'if lazy else'')+'>'
 FOOTER='''<footer class="site-footer"><a href="/portals/">All Portals stories</a><nav aria-label="Chloe elsewhere"><a href="https://x.com/cloeystarr">X</a><a href="https://www.instagram.com/cloeystarr/">Instagram</a><a href="https://www.instagram.com/cloeystarrai/">Agent Instagram</a><a href="https://www.linkedin.com/in/chloestarrai/">LinkedIn</a><a href="https://cloeystarr.substack.com">Substack</a><a href="https://cloeystarr.medium.com">Medium</a><a href="https://www.youtube.com/@TheCloeystarr">YouTube</a><a href="https://github.com/cloeystarr">GitHub</a></nav><a class="company-link" href="https://ompom.ai">ompom.ai ↗</a></footer>'''
 def head(title,deck,url,image=''):
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101923"><title>'+E(title)+' | Chloe Starr</title><meta name="description" content="'+E(deck)+'"><link rel="canonical" href="https://chloestarr.me'+url+'"><meta property="og:title" content="'+E(title)+'"><meta property="og:description" content="'+E(deck)+'"><meta property="og:url" content="https://chloestarr.me'+url+'"><meta property="og:type" content="'+('website'if url=='/portals/'else'article')+'"><meta name="twitter:card" content="summary_large_image">'+('<meta property="og:image" content="https://chloestarr.me'+E(src(image))+'">'if image and not image.startswith('https://')else'')+'<link rel="stylesheet" href="/assets/editorial/portals-system.css?v=retrofit1"></head><body><a class="skip" href="#main">Skip to content</a>'+HEADER
 
 def facade(vid,title,poster,caption=''):
- return '<figure class="film-stage"><button class="youtube-facade" data-youtube-id="'+E(vid)+'" aria-label="Play '+E(title)+'"><img src="'+E(src(poster))+'" alt="'+E(title)+'"><span aria-hidden="true">▶</span></button><figcaption>'+E(title)+(' · '+caption if caption else '')+'</figcaption></figure>'
+ treated=MEDIA.get(src(poster),{}).get('kind')=='ai_photo'
+ return '<figure class="film-stage"><button class="youtube-facade" data-youtube-id="'+E(vid)+'" aria-label="Play '+E(title)+'">'+image_tag(poster,('AI-treated preview: 'if treated else'')+title)+'<span aria-hidden="true">▶</span></button><figcaption>'+E(title)+(' · '+caption if caption else '')+(' · AI-treated preview.'if treated else'')+'</figcaption></figure>'
 def clean(n,pid,media,unverified):
  # Drop embedded old player wrappers; all verified main films are staged once separately.
  if n.t=='video':
@@ -92,7 +103,8 @@ def clean(n,pid,media,unverified):
  if n.t=='a' and re.search(r'\.(?:mp4|mov)(?:\?|$)',n.a.get('href','')):
   unverified.append(n.a['href']);return ''
  if n.t=='img':
-  n.a.pop('style',None);n.a['loading']='lazy';n.a['src']=src(n.a.get('src',''));return n.out()
+  if not n.a.get('src') or n.a.get('src')=='/':return ''
+  return image_tag(n.a['src'],n.a.get('alt',''),lazy=True)
  if n.t in {'p','figcaption'} and not n.txt().strip():return ''
  if n.t:
   n.a.pop('style',None)
@@ -135,7 +147,7 @@ for post in ([] if "--index-only" in sys.argv else ORDER):
   if chunks:(main if selected else notes).append(rendered)
  # Text-first for generic diagrams; historical brand artworks remain inside their dated story.
  diagram=post.get('image','').endswith('.svg')
- hero=''if media or diagram else '<figure class="work-image"><img src="'+E(src(post['image']))+'" alt="'+E(post.get('alt',''))+'"><figcaption>'+post.get('caption',post.get('alt',''))+'</figcaption></figure>'
+ hero=''if media or diagram or not post.get('image') else '<figure class="work-image">'+image_tag(post['image'],post.get('alt',''))+'<figcaption>'+post.get('caption',post.get('alt',''))+'</figcaption></figure>'
  # Avoid presenting a second copy of the lead image in the main composition.
  maintext=''.join(main)
  if post.get('image'):
@@ -194,8 +206,10 @@ def card(p,cl='',archive=False):
  if p['id']=='memories-preproduction':deck='The original poem, an earlier cut, and the next decisions. Film in progress.'
  if p['id']=='content-can-be-liquid-too':deck='I went out for Halloween and came home wishing I’d filmed more. So I used AI to reconstruct and extend the night.'
  deck=INDEX_DECKS.get(p['id'],deck)
- return '<article class="story-card '+cl+' work-'+E(p['id'])+'"><a href="/journal/'+p['id']+'/">'+('<img src="'+E(src(image))+'" alt="'+E(p.get('alt',''))+'" loading="lazy">'if image else'')+'<p class="eyebrow">'+E(index_kind(p))+' · <time datetime="'+E(p['iso'])+'">'+E(p['date'])+'</time></p><h2>'+display_title(NAV_TITLES.get(p['id'],p['title']))+'</h2>'+(''if archive else '<p>'+E(deck)+'</p>')+'</a></article>'
+ return '<article class="story-card '+cl+' work-'+E(p['id'])+'"><a href="/journal/'+p['id']+'/">'+(image_tag(image,p.get('alt',''),lazy=True)if image else'')+'<p class="eyebrow">'+E(index_kind(p))+' · <time datetime="'+E(p['iso'])+'">'+E(p['date'])+'</time></p><h2>'+display_title(NAV_TITLES.get(p['id'],p['title']))+'</h2>'+(''if archive else '<p>'+E(deck)+'</p>')+'</a></article>'
 latest=ORDER[:1];chosen=ORDER[1:5];rest=ORDER[5:]
 cover=head('Portals','A studio journal by Chloe Starr. Art films, field notes and experiments in making.','/portals/')+'<main id="main" class="portals"><div class="portals-title"><p>A studio journal by Chloe Starr</p><h1>Portals<span class="punctuation">.</span></h1></div><section class="current-stories" aria-label="Newest stories">'+''.join(card(p)for p in latest)+'</section><section class="selected-stories chronological" aria-label="More recent stories">'+''.join(card(p)for p in chosen)+'</section><section class="earlier-stories" aria-label="Chronological archive"><h2>Earlier stories<span class="punctuation">.</span></h2><div class="archive-stories">'+''.join(card(p,archive=True)for p in rest)+'</div></section><nav class="secondary-nav"><a href="/poetry/">Poetry &amp; poetry films</a><a href="/#events">Events &amp; field films</a></nav></main>'+FOOTER+'<script src="/assets/editorial/portals-system.js?v=retrofit1"></script></body></html>'
 (WEB/'portals/index.html').write_text(cover)
 print(json.dumps({'articles':AUDIT,'count':len(AUDIT),'preserved_halloween_sha256':hashlib.sha256((WEB/'journal/content-can-be-liquid-too/index.html').read_bytes()).hexdigest()},indent=2))
+
+subprocess.run([sys.executable,str(WEB/"scripts/check_editorial_media.py")],cwd=WEB,check=True)

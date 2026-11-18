@@ -1,0 +1,1418 @@
+{
+  "version": 1,
+  "updated": "2026-11-18",
+  "policy": "Every standalone editorial photograph, including supporting images and photographic video previews, requires an executed AI treatment and visual review. Existing AI art and exact quoted source/interface/diagram records retain their source integrity. Unknown or changed assets require review.",
+  "routes": [
+    "ai-will-replace-you-please-save-our-ceo",
+    "gabriel-jimenez-uglycash",
+    "giving-the-idea-a-body",
+    "the-town-square-in-towels",
+    "on-target",
+    "valuable-to-whom",
+    "a-world-i-can-keep-changing",
+    "content-can-be-liquid-too",
+    "first-a-heartbeat-animal-talk",
+    "who-gets-to-build-the-next-internet",
+    "coffee-photographs-become-a-film",
+    "i-asked-ai-to-finish-my-film",
+    "memories-preproduction",
+    "security-a-backpack-and-the-chainsmokers",
+    "before-the-software",
+    "a-house-on-the-internet",
+    "out-to-play",
+    "builder-odyssey-world-worth-entering",
+    "the-films-leave-the-feed",
+    "purple-curtains-and-a-poetry-recut",
+    "pixels-and-authorship",
+    "open-together-making-a-field-film",
+    "more-worlds-an-old-poem",
+    "a-pipeline-is-not-a-folder",
+    "three-infrastructure-nightmares",
+    "the-dresden-dolls-and-still-being-a-fan",
+    "a-life-becomes-context",
+    "four-rooms-one-agent-question",
+    "humans-under-a-disco-ball",
+    "the-missing-layer",
+    "codex-meetup-wrong-pin",
+    "a-business-card-in-a-manicure",
+    "a-site-from-an-archive",
+    "personal-agents-still-buffering",
+    "gray-area-beyond-the-interface",
+    "the-author-first-cut",
+    "waffles-before-the-week",
+    "i-wanted-to-make-it"
+  ],
+  "assets": {
+    "/assets/editorial/box-episode03/episode-poster.webp": {
+      "kind": "ai_art",
+      "sha256": "05bd4ef3ec369e4087f42a97d705ef50d9762253e984af9179715f134ad2860c",
+      "source": "/assets/editorial/box-episode03/episode-poster.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/treatments-2026-11/box-editorial-v5.jpg": {
+      "kind": "ai_photo",
+      "sha256": "3228c33593e93189e3e044774f51a4c0ea063a2aec8114a1c66fb6287a07a900",
+      "source": "/assets/editorial/box-episode03/chloe-box-portrait-v2.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "box-editorial-v5"
+    },
+    "/assets/editorial/treatments-2026-11/uglycash-studio-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "f312c43d47e8c84590a0061352912cf5c65a7083b2a89e542aa41ca04a05bae9",
+      "source": "/assets/editorial/uglycash-2026-11-13/studio-table.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "uglycash-studio-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dimensional-warehouse-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "37d5862d719f62bfef111225167de36b23594dbba1352877648d7a09f37015bd",
+      "source": "/assets/editorial/dimensional-2026-11-06/justin-warehouse.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1672,
+      "height": 941,
+      "treatment": "dimensional-warehouse-film-v1"
+    },
+    "/assets/editorial/dimensional-2026-11-06/outfit-headshot-reference-v4.jpg": {
+      "kind": "ai_art",
+      "sha256": "0a76d812ff4c5303f4adfacc2f9098f4721f99c703ae03d1f2aa89faaca3a57a",
+      "source": "/assets/editorial/dimensional-2026-11-06/outfit-headshot-reference-v4.jpg",
+      "reviewed": "2026-11-18",
+      "method": "existing AI outfit/likeness treatment; author accepted November 7, 2026",
+      "width": 1163,
+      "height": 1353
+    },
+    "/assets/editorial/treatments-2026-11/dimensional-humanoid-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "72424d13083831994a98d7c751a4c983e51f7de96462fd681deb4da9bbbdcf16",
+      "source": "/assets/editorial/dimensional-2026-11-06/justin-humanoid.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1671,
+      "treatment": "dimensional-humanoid-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dimensional-robots-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "1380920431fe7c9aabf920525407fffe363f88ad7cce63599a069d61707ddf9d",
+      "source": "/assets/editorial/dimensional-2026-11-06/paramendra-robots.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "dimensional-robots-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dimensional-crowd-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "db40e078a70efbbad83844220251fa0d1d3b625e5c8cdb7870c378ca77dfe5ed",
+      "source": "/assets/editorial/dimensional-2026-11-06/paramendra-crowd.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "dimensional-crowd-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dimensional-couple-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "303b09dec04fb2278906491334ca4f3757be2851014909bc23ad7b21a38d09de",
+      "source": "/assets/editorial/dimensional-2026-11-06/chloe-chris.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "dimensional-couple-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/afterglow-couple-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "b33634ddddd0d87436935f38d02c6ed0b2cf826cc107358a19d5b2da8b21e4ab",
+      "source": "/assets/editorial/afterglow-2026-11-06/sauna-together.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "afterglow-couple-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/afterglow-smile-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "53c5688077dceb480924a2519f8f79bf36bf6f28c2206c8b46ad50a2cc0470ac",
+      "source": "/assets/editorial/afterglow-2026-11-06/conversation-smile.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "afterglow-smile-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/afterglow-gesture-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "b60378839cfe04b293d624eebcba9bc46cfe5830642c46453750a4a843c06fef",
+      "source": "/assets/editorial/afterglow-2026-11-06/conversation-gesture.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "afterglow-gesture-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/afterglow-dj-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "2f91fa0cd3b83e8df3481347539d41d888987a9d8f93be3e48aa6bbb33b5547a",
+      "source": "/assets/editorial/afterglow-2026-11-06/dj.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "afterglow-dj-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/afterglow-garden-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "eaba070fdbb87a79bfb5dd1867ff168df322e08511219c19e163b08b9e49f405",
+      "source": "/assets/editorial/afterglow-2026-11-06/garden-table.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "afterglow-garden-film-v1"
+    },
+    "/assets/editorial/afterglow-2026-11-06/host-post.jpg": {
+      "kind": "quoted_source",
+      "sha256": "7580c546412d0ab880124111fbe25a9c9a828624fe8eabf39552102377d83197",
+      "source": "/assets/editorial/afterglow-2026-11-06/host-post.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 599,
+      "height": 1057
+    },
+    "/assets/editorial/afterglow-2026-11-06/nalin-post.jpg": {
+      "kind": "quoted_source",
+      "sha256": "0d6741f8fe020e36be6c72abb806d3b1c61462adea4ac2b9d61dc041215b819c",
+      "source": "/assets/editorial/afterglow-2026-11-06/nalin-post.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 599,
+      "height": 805
+    },
+    "/assets/editorial/afterglow-2026-11-06/atlas-post.jpg": {
+      "kind": "quoted_source",
+      "sha256": "52e9da865f10bc2731ea72b3f7daf6c0992ec1a5cee409afd61206223aa08f83",
+      "source": "/assets/editorial/afterglow-2026-11-06/atlas-post.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 599,
+      "height": 412
+    },
+    "/assets/editorial/afterglow-2026-11-06/sfrats-map-page.jpg": {
+      "kind": "interface",
+      "sha256": "e4d6497fd2aeee6ff89dc7947cdeca48e9990a209d31e71da0cfa2421c010050",
+      "source": "/assets/editorial/afterglow-2026-11-06/sfrats-map-page.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 2992,
+      "height": 1452
+    },
+    "/assets/editorial/afterglow-2026-11-06/amy-post.jpg": {
+      "kind": "quoted_source",
+      "sha256": "e48a7e2b37b88f9f8bb2bc360466a55e75b72a0ba15408f8a4f0e85ffe27aebe",
+      "source": "/assets/editorial/afterglow-2026-11-06/amy-post.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 599,
+      "height": 580
+    },
+    "/assets/editorial/treatments-2026-11/nooks-cuter-v3.jpg": {
+      "kind": "ai_photo",
+      "sha256": "a14ef8ecbdd636d8fe941fe3bdc80b168362aa401ca0810776ad1e5d17341ef3",
+      "source": "/assets/editorial/nooks-2026-11-04/party-portrait.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1536,
+      "height": 1024,
+      "treatment": "nooks-cuter-v3"
+    },
+    "/assets/editorial/treatments-2026-11/nooks-witch-editorial-v3.jpg": {
+      "kind": "ai_photo",
+      "sha256": "d09db058a5d3b59d1d9009e181bbe65587f817df6a0b533aeb7cade6d974981f",
+      "source": "/assets/editorial/nooks-2026-11-04/witch-booth.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1034,
+      "height": 1521,
+      "treatment": "nooks-witch-editorial-v3"
+    },
+    "/assets/editorial/nooks-2026-11-04/yue-linkedin-dm.png": {
+      "kind": "quoted_source",
+      "sha256": "b14a49544ba9612136058baa1d331467928d2f03b3e32bdef95a8457129a54bd",
+      "source": "/assets/editorial/nooks-2026-11-04/yue-linkedin-dm.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 466,
+      "height": 965
+    },
+    "/assets/editorial/nooks-2026-11-04/rippling-follow-up.png": {
+      "kind": "quoted_source",
+      "sha256": "45d197784033576fee9d51e8990685ae7028a446b1dac8f07452333b6b693ef7",
+      "source": "/assets/editorial/nooks-2026-11-04/rippling-follow-up.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 797,
+      "height": 192
+    },
+    "/assets/editorial/nooks-2026-11-04/brex-offer.png": {
+      "kind": "quoted_source",
+      "sha256": "2f3fea39653580e8a5c99f6343c9c6f194b5f0640f9957bd6bacb614a134c277",
+      "source": "/assets/editorial/nooks-2026-11-04/brex-offer.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 797,
+      "height": 184
+    },
+    "/assets/editorial/nooks-2026-11-04/brex-conditions.png": {
+      "kind": "quoted_source",
+      "sha256": "efef0818d77ea260ac3d4665abedde91c7ea1c33d64e195f4baff08fdbaecc79",
+      "source": "/assets/editorial/nooks-2026-11-04/brex-conditions.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 797,
+      "height": 291
+    },
+    "/assets/editorial/nooks-2026-11-04/bridge-quota.jpg": {
+      "kind": "interface",
+      "sha256": "d91520eb2089d8827e87e9d10cfcf293a99dbac9df76a87d403aee43e66709da",
+      "source": "/assets/editorial/nooks-2026-11-04/bridge-quota.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 500,
+      "height": 393
+    },
+    "/assets/editorial/nooks-2026-11-04/dan-solomon-post.png": {
+      "kind": "quoted_source",
+      "sha256": "90c4f3422e1deb6ec8f697b4f8cd8cdfa1b965455e394b4193ceb0b8952e8e09",
+      "source": "/assets/editorial/nooks-2026-11-04/dan-solomon-post.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 550,
+      "height": 430
+    },
+    "/assets/editorial/nooks-2026-11-04/founder-timeline.jpg": {
+      "kind": "interface",
+      "sha256": "eff500a6336ceb039941dbf5c9938ac63cd285157f55e359018c23433241dc1c",
+      "source": "/assets/editorial/nooks-2026-11-04/founder-timeline.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 800,
+      "height": 800
+    },
+    "/assets/editorial/treatments-2026-11/nooks-ice-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "0236ac5aed2e74585e5e230a36273fb984689c60464be3901fa94f1c47c153ce",
+      "source": "/assets/editorial/nooks-2026-11-04/naman-ice.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "nooks-ice-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-natural-v4.jpg": {
+      "kind": "ai_photo",
+      "sha256": "d0a5e18d0ad9ea3d821a92a59c99f7de06473bfa6e0e52d01329dfb3baef4b10",
+      "source": "/assets/editorial/elastic-on-2026-11-04/portrait.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1529,
+      "height": 1028,
+      "treatment": "elastic-natural-v4"
+    },
+    "/assets/editorial/elastic-on-2026-11-04/film-poster.webp": {
+      "kind": "interface",
+      "sha256": "1e133b53e37caacafa76daed91a6a24b2d04624512346b9eb12674aeef76da51",
+      "source": "/assets/editorial/elastic-on-2026-11-04/film-poster.webp",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 720,
+      "height": 1280
+    },
+    "/assets/editorial/treatments-2026-11/elastic-anish-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "56241ab41ca694e0fe136ef32fc860a363a62d8d1a01dfeb68263a7868b3d395",
+      "source": "/assets/editorial/elastic-on-2026-11-04/anish-portrait.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "elastic-anish-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-victor-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "d5bd7096acbd145e46795da705620886a706ab193ec189655363bd15f9a76bed",
+      "source": "/assets/editorial/elastic-on-2026-11-04/victor-portrait.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "elastic-victor-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-han-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "4c48e817ba9940bf62fdfe0fb1ffb5d751d369cb56f19fe0be4c9885833c7a53",
+      "source": "/assets/editorial/elastic-on-2026-11-04/han-portrait.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1237,
+      "height": 1271,
+      "treatment": "elastic-han-film-v1"
+    },
+    "/assets/editorial/elastic-on-2026-11-04/omni-work.webp": {
+      "kind": "interface",
+      "sha256": "c331e65451d06e9e615c29942407cfdd2b50e6c2e9e6b8e033f9e0b250d8dd1b",
+      "source": "/assets/editorial/elastic-on-2026-11-04/omni-work.webp",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1600,
+      "height": 900
+    },
+    "/assets/editorial/treatments-2026-11/elastic-kassy-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "e666f87dedbe5e1e204063b6dd16f6cb1f19986ef96e9b1008de4566d892d1e2",
+      "source": "/assets/editorial/elastic-on-2026-11-04/kassy-portrait.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "elastic-kassy-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-print-original-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "392291ab988469fdba4199804b3a9b7c3c6cdbc0bb78e8533c251fe263821880",
+      "source": "/assets/editorial/elastic-on-2026-11-04/print-original.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "elastic-print-original-film-v2"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-print-interpretation-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "377890917dc8b6000cfb53ac46bad4315805c81c313eeb115bf2877d1f47160f",
+      "source": "/assets/editorial/elastic-on-2026-11-04/print-interpretation.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "elastic-print-interpretation-film-v2"
+    },
+    "/assets/editorial/building-identity/homepage.png": {
+      "kind": "interface",
+      "sha256": "d79aff6aaa3b54164eddd65c39160344cc6b1cfc8228ea8dc3339b02be5c851b",
+      "source": "/assets/editorial/building-identity/homepage.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1440,
+      "height": 1000
+    },
+    "/assets/editorial/building-identity/ompom-liquid-a2.svg": {
+      "kind": "diagram",
+      "sha256": "7eb47e36599027902646543ca2ab0570b7f0973a4e8acf2b0dd3552dec05816b",
+      "source": "/assets/editorial/building-identity/ompom-liquid-a2.svg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved"
+    },
+    "/assets/editorial/building-identity/ompom-opening-clean.png": {
+      "kind": "interface",
+      "sha256": "4d95fdc52bf9df01febd196efa0717f911f6e6b1df115584454130d5017d3346",
+      "source": "/assets/editorial/building-identity/ompom-opening-clean.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1440,
+      "height": 874
+    },
+    "/assets/editorial/building-identity/film-inspirations.png": {
+      "kind": "interface",
+      "sha256": "61307e30a0324f9340590cda0b5bd81adf2ea72e0f80d11e9c9c6fe27717c8a1",
+      "source": "/assets/editorial/building-identity/film-inspirations.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/building-identity/poetry.png": {
+      "kind": "interface",
+      "sha256": "3561f37613bddbd981669d2581832427c35f1fc00f8feece7ade89bb03f3d6fc",
+      "source": "/assets/editorial/building-identity/poetry.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1440,
+      "height": 1000
+    },
+    "/assets/editorial/building-identity/portals.png": {
+      "kind": "interface",
+      "sha256": "05891e0f4c5d2789dbbc257bcbe9926501c5d8f20fea9267222714998f4bb3e2",
+      "source": "/assets/editorial/building-identity/portals.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1440,
+      "height": 1000
+    },
+    "/assets/editorial/treatments-2026-11/halloween-runway-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "7595e2143809de8d55507d818cf5f60fd663bb69a41624515e582f7eb7ca8ea6",
+      "source": "/assets/editorial/halloween-2026/27bc4f5a-opening-chloe-runway.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1672,
+      "height": 941,
+      "treatment": "halloween-runway-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-costume-selfie-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "aedbae6c0ae455bceabdd0a6acac2ff096df56561de644876d9a03779dc03153",
+      "source": "/assets/editorial/liquid-review/original-costumes.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "halloween-costume-selfie-film-v1"
+    },
+    "/assets/editorial/halloween-2026/aec0002e-chloe-chris-wistoria-v1.webp": {
+      "kind": "ai_art",
+      "sha256": "3d12c5a5370c28f47306739fb926fa619b3cf69e3a06f84620ed1db6892b1474",
+      "source": "/assets/editorial/halloween-2026/aec0002e-chloe-chris-wistoria-v1.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1087,
+      "height": 1447
+    },
+    "/assets/editorial/treatments-2026-11/halloween-honeypot-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "59db10575213a730f310d2b8a2e5a92f436c6d2bf87583ed72dd6d029b3efde4",
+      "source": "/assets/editorial/liquid-review/meli-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "halloween-honeypot-film-v2"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-cloud-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "89c4593b32e564c4d940351ba9881d5fdd234616b78423764547120557db1da6",
+      "source": "/assets/editorial/liquid-review/sammy-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "halloween-cloud-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-pdoom-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "0da5688e4f5c70e4970d2265b861d0604414357f9924fdafee213320849be25d",
+      "source": "/assets/editorial/liquid-review/pdoom-poster.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "halloween-pdoom-film-v1"
+    },
+    "/assets/editorial/liquid-review/klombo-poster.webp": {
+      "kind": "ai_art",
+      "sha256": "0c43c04b0576d258b20b4c5db891ad0fe8ff0664672bee6b97c539358a78dd64",
+      "source": "/assets/editorial/liquid-review/klombo-poster.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 124,
+      "height": 220
+    },
+    "/assets/editorial/treatments-2026-11/halloween-mission-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "be5394e21fd232b2293fe3f73840c869852f79e66f6106c212573e3c6f6faf8c",
+      "source": "/assets/editorial/liquid-review/mission.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "halloween-mission-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-annie-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "0903f6678db594379d888f88e694b7be4a647978225244348e27b4d2ba67fc53",
+      "source": "/assets/editorial/liquid-review/annie-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1672,
+      "height": 941,
+      "treatment": "halloween-annie-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-yichi-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "4e04d556600b37ba3cc06fb8c228f4186c3faad939f06665dc98488da7e36872",
+      "source": "/assets/editorial/liquid-review/yichi-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1521,
+      "height": 1034,
+      "treatment": "halloween-yichi-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-abhi-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "36b7c155627fdeebadc81d83769882465dfb34bd3166717e1e2a319b02e9fc80",
+      "source": "/assets/editorial/liquid-review/abhi-film-frame.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1087,
+      "height": 1447,
+      "treatment": "halloween-abhi-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-rager-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "294d016275ef82ccadb02ca9d0f8ead840d349e2eb3bc54bf32dca18f6bdb6bf",
+      "source": "/assets/editorial/liquid-review/rager-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "halloween-rager-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-stories-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "7d74933a58c2aa6743225e7c6ffa8a627b1044517f6f413ceba4fcc3b691ae0a",
+      "source": "/assets/editorial/liquid-review/stories.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "halloween-stories-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/halloween-visit-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ad8fdf6c03eee460cbc0e5f6f2aec8a313ab37f99a91005799e61820d6799cc8",
+      "source": "/assets/editorial/liquid-review/visit.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "halloween-visit-film-v1"
+    },
+    "/assets/editorial/halloween-2026/4a11c9d7-halloween-spin-start.webp": {
+      "kind": "ai_art",
+      "sha256": "21e8c0b1aa48dd0b5332a6bc27703a673800fb68ecdb88a3fa95c18ac1accb20",
+      "source": "/assets/editorial/halloween-2026/4a11c9d7-halloween-spin-start.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/halloween-2026/bb604cfa-halloween-spin-end.webp": {
+      "kind": "ai_art",
+      "sha256": "0790eb3c1514fe4f24dece0a8dfaac604eeee0e3c2df9822219a12454f26e105",
+      "source": "/assets/editorial/halloween-2026/bb604cfa-halloween-spin-end.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/liquid-review/collison-full-post.webp": {
+      "kind": "quoted_source",
+      "sha256": "1ff940b9abf9b34df61d90497d6ba6fb8b003c61e6e012d6cbd0d487974fb1b4",
+      "source": "/assets/editorial/liquid-review/collison-full-post.webp",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 599,
+      "height": 1139
+    },
+    "/assets/editorial/treatments-2026-11/animal-natural-v3.png": {
+      "kind": "ai_photo",
+      "sha256": "5946f80225ac98f94c3b08eaddfbfde22c0cf28c6c68a0b99bd29fd4e6964f22",
+      "source": "/assets/editorial/animal-talk/chloe-and-chris-close.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1087,
+      "height": 1447,
+      "treatment": "animal-natural-v3"
+    },
+    "/assets/editorial/treatments-2026-11/animal-performance-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "341a3cba67c952daf79dda93afb7303ccd9cf4915f51c2ea83f0a566a26e8bc9",
+      "source": "/assets/editorial/animal-talk/IMG_3213.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "animal-performance-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/animal-room-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "2a1ee764166c63a16e3ba3ba24210dcffa2746f43f0abd964f413f8eec963c28",
+      "source": "/assets/editorial/animal-talk/chloe-and-chris-room.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "animal-room-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-arrival-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "47568979090b8c0bd40a56b7cff1021337fdda18b15699b9a14eefda6bd16e96",
+      "source": "/assets/editorial/open-source-awards/arrival.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1122,
+      "height": 1402,
+      "treatment": "awards-arrival-film-v2"
+    },
+    "/assets/editorial/treatments-2026-11/awards-peter-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "beda786cd142bda690fa21e4a9efb1d2f5f37dc1fda6d325fa5a76c294280a4e",
+      "source": "/assets/editorial/open-source-awards/peter.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-peter-film-v1"
+    },
+    "/assets/editorial/open-source-awards/openrouter-agents.jpg": {
+      "kind": "interface",
+      "sha256": "5960a11ff10b17f09b8ef61351d6841e8e8b565c6fd9140bf58fed677e2ec525",
+      "source": "/assets/editorial/open-source-awards/openrouter-agents.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1040,
+      "height": 585
+    },
+    "/assets/editorial/treatments-2026-11/awards-alex-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "0786744cdb136d807a7e19f75e5eddc24a9a9b6b69b00864d5e22211f4dd0374",
+      "source": "/assets/editorial/open-source-awards/alex.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-alex-film-v1"
+    },
+    "/assets/editorial/open-source-awards/mix-waveforms-and-cuts.jpg": {
+      "kind": "interface",
+      "sha256": "874649ab4d9c58daefe5ea7cfb39eb455884956e8bfe1d13b0515779222a3269",
+      "source": "/assets/editorial/open-source-awards/mix-waveforms-and-cuts.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1800,
+      "height": 940
+    },
+    "/assets/editorial/open-source-awards/claudemem.gif": {
+      "kind": "interface",
+      "sha256": "13e1d2ab12090b1a155298ea77d1a567efb6041d047159a5b41d1e7c4101784c",
+      "source": "/assets/editorial/open-source-awards/claudemem.gif",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 640,
+      "height": 360
+    },
+    "/assets/editorial/treatments-2026-11/awards-jason-entry-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "2e793b21f9595f3e4f5d286d3038582cc1fdb725ddf27d28f9cb5e12e985849e",
+      "source": "/assets/editorial/open-source-awards/jason-entry.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1449,
+      "height": 1085,
+      "treatment": "awards-jason-entry-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-prize-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "360d3b04a6c6d27ebefe7529a556b38bb2353104c190138fe479ce4475bce04e",
+      "source": "/assets/editorial/open-source-awards/jason-prize.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "awards-prize-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-matt-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "3c20451671299b449d3bc27ad840194ae0c91c982f01212035e77cbe8a4fa8d3",
+      "source": "/assets/editorial/open-source-awards/matt.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-matt-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-ian-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "c8ec421797eadae72206364decc7a50905c66b466637cc50a2d5b29794050aad",
+      "source": "/assets/editorial/open-source-awards/ian.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-ian-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-edge-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ee2418b540bb29a379fa25f75317cefe76d91e17d151215da5f35c6896211fe9",
+      "source": "/assets/editorial/open-source-awards/edge.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-edge-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-daniel-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9155a5af9df55c5c503ba434e92d0edd0f0840b15445af4d3fc1375521fcf952",
+      "source": "/assets/editorial/open-source-awards/daniel.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-daniel-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/awards-stage-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9ff34ebc8aad4b8d2770f78e1ecdb3ddbd3271927b2365b8031b480dc249ebc0",
+      "source": "/assets/editorial/open-source-awards/jason-daniel.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1449,
+      "height": 1085,
+      "treatment": "awards-stage-film-v1"
+    },
+    "/assets/editorial/open-source-awards/daniel-sloth-game.webp": {
+      "kind": "interface",
+      "sha256": "29cb5c053c736b2f6fb99db1772bb206c4924b3032a383abbe2546180a9c8502",
+      "source": "/assets/editorial/open-source-awards/daniel-sloth-game.webp",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1125,
+      "height": 568
+    },
+    "/assets/editorial/treatments-2026-11/awards-irene-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9373d1032536f71ce6677556e4616408f10a76f6e1e00a1dd1aa15a91390d370",
+      "source": "/assets/editorial/open-source-awards/irene.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "awards-irene-film-v1"
+    },
+    "/assets/editorial/open-source-awards/hf-replay.webp": {
+      "kind": "interface",
+      "sha256": "db39e800147d4875e0f4b9cba7f1352e50e2d758f9f43c3d33f7d430f232db9c",
+      "source": "/assets/editorial/open-source-awards/hf-replay.webp",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/open-source-awards/irene-community.webp": {
+      "kind": "ai_art",
+      "sha256": "b51ae0774016f41adf5a4b98dbeb68928edaef12cf15baccbff7b380b6162409",
+      "source": "/assets/editorial/open-source-awards/irene-community.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1125,
+      "height": 625
+    },
+    "/assets/editorial/treatments-2026-11/coffee-portrait-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "c230b23fdff1a59fe6489945bec652926af93ef19c64b20d995c30da9ca1f72d",
+      "source": "/assets/poetry-films/coffee-poster.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1100,
+      "height": 1430,
+      "treatment": "coffee-portrait-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/coffee-actions-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "d5aaaa380cb51eeb954c58dd163f7c71af52a1af031499fe2a68d54764bcfd0e",
+      "source": "/assets/editorial/coffee-actions.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 2138,
+      "height": 735,
+      "treatment": "coffee-actions-film-v2"
+    },
+    "/assets/editorial/treatments-2026-11/archive-denim-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9cd4d612d3b1c8dbb86a163a690efc01d360675ce75c759061578ea81dff2ff0",
+      "source": "/assets/editorial/film-failure/chloe-portrait.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1498,
+      "height": 1050,
+      "treatment": "archive-denim-film-v1"
+    },
+    "/assets/editorial/film-failure/generated-bedroom.png": {
+      "kind": "ai_art",
+      "sha256": "104118ccffa46d964bafd89091a997ec7e0ee64c075d84d19b392e1a48d016c1",
+      "source": "/assets/editorial/film-failure/generated-bedroom.png",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1365,
+      "height": 768
+    },
+    "/assets/editorial/treatments-2026-11/memories-frame-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "713289a168102bb3f3f87b746ab51db84aef2a763b0b936e6b499480d6570c8e",
+      "source": "/assets/editorial/memories-cut-sequence.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1672,
+      "height": 941,
+      "treatment": "memories-frame-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/oracle-natural-v4.jpg": {
+      "kind": "ai_photo",
+      "sha256": "6881790270941f1f5d341c54cd570100af961ba61613146992b7c42c26138c14",
+      "source": "/assets/editorial/oct21-chloe-chris-oracle.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "oracle-natural-v4"
+    },
+    "/assets/editorial/treatments-2026-11/oracle-icecream-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "b5810322cd71bdd891dce15aeaa7d73c54f044104b803c14ac7cebe71ab4ea58",
+      "source": "/assets/editorial/oct21-ice-cream-bar.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "oracle-icecream-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/oracle-peppers-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9dbfb6543bde8120b098627d139b51c3ecef886140163a396d4f7e5ef48aa6d3",
+      "source": "/assets/editorial/oct21-oracle-garden-peppers.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "oracle-peppers-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/oracle-chainsmokers-film-v2.jpg": {
+      "kind": "ai_photo",
+      "sha256": "047683dbb4093e25ec76964fa8e737c2428c28025727307b0b274259f7665f1f",
+      "source": "/assets/editorial/oct21-chainsmokers-blue.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "oracle-chainsmokers-film-v2"
+    },
+    "/assets/editorial/oct21-film-principles-original.PNG": {
+      "kind": "quoted_source",
+      "sha256": "05f4240e753aae5bd7c9d7dffef60a4b91b2ba3f4cfb17a4de804ad584e56611",
+      "source": "/assets/editorial/oct21-film-principles-original.PNG",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1290,
+      "height": 2796
+    },
+    "/assets/editorial/attention-study.svg": {
+      "kind": "diagram",
+      "sha256": "163041c143a623eb20c4181f260e4a7debbd5eb6f5c8a6dbc7386247b2ae29ca",
+      "source": "/assets/editorial/attention-study.svg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1200,
+      "height": 800
+    },
+    "/assets/brand/chloe-in-her-pom-line-v4.jpg": {
+      "kind": "ai_art",
+      "sha256": "c6d6202904287266f09c715f92cbdee2234f118932961fc17063b3a73f988b29",
+      "source": "/assets/brand/chloe-in-her-pom-line-v4.jpg",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1536,
+      "height": 1024
+    },
+    "/assets/editorial/ompom-linework-banner.png": {
+      "kind": "ai_art",
+      "sha256": "1d58fa61f87afce5aeaeba772d19ba4266f50a3220a4e5640d20fecd824352e1",
+      "source": "/assets/editorial/ompom-linework-banner.png",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1500,
+      "height": 500
+    },
+    "/assets/editorial/treatments-2026-11/out-to-play-portrait-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "993bedf544438b20ea9530421d66f028ca7a7a04157ffb948743491b215b3eaa",
+      "source": "/assets/editorial/overmind-chloe.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1122,
+      "height": 1402,
+      "treatment": "out-to-play-portrait-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/builder-panel-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "234061c9f0f5caa929f86bc4f405efee271c10d46dcf937cd5e38072860f9f9d",
+      "source": "/assets/event-stills/V6a0FLrHq44.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "builder-panel-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/builder-portrait-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "068fd14572d609084610c093040a0a1a0c7e635de9cbe4e9911a9b33c04cb26c",
+      "source": "/assets/editorial/builder-jonathan.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "builder-portrait-film-v1"
+    },
+    "/assets/editorial/film-collection-page.png": {
+      "kind": "interface",
+      "sha256": "bf2d9d37856b843e0472481d46d0be69e1f93bd0b296c1a9ce8582de6545f898",
+      "source": "/assets/editorial/film-collection-page.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/treatments-2026-11/pebblebed-natural-v3.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9986e7c07832b5f6cf284bfc68ea024eb0a102ff2ee685233511f8387d45c68f",
+      "source": "/assets/editorial/pebblebed-chloe-smiling.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "pebblebed-natural-v3"
+    },
+    "/assets/editorial/treatments-2026-11/pebblebed-outfit-natural-v3.jpg": {
+      "kind": "ai_photo",
+      "sha256": "e3da22f080123cf2d043086e871a609d9ca1dd67ba90208f632293d622c4e49e",
+      "source": "/assets/editorial/pebblebed-chloe-outfit.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "pebblebed-outfit-natural-v3"
+    },
+    "/assets/editorial/treatments-2026-11/pixels-desk-set-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "500863f15d682eb82f7c1c52209fa1a11ec2ae89a538548a0f55613a74a2f841",
+      "source": "/assets/event-stills/62hPXNfkuKg.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1672,
+      "height": 941,
+      "treatment": "pixels-desk-set-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/pixels-stage-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "1e9dd6b9a31b7af4781ef52dbada98e52a51ae05f43fca89d95a9d376dcbff80",
+      "source": "/assets/editorial/pixels-stage.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "pixels-stage-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/open-together-portrait-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "cfbf20d8e34f28c59c6cf5b47d08d09ffa0f6f67a9c051b651fec8279cf1e4c8",
+      "source": "/assets/event-stills/S9bivn_lR4Q.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "open-together-portrait-film-v1"
+    },
+    "/assets/event-stills/dDSRjptCQ8M.jpg": {
+      "kind": "diagram",
+      "sha256": "0d2da85b964fda8b79e6c93359a2a1c593cd041babd246fe90f3c377d69b4da6",
+      "source": "/assets/event-stills/dDSRjptCQ8M.jpg",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 640,
+      "height": 360
+    },
+    "/assets/editorial/treatments-2026-11/archive-typewriter-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "94f5f2cae22c3a5b987d2abc0c5d0c5f86fb51f234f9540ebb30fa19551c7019",
+      "source": "/assets/editorial/archive-writer-at-typewriter.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1536,
+      "height": 1024,
+      "treatment": "archive-typewriter-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/infrastructure-speaker-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "70fd8ec4b97166cd91c4c3c77b89cc6e6e936665e52a22ddc0f3e3b89eb3722f",
+      "source": "/assets/event-stills/6BYh8F40nIU.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1313,
+      "height": 1198,
+      "treatment": "infrastructure-speaker-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/infrastructure-room-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "5bac3ef827a489fc15d6a5694fc7b7053dda625995c61d614168fba689b69036",
+      "source": "/assets/event-stills/oCC0P2yHp78.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1402,
+      "height": 1122,
+      "treatment": "infrastructure-room-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/infrastructure-vectoral-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "de91309f0b964872b6a79a18f5019fcb01e9c302c81e30e6a45e6b872802cf18",
+      "source": "/assets/event-stills/l6s6WLrUGE8.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1402,
+      "height": 1122,
+      "treatment": "infrastructure-vectoral-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dresden-preview-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "f83b1da5fbf221abbd4e448e84e92fa47d4e5c314e88a8f1e19eb99ac04e2465",
+      "source": "/assets/event-stills/xzI2gzphh48.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "dresden-preview-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dresden-hall-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "1a70035e1e62d9fbb5b4188d80a001a09cc7cfd2fee4f1fb37c5bf031b1f6830",
+      "source": "/assets/editorial/dresden-hall-crowd.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1448,
+      "height": 1086,
+      "treatment": "dresden-hall-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dresden-paisley-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "8b495666caffc64298a11f5a8f849a7217583cd04e16278d4a710284a9fcc8d6",
+      "source": "/assets/editorial/paisley-chloe-trailer.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 2039,
+      "height": 771,
+      "treatment": "dresden-paisley-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/dresden-amanda-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "0d23c6219efb8c00976a720b9b69212a5d8758899fca5d1c07cbbc20ee51ae6d",
+      "source": "/assets/editorial/dresden-amanda-blue.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "dresden-amanda-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/founder-phone-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "f1ed619e70147187c0e1300ea4a1304cd92aca9f813d000f3cfb5b817d91ff5a",
+      "source": "/assets/event-stills/m5w4WjHi_AU.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "founder-phone-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/founder-coffee-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "dc65361729864b27c0723eb1d4c3be33396ed3a016b483b8e9b07347c08bbdae",
+      "source": "/assets/event-stills/nsvHBKPNa54.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "founder-coffee-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/founder-entrance-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "f8350672ff2ef8a78bc50aade626de908c0675de8b62daff2182f07a614f80c1",
+      "source": "/assets/editorial/claude-house.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "founder-entrance-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/fourrooms-friendli-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "aaaa78d3ceadb114087114dd897bde019b3128e460b9880923162a58e496b07a",
+      "source": "/assets/event-stills/DOixBj3LgRA.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1402,
+      "height": 1122,
+      "treatment": "fourrooms-friendli-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/fourrooms-couple-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "dfe3d56f460117e4cbb1e4af21ead4834f5bfe1702863cb0ac2c3492f433ea1b",
+      "source": "/assets/editorial/google-chloe-chris.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "fourrooms-couple-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/fourrooms-google-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "a0d8013051e04c0def3827d09bf631f3b119a330c6bc10b47c9913f81740fb71",
+      "source": "/assets/event-stills/fS0fKAIo4tM.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1402,
+      "height": 1122,
+      "treatment": "fourrooms-google-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/fourrooms-posttraining-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "e5f82386004a2bdba79a48436d1b917c3d7f919d369057575e4873475eb7d4ce",
+      "source": "/assets/event-stills/xaBFDNh03ww.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "fourrooms-posttraining-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/fourrooms-adil-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ab20507b38da9c40460c4ef801befcd80bb48cdf238ad4a642dde4d2d7d6677f",
+      "source": "/assets/event-stills/NU20kmU02kM.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "fourrooms-adil-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/shack-attendee-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "22bcebc5b56a073efe7fe8b478486edc02681befc3f8e6d0140a3a80b424f7f9",
+      "source": "/assets/event-stills/Fci5clWb2hs.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "shack-attendee-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/shack-disco-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "a8599e2220208b060178f5475d1d3cb15244fdc7b7e1557d1010e2b1ea4e1d1c",
+      "source": "/assets/editorial/shack-disco.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1070,
+      "height": 1470,
+      "treatment": "shack-disco-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/epam-conversation-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "6b64d3f94e5574656c22595a9993500cf63a8891240c5d6055faa7ab4b0d1b33",
+      "source": "/assets/event-stills/IfGdFn-8ZKU.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "epam-conversation-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/epam-panel-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "c8bd02d3260d3b35ca26eb776e7fc2c698873f0507db27a26ff0c42ec175859c",
+      "source": "/assets/editorial/epam-panel.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "epam-panel-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/codex-sign-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ace3b193710b93398d4ac0a2298e5f3a0abf4c590b6a7eff1c8cd1005dd81096",
+      "source": "/assets/event-stills/HV6CzSWt6wM.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "codex-sign-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/codex-speaker-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ccb86e5061d56709c7436dd39388b58fa3c511696851710c58d10583628460d3",
+      "source": "/assets/editorial/codex-room.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "codex-speaker-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/manicure-room-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "7d63714e699270bf75ef296359b728e5344402d3699fa4e63f2922ed2998ce11",
+      "source": "/assets/event-stills/3gOiWPm1-vA.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "manicure-room-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/manicure-june-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "3593f8dec64419c872e5f9f6de4803381b35159a7f87b4b8f7dbaf5c0bd5bf2e",
+      "source": "/assets/editorial/manicure-june-hand.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "manicure-june-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/manicure-september-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "b77b567cc3b9d1bfe7162584bb37f84d9af4ff9051d18d9dbb339ca822ab9bfb",
+      "source": "/assets/editorial/manicure-september-details.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "manicure-september-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/manicure-nfc-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "f7278f5ce65957448b386014a4485d0c64510dd55693883eee4e6fee22b5ca42",
+      "source": "/assets/editorial/cyberglam-nails.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1086,
+      "height": 1448,
+      "treatment": "manicure-nfc-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/personal-agents-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "705b4520a3c40e21dac5978893c68b70441033f462b655c22d90a811b5f2dc3f",
+      "source": "/assets/event-stills/1HBsFHOIqiw.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "personal-agents-film-v1"
+    },
+    "/assets/event-stills/fqZi9JQCzN4.jpg": {
+      "kind": "ai_art",
+      "sha256": "1faa66b582864267453367a8f31f583d482063a111d2a47b0bbc3b383d7e10d7",
+      "source": "/assets/event-stills/fqZi9JQCzN4.jpg",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 640,
+      "height": 360
+    },
+    "/assets/visual-media/poster.jpg": {
+      "kind": "ai_art",
+      "sha256": "bd094eefa446b2585b6456e8a81c334587c0f2438b7eb11af5daf87531d34cdd",
+      "source": "/assets/visual-media/poster.jpg",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1080,
+      "height": 1920
+    },
+    "/assets/editorial/treatments-2026-11/waffles-people-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "b82bda0b2560328b267d13546e0f079b373486fda3169c8817f4507ff40f7238",
+      "source": "/assets/event-stills/JEQWzenjQro.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 940,
+      "height": 1672,
+      "treatment": "waffles-people-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/waffles-garden-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "d852148558aa722f8cf8f7e416618937c5126775ee62415397a740551e8475dd",
+      "source": "/assets/editorial/waffle-scene.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 941,
+      "height": 1672,
+      "treatment": "waffles-garden-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/blog-headshot-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "8e54d1742403777128f34b1fc585f9587f1d179d73ad25f5eee7d84350c34c34",
+      "source": "/assets/brand/approved-headshot.png",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 1254,
+      "height": 1254,
+      "treatment": "blog-headshot-film-v1"
+    },
+    "/assets/editorial/i-wanted-to-make-it/episode-poster.webp": {
+      "kind": "ai_art",
+      "sha256": "1896d5d6c4a0a9654c33e7f20a8dd3fa254a13ed9697c49f3b42bce926693bc5",
+      "source": "/assets/editorial/i-wanted-to-make-it/episode-poster.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/i-wanted-to-make-it/ancient-witch-temple-headshot-v1.webp": {
+      "kind": "ai_art",
+      "sha256": "a84a0130fd564fff6fd868c3f256c6efe2369584612b761455eaa9feeac65a3d",
+      "source": "/assets/editorial/i-wanted-to-make-it/ancient-witch-temple-headshot-v1.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 256,
+      "height": 256
+    },
+    "/assets/editorial/i-wanted-to-make-it/chloe-temple-headshot-v1.webp": {
+      "kind": "ai_art",
+      "sha256": "a02a13c64091a790574cd7f35d087817d0235c3f05a76b68d11743db07ef655f",
+      "source": "/assets/editorial/i-wanted-to-make-it/chloe-temple-headshot-v1.webp",
+      "reviewed": "2026-11-18",
+      "method": "existing authored artwork; preserved",
+      "width": 256,
+      "height": 256
+    },
+    "/assets/editorial/i-wanted-to-make-it/film-collection-archive.png": {
+      "kind": "interface",
+      "sha256": "bf2d9d37856b843e0472481d46d0be69e1f93bd0b296c1a9ce8582de6545f898",
+      "source": "/assets/editorial/i-wanted-to-make-it/film-collection-archive.png",
+      "reviewed": "2026-11-18",
+      "method": "exact source record; preserved",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/treatments-2026-11/livblends-strip-film-v1.jpg": {
+      "kind": "ai_photo",
+      "sha256": "ea1e76382be6dcc7a5376b94521dae5cd1baad2e421833741e3cb9d16c2b59da",
+      "source": "/assets/editorial/i-wanted-to-make-it/livblends-archive-collage.jpg",
+      "reviewed": "2026-11-18",
+      "method": "executed ImageGen edit; photographic light, texture and optical depth",
+      "width": 2170,
+      "height": 725,
+      "treatment": "livblends-strip-film-v1"
+    },
+    "/assets/editorial/treatments-2026-11/elastic-eras-likeness-v1.png": {
+      "kind": "ai_art",
+      "sha256": "c6e901dece518d9434f52a4c36c5eda4b814122ed052521e6d8db1918bd367a5",
+      "reviewed": "2026-11-18",
+      "method": "executed seven-era likeness correction; author accepted",
+      "treatment": "elastic-eras-likeness-v1",
+      "width": 1529,
+      "height": 1028
+    }
+  }
+}
