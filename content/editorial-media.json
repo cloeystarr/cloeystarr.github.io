@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "policy": "Every standalone editorial photograph, including supporting images and photographic video previews, requires an executed AI treatment and visual review. Existing AI art and exact quoted source/interface/diagram records retain their source integrity. Unknown or changed assets require review.",
   "routes": [
     "ai-will-replace-you-please-save-our-ceo",
@@ -40,7 +40,8 @@
     "gray-area-beyond-the-interface",
     "the-author-first-cut",
     "waffles-before-the-week",
-    "i-wanted-to-make-it"
+    "i-wanted-to-make-it",
+    "i-want-my-world-to-answer-back"
   ],
   "assets": {
     "/assets/editorial/box-episode03/episode-poster.webp": {
@@ -1413,6 +1414,56 @@
       "treatment": "elastic-eras-likeness-v1",
       "width": 1529,
       "height": 1028
+    },
+    "/assets/editorial/vapicon-2026/hero.jpg": {
+      "kind": "ai_photo",
+      "sha256": "6f8f95822531a48174bb454fadb185b098f1bcbfd21623768107b5ffb1adc78a",
+      "source": "Chloe-supplied portrait, preserved in private VapiCon production archive",
+      "reviewed": "2026-11-19",
+      "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
+      "treatment": "vapicon-creator-collage-v1",
+      "width": 1600,
+      "height": 900
+    },
+    "/assets/editorial/vapicon-2026/youtube-cover.jpg": {
+      "kind": "ai_photo",
+      "sha256": "9743e66aa5f30a815010f6fc10de7b009f13237a887bafc81f6400755b6e37bc",
+      "source": "Chloe-supplied portrait, preserved in private VapiCon production archive",
+      "reviewed": "2026-11-19",
+      "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
+      "treatment": "vapicon-creator-collage-v1",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/vapicon-2026/jordan-cover.jpg": {
+      "kind": "ai_photo",
+      "sha256": "535c7493f1febb211a52bcf7ed4f5d4e8ba67838341805dbf1e0ae36418a5e16",
+      "source": "Chloe-supplied portrait, preserved in private VapiCon production archive",
+      "reviewed": "2026-11-19",
+      "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
+      "treatment": "vapicon-creator-collage-v1",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/vapicon-2026/mehmet-cover.jpg": {
+      "kind": "ai_photo",
+      "sha256": "7419d87e5b67412a844a3d2b4563ef9563288758c54816c7b5a4748f2e994f69",
+      "source": "Chloe-supplied portrait, preserved in private VapiCon production archive",
+      "reviewed": "2026-11-19",
+      "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
+      "treatment": "vapicon-creator-collage-v1",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/vapicon-2026/bets-cover.jpg": {
+      "kind": "ai_photo",
+      "sha256": "98150816bdf6e8d5c14a7b91e30ecb93e5d868f7c4666c3f7fedfab9e1ea6621",
+      "source": "Chloe-supplied portrait, preserved in private VapiCon production archive",
+      "reviewed": "2026-11-19",
+      "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
+      "treatment": "vapicon-creator-collage-v1",
+      "width": 1280,
+      "height": 720
     }
   }
 }
