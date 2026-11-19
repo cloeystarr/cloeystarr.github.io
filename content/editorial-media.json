@@ -3,6 +3,7 @@
   "updated": "2026-11-19",
   "policy": "Every standalone editorial photograph, including supporting images and photographic video previews, requires an executed AI treatment and visual review. Existing AI art and exact quoted source/interface/diagram records retain their source integrity. Unknown or changed assets require review.",
   "routes": [
+    "two-hearts-to-go",
     "ai-will-replace-you-please-save-our-ceo",
     "gabriel-jimenez-uglycash",
     "giving-the-idea-a-body",
@@ -1462,6 +1463,24 @@
       "reviewed": "2026-11-19",
       "method": "Executed imagegen identity-preserving creator collage, reviewed with author; typography derivatives of accepted treatment",
       "treatment": "vapicon-creator-collage-v1",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/dd-keychains-2026-11-14/couple-paper-v4.jpg": {
+      "kind": "ai_art",
+      "sha256": "afe2cbdbf3bb6cc6136a58d3b810c2e091f2d2b605ba95d9d34863281b17a792",
+      "source": "/assets/editorial/dd-keychains-2026-11-14/couple-paper-v4.jpg",
+      "reviewed": "2026-11-19",
+      "method": "Executed ImageGen paper collage from authorized couple likeness references and the actual circuit-heart keychain design; corrected wardrobe and hand-free framing; full-size visual review. Film cover is a frame from the final mixed-media film.",
+      "width": 1672,
+      "height": 941
+    },
+    "/assets/editorial/dd-keychains-2026-11-14/film-cover.jpg": {
+      "kind": "ai_art",
+      "sha256": "6ac75202551236c779b0a3bd8609ccbcb1e8ed475858b36016e1e8da87804ebc",
+      "source": "/assets/editorial/dd-keychains-2026-11-14/film-cover.jpg",
+      "reviewed": "2026-11-19",
+      "method": "Executed ImageGen paper collage from authorized couple likeness references and the actual circuit-heart keychain design; corrected wardrobe and hand-free framing; full-size visual review. Film cover is a frame from the final mixed-media film.",
       "width": 1280,
       "height": 720
     }

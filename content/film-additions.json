@@ -126,5 +126,21 @@
     "publication_status": "approved",
     "byline": "Film by Chloe Starr.",
     "published_on": "2026-11-19"
+  },
+  {
+    "id": "dd-keychains-2026-11-14",
+    "title": "Two hearts, to go.",
+    "date": "2026-11-14",
+    "display": "November 14, 2026 · Film published November 19",
+    "youtube": "ngmWqmkwzgQ",
+    "youtube_id": "ngmWqmkwzgQ",
+    "poster": "/assets/editorial/dd-keychains-2026-11-14/film-cover.jpg",
+    "article": "two-hearts-to-go",
+    "notes": "<p>Film and original workshop footage: Chloe Starr. With Chris Starr AI. Host and maker: <a href=\"https://x.com/finding_dd\">DD / Didi</a>. AI paper artwork from authorized couple photographs, original animated circuit linework, picture assembly and synthesized score with Codex. Imagined paper scenes are labeled; real workshop footage remains documentary. Full credits in the story.</p>",
+    "creator": "Chloe Starr",
+    "state": "finished",
+    "publication_status": "approved",
+    "byline": "A tiny maker afternoon with Chloe + Chris.",
+    "published_on": "2026-11-19"
   }
 ]
