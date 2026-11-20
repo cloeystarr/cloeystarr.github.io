@@ -3,6 +3,7 @@
   "updated": "2026-11-19",
   "policy": "Every standalone editorial photograph, including supporting images and photographic video previews, requires an executed AI treatment and visual review. Existing AI art and exact quoted source/interface/diagram records retain their source integrity. Unknown or changed assets require review.",
   "routes": [
+    "eight-months-for-an-ai-ad",
     "two-hearts-to-go",
     "ai-will-replace-you-please-save-our-ceo",
     "gabriel-jimenez-uglycash",
@@ -1481,6 +1482,70 @@
       "source": "/assets/editorial/dd-keychains-2026-11-14/film-cover.jpg",
       "reviewed": "2026-11-19",
       "method": "Executed ImageGen paper collage from authorized couple likeness references and the actual circuit-heart keychain design; corrected wardrobe and hand-free framing; full-size visual review. Film cover is a frame from the final mixed-media film.",
+      "width": 1280,
+      "height": 720
+    },
+    "/assets/editorial/kernel-2026-11-18/fit-flash-drag-v5.png": {
+      "kind": "ai_photo",
+      "treatment": "kernel-fit-flash-drag-v5",
+      "sha256": "71a2be150602901734039b91da53d6466a4e809368afa489e513bf11eec71c46",
+      "source": "Chloe Starr original KERNEL event media, November 18, 2026; originals preserved privately",
+      "reviewed": "2026-11-19",
+      "author_acceptance": "Approved complete illustrated article and film for publication, November 19, 2026",
+      "method": "Executed built-in ImageGen treatment from saved creator prompts and original source references",
+      "width": 1086,
+      "height": 1448
+    },
+    "/assets/editorial/kernel-2026-11-18/room-collage-v1.png": {
+      "kind": "ai_art",
+      "treatment": "kernel-handwritten-courtyard-v1",
+      "sha256": "54a8181d328898270380b50ff5f797fb8f3f9cc8932a66267ed43c6486cd1f44",
+      "source": "Chloe Starr original KERNEL event media, November 18, 2026; originals preserved privately",
+      "reviewed": "2026-11-19",
+      "author_acceptance": "Approved complete illustrated article and film for publication, November 19, 2026",
+      "method": "Executed built-in ImageGen treatment from saved creator prompts and original source references",
+      "width": 1672,
+      "height": 941
+    },
+    "/assets/editorial/kernel-2026-11-18/encounter-v1.png": {
+      "kind": "ai_photo",
+      "treatment": "kernel-encounter-v1",
+      "sha256": "11c2b00cad8cf2043b028e94e0486c0ce3872ec51b56846fa7c412e0cd300451",
+      "source": "Chloe Starr original KERNEL event media, November 18, 2026; originals preserved privately",
+      "reviewed": "2026-11-19",
+      "author_acceptance": "Approved complete illustrated article and film for publication, November 19, 2026",
+      "method": "Executed built-in ImageGen treatment from saved creator prompts and original source references",
+      "width": 1122,
+      "height": 1402
+    },
+    "/assets/editorial/kernel-2026-11-18/portrait-v1.png": {
+      "kind": "ai_photo",
+      "treatment": "kernel-portrait-v1",
+      "sha256": "7d5de314a917084ef6aecbb7627808dd964e1be55cb0033b7e70144c8763a3d5",
+      "source": "Chloe Starr original KERNEL event media, November 18, 2026; originals preserved privately",
+      "reviewed": "2026-11-19",
+      "author_acceptance": "Approved complete illustrated article and film for publication, November 19, 2026",
+      "method": "Executed built-in ImageGen treatment from saved creator prompts and original source references",
+      "width": 1122,
+      "height": 1402
+    },
+    "/assets/editorial/kernel-2026-11-18/couple-v2.png": {
+      "kind": "ai_photo",
+      "treatment": "kernel-couple-v2",
+      "sha256": "bd0fd416aff0837f49593d7e8803982ea6ecf2ef51d98e23e3c13b8d4ca7df36",
+      "source": "Chloe Starr original KERNEL event media, November 18, 2026; originals preserved privately",
+      "reviewed": "2026-11-19",
+      "author_acceptance": "Approved complete illustrated article and film for publication, November 19, 2026",
+      "method": "Executed built-in ImageGen treatment from saved creator prompts and original source references",
+      "width": 1122,
+      "height": 1402
+    },
+    "/assets/editorial/kernel-2026-11-18/film-cover.jpg": {
+      "kind": "quoted_source",
+      "sha256": "a0cd0846969ba97cbc2de9d5f0dc5d5c46269633c278e04e03593bf5b05df1f0",
+      "source": "https://www.youtube.com/watch?v=deQsLCgNn50",
+      "reviewed": "2026-11-19",
+      "method": "Credited excerpt of KERNEL × Parallel Studios commissioned animation; title and credit from approved film",
       "width": 1280,
       "height": 720
     }

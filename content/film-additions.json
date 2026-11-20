@@ -142,5 +142,21 @@
     "publication_status": "approved",
     "byline": "A tiny maker afternoon with Chloe + Chris.",
     "published_on": "2026-11-19"
+  },
+  {
+    "id": "kernel-2026-11-18",
+    "title": "Eight months for an AI ad.",
+    "date": "2026-11-18",
+    "display": "November 18, 2026 · Film published November 19",
+    "youtube": "Xubsjfxb5WU",
+    "youtube_id": "Xubsjfxb5WU",
+    "poster": "/assets/editorial/kernel-2026-11-18/film-cover.jpg",
+    "article": "eight-months-for-an-ai-ad",
+    "notes": "<p>Film and original event footage: Chloe Starr. With <a href=\"https://x.com/chrisstarrai\">Chris Starr AI</a>. Commissioned animation and score: KERNEL × Parallel Studios, quoted from <a href=\"https://www.youtube.com/watch?v=deQsLCgNn50\">built on KERNEL.</a>. AI-edited editorial photographs and datamosh with Codex and ImageGen. Full source credits in the article.</p>",
+    "creator": "Chloe Starr",
+    "state": "finished",
+    "publication_status": "approved",
+    "byline": "A film by Chloe Starr.",
+    "published_on": "2026-11-19"
   }
 ]
