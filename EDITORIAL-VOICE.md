@@ -34,3 +34,8 @@ collection for repeated rhetorical habits. A machine check cannot certify voice.
 Run the editorial media check and JavaScript syntax checks before release. Keep
 private review records outside the deploy tree. Existing-article repair and new
 publication are separate scopes; new drafts retain their review requirement.
+
+November 25 caption direction: do not label photographs as AI-edited, AI-treated
+or explain their processing in captions. Caption the people, scene or work and
+retain relevant credits. Keep treatment methods and provenance in the private
+production records. The executed-image-treatment requirement still applies.

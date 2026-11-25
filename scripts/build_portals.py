@@ -87,7 +87,7 @@ def head(title,deck,url,image=''):
 
 def facade(vid,title,poster,caption=''):
  treated=MEDIA.get(src(poster),{}).get('kind')=='ai_photo'
- return '<figure class="film-stage"><button class="youtube-facade" data-youtube-id="'+E(vid)+'" aria-label="Play '+E(title)+'">'+image_tag(poster,('AI-treated preview: 'if treated else'')+title)+'<span aria-hidden="true">▶</span></button><figcaption>'+E(title)+(' · '+caption if caption else '')+(' · AI-treated preview.'if treated else'')+'</figcaption></figure>'
+ return '<figure class="film-stage"><button class="youtube-facade" data-youtube-id="'+E(vid)+'" aria-label="Play '+E(title)+'">'+image_tag(poster,('AI-treated preview: 'if treated else'')+title)+'<span aria-hidden="true">▶</span></button><figcaption>'+E(title)+(' · '+caption if caption else '')+'</figcaption></figure>'
 def clean(n,pid,media,unverified):
  # Drop embedded old player wrappers; all verified main films are staged once separately.
  if n.t=='video':

@@ -51,10 +51,13 @@ for route in routes:
    check(a.get('src',''),route,a)
    if not a.get('alt'):errors.append(f'{route}: image has no alt text')
    if not a.get('width') or not a.get('height'):errors.append(f'{route}: image has no intrinsic dimensions')
+  if a.get('srcset'):
+   for candidate in a['srcset'].split(','):
+    check(candidate.strip().split()[0],route+' responsive')
   elif t=='meta' and a.get('property')=='og:image':check(a.get('content',''),route)
   elif t=='video' and a.get('poster'):check(a['poster'],route)
- for fig in re.findall(r'<figure\b[^>]*>.*?</figure>',text,re.S):
-  if 'data-editorial-treatment=' in fig and not re.search(r'<figcaption\b[^>]*>.*?AI',fig,re.S|re.I):errors.append(f'{route}: treated image needs visible AI caption')
+ # November 25: processing disclosures are not part of reader-facing captions.
+ # Executed treatments, asset hashes and source identities remain enforced above.
 for t,a in cover.tags:
  if t=='img':check(a.get('src',''),'Portals',a)
 # Check original records too, so a rebuild cannot silently restore untreated photos.

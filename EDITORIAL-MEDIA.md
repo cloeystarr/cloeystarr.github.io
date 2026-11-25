@@ -23,3 +23,8 @@ It does not establish artistic approval or grant permission to publish new draft
 The November 2026 historical photo repair covers the 38 existing Portals stories.
 The canonical approved headshot and separately approved site rooms remain protected;
 the blog uses a separate light/film-texture derivative where required.
+
+November 25, 2026: Chloe directs that captions omit AI-editing disclosures.
+Keep the executed treatments, source relationships and reviews in production
+records; caption the scene and retain relevant credits. This supersedes the
+earlier visible-caption-label requirement.
