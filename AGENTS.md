@@ -6,3 +6,8 @@ details, source photographs and credits. Register reviewed assets and hashes in
 before publishing. New or changed imagery must not bypass review by being classified
 as an interface or quoted source. Existing original source records and AI artwork
 retain their integrity. New article drafts still require their publication approval.
+
+For Portals prose, follow [the editorial voice standard](EDITORIAL-VOICE.md).
+Read Chloe's original writing before editing as her. No compulsory lessons,
+takeaways or morals. Preserve the authored journal editions and synchronize their
+content records; do not regenerate them from older section selections.

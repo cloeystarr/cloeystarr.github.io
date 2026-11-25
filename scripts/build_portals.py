@@ -1,5 +1,6 @@
 """Build the private Portals retrofit from existing editorial records. No network or publishing.
-Content stays in script.js/history-posts.js; this file owns editorial selections/presentation.
+Authored journal pages own their presentation and copy; source records mirror them.
+This builder only assembles non-authored records and the Portals index.
 Halloween is already directed independently and is deliberately never regenerated here.
 """
 from pathlib import Path
@@ -118,7 +119,10 @@ def clean(n,pid,media,unverified):
 AUDIT=[]
 for post in ([] if "--index-only" in sys.argv else ORDER):
  pid=post['id']
- if pid=='content-can-be-liquid-too' or post.get('presentation')=='authored':continue
+ if pid=='content-can-be-liquid-too' or post.get('presentation')=='authored':
+  authored=WEB/post.get('authored_path','journal/'+pid+'/index.html')
+  if not authored.is_file():raise FileNotFoundError('Missing authored article: '+str(authored))
+  continue
  body=P(post['body']).root
  source_links=[{'url':n.a['href'],'label':n.txt().strip(),'verification':'existing article source; not freshly verified'}for n in body.find(lambda n:n.t=='a' and n.a.get('href'))]
  films=[f for f in FILMS if f.get('article')==pid]
@@ -205,7 +209,7 @@ def card(p,cl='',archive=False):
  deck=p['deck']
  if p['id']=='memories-preproduction':deck='The original poem, an earlier cut, and the next decisions. Film in progress.'
  if p['id']=='content-can-be-liquid-too':deck='I went out for Halloween and came home wishing I’d filmed more. So I used AI to reconstruct and extend the night.'
- deck=INDEX_DECKS.get(p['id'],deck)
+ deck=p['deck'] if p.get('presentation')=='authored' else INDEX_DECKS.get(p['id'],deck)
  return '<article class="story-card '+cl+' work-'+E(p['id'])+'"><a href="/journal/'+p['id']+'/">'+(image_tag(image,p.get('alt',''),lazy=True)if image else'')+'<p class="eyebrow">'+E(index_kind(p))+' · <time datetime="'+E(p['iso'])+'">'+E(p['date'])+'</time></p><h2>'+display_title(NAV_TITLES.get(p['id'],p['title']))+'</h2>'+(''if archive else '<p>'+E(deck)+'</p>')+'</a></article>'
 latest=ORDER[:1];chosen=ORDER[1:5];rest=ORDER[5:]
 cover=head('Portals','A studio journal by Chloe Starr. Art films, field notes and experiments in making.','/portals/')+'<main id="main" class="portals"><div class="portals-title"><p>A studio journal by Chloe Starr</p><h1>Portals<span class="punctuation">.</span></h1></div><section class="current-stories" aria-label="Newest stories">'+''.join(card(p)for p in latest)+'</section><section class="selected-stories chronological" aria-label="More recent stories">'+''.join(card(p)for p in chosen)+'</section><section class="earlier-stories" aria-label="Chronological archive"><h2>Earlier stories<span class="punctuation">.</span></h2><div class="archive-stories">'+''.join(card(p,archive=True)for p in rest)+'</div></section><nav class="secondary-nav"><a href="/poetry/">Poetry &amp; poetry films</a><a href="/#events">Events &amp; field films</a></nav></main>'+FOOTER+'<script src="/assets/editorial/portals-system.js?v=retrofit1"></script></body></html>'
